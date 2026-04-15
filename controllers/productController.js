@@ -1,5 +1,3 @@
-//let products = [];
-
 const db = require('../config/db');
 const { validationResult } = require('express-validator');
 
@@ -36,17 +34,6 @@ exports.getProductById = async (req, res) => {
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
-    /*const productId = parseInt(req.params.id);
-    
-    const product = products.find(p => p.id === productId);
-
-    if (!products) {
-        return res.status(404).json({
-            message: 'Produk tidak ditemukan'
-        });
-    };
-
-    res.json(product);*/
 };
 
 exports.createProduct = async (req,res) => {
@@ -72,19 +59,6 @@ exports.createProduct = async (req,res) => {
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
-
-    /*const newProduct = {
-        id: products.length + 1,
-        name,
-        price
-    };
-
-    products.push(newProduct);
-
-    res.json({
-        message: 'Produk berhasil ditambahkan',
-        data: newProduct
-    }); */
 };
 
 exports.updateProduct = async (req, res) => {
@@ -104,9 +78,6 @@ exports.updateProduct = async (req, res) => {
 
         const product = result.rows[0];
 
-        //console.log("DB user_id:", product.user_id)
-        //console.log('token user_id:', req.user.id)
-
         if (Number(product.user_id) !== Number(userId)) {
             return res.status(403).json({ message: 'Kamu tidak berhak mengedit produk ini' });
         } 
@@ -119,26 +90,6 @@ exports.updateProduct = async (req, res) => {
     } catch (err) {
         res.status(500),json({ message: err.message });
     }
-
-
-    /*const productId = parseInt(req.params.id);
-    const { name, price } = req.body;
-
-    const product = products.find(p => p.id === productId);
-
-    if (!product) {
-        return res.status(404).json({
-            message: 'Produk tidak ditemukan',
-        });
-    };
-
-    product.name = name;
-    product.price = price;
-
-    res.json({
-        message: 'Produk berhasil ditambahkan',
-        data: product
-    });*/
 };
 
 exports.deleteProduct = async (req,res) => {
@@ -170,23 +121,7 @@ exports.deleteProduct = async (req,res) => {
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
-    /*const productId = parseInt(req.params.id);
-
-    const productIndex = products.findIndex(p => p.id === productId);
-
-    if (productIndex === -1) {
-        return res.status(404).json({
-            message: 'Produk tidak ditemukan',
-        });
-    };
-
-    const deletedProduct = products[productIndex];
-    products.splice(productIndex, 1);
-
-    res.json({
-        message: 'Produk berhasil dihapus',
-        data: deletedProduct
-    });*/
+    
 };
 
 exports.getMyProducts = async (req, res) => {

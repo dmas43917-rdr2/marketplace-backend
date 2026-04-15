@@ -14,7 +14,6 @@ router.post('/products',authMiddleware,[
 
 router.get('/products',productController.getAllProducts);
 router.get('/products/:id',productController.getProductById);
-//router.post('/products',productController.createProduct);
 router.put('/products/:id',authMiddleware,productController.updateProduct);
 router.delete('/products/:id',authMiddleware,productController.deleteProduct);
 router.get('/my-products',authMiddleware,productController.getMyProducts);
