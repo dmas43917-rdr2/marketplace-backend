@@ -2,16 +2,30 @@ const db = require('../config/db');
 const { validationResult } = require('express-validator');
 
 exports.getAllProducts = async (req, res) => {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 5;
+    const search = req.query.search || '';
+    const offset = (page - 1) * limit;
+
     try {
         const result = await db.query(
             `SELECT
               products.*,
               users.email 
             FROM products
-            JOIN users 
-            ON products.user_id = users.id`
+            JOIN users ON 
+        products.user_id = users.id
+            WHERE products.name ILIKE $1
+            LIMIT $2 OFFSET $3
+            `, [`%${search}%`, limit, offset]
         );
-        res.json(result.rows);
+
+        res.json({
+            page,
+            limit,
+            data: result.rows
+        });
+        
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
