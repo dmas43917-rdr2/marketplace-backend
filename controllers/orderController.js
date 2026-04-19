@@ -5,6 +5,30 @@ exports.createOrder = async (req, res) => {
     const { product_id } = req.body;
 
     try {
+        const productResult = await db.query(
+            'SELECT * FROM products WHERE id = $1',
+            [product_id]
+        );
+
+        if (productResult.rows.length === 0) {
+            return res.status(404).json({ message: 'Produk tidak ditemukan' });
+        }
+
+        const product = productResult.rows[0];
+
+        if (Number(product.user_id) === Number(userId)) {
+            return res.status(403).json({ message: 'Tidak bisa membeli produk sendiri' });
+        }
+
+        const existingOrders = await db.query(
+            'SELECT * FROM orders WHERE user_id = $1 AND  product_id = $2',
+            [userId, product_id]
+        );
+
+        if (existingOrders.rows.length > 0) {
+            return res.status(400).json({ message: 'Kamu sudah membeli produk ini' });
+        }
+
         const result = await db.query(
             'INSERT INTO orders (user_id, product_id) VALUES ($1, $2) RETURNING*',
             [userId, product_id]
