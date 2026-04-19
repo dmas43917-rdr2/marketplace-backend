@@ -10,6 +10,7 @@
   - Tidak bisa beli produk  yang sama 2x
 - Order history (my orders)
 - Relasi database (join)
+- Pagination & search products
 
 ## Tech Stack 
 - Node.js
