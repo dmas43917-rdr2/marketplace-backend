@@ -42,3 +42,28 @@ exports.getAllOrders = async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 };
+
+exports.getMyOrders = async (req, res) => {
+    const userId = req.user.id;
+
+    try {
+        const result = await db.query(`
+            SELECT
+               orders.id AS order_id,
+               products.name AS product_name,
+               products.price,
+               seller.email AS seller_email,
+               orders.created_at 
+            FROM orders
+            JOIN products ON
+        orders.product_id = products.id
+            JOIN users AS seller ON
+        products.user_id = seller.id
+            WHERE orders.user_id = $1
+            `, [userId]);
+
+            res.json(result.rows);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+};
