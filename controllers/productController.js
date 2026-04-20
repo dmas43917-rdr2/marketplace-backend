@@ -6,6 +6,15 @@ exports.getAllProducts = async (req, res) => {
     const limit = parseInt(req.query.limit) || 5;
     const search = req.query.search || '';
     const offset = (page - 1) * limit;
+    const sort = req.query.sort || 'newest';
+
+    let orderQuery = 'ORDER BY products.id DESC';
+
+    if (sort === 'price_asc') {
+        orderQuery ='ORDER BY products.price ASC';
+    } else if (sort === 'price_desc') {
+        orderQuery = 'ORDER BY products.price DESC';
+    }
 
     try {
         const result = await db.query(
@@ -15,7 +24,7 @@ exports.getAllProducts = async (req, res) => {
             FROM products
             JOIN users ON 
         products.user_id = users.id
-            WHERE products.name ILIKE $1
+            WHERE products.name ILIKE $1 ${orderQuery}
             LIMIT $2 OFFSET $3
             `, [`%${search}%`, limit, offset]
         );
