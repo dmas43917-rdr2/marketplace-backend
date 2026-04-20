@@ -11,6 +11,7 @@
 - Order history (my orders)
 - Relasi database (join)
 - Pagination & search products
+- Sorting products (price asc/desc,newest)
 
 ## Tech Stack 
 - Node.js
