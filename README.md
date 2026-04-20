@@ -12,7 +12,7 @@
 - Relasi database (join)
 - Pagination & search products
 - Sorting products (price asc/desc,newest)
-- Image upload
+- Upload image for products and url for response
 
 ## Tech Stack 
 - Node.js

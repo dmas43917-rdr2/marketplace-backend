@@ -3,7 +3,7 @@ const { validationResult } = require('express-validator');
 
 exports.getAllProducts = async (req, res) => {
     const page = parseInt(req.query.page) || 1;
-    const limit = parseInt(req.query.limit) || 5;
+    const limit = parseInt(req.query.limit) || 10;
     const search = req.query.search || '';
     const offset = (page - 1) * limit;
     const sort = req.query.sort || 'newest';
@@ -29,10 +29,17 @@ exports.getAllProducts = async (req, res) => {
             `, [`%${search}%`, limit, offset]
         );
 
+        const products = result.rows.map((product) => {
+            return {
+                ...product,
+                image_url: product.image ?`http://localhost:3000/uploads/${product.image}` : null
+            };
+        });
+
         res.json({
             page,
             limit,
-            data: result.rows
+            data: products
         });
         
     } catch (err) {
