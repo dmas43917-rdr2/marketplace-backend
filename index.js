@@ -9,6 +9,8 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
+app.use('/uploads',express.static('uploads'));
+
 app.use('/', productRoutes);
 app.use('/', authRoutes);
 app.use('/',orderRoutes);

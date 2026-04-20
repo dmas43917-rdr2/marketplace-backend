@@ -68,11 +68,12 @@ exports.createProduct = async (req,res) => {
 
     const { name, price } = req.body;
     const  userId = req.user.id;
+    const image = req.file ? req.file.filename : null;
 
     try {
         const result = await db.query(
-            'INSERT INTO products (name, price, user_id) VALUES ($1, $2, $3) RETURNING *',
-            [name, price, userId] 
+            'INSERT INTO products (name, price, user_id, image) VALUES ($1, $2, $3, $4) RETURNING *',
+            [name, price, userId, image] 
         );
 
         res.json({
