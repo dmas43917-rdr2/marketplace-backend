@@ -13,6 +13,7 @@
 - Pagination & search products
 - Sorting products (price asc/desc,newest)
 - Upload image for products and url for response
+- Update product with image
 
 ## Tech Stack 
 - Node.js
