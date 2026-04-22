@@ -15,6 +15,20 @@ app.use('/', productRoutes);
 app.use('/', authRoutes);
 app.use('/',orderRoutes);
 
+app.use((err, req, res, next) => {
+    console.error(err);
+
+    if(err.message.includes('Hanya file gambar')) {
+        return res.status(400).json({ message: err.message });
+    }
+
+    if (err.code === 'LIMIT_FILE_SIZE') {
+        return res.status(400).json({ message: 'File terlalu besar (max 2MB)' });
+    }
+
+    res.status(500).json({ message: 'Internal Server Error' })
+})
+
 app.get('/', (req, res) => {
     res.send('Server Jalan Bro!');
 });
