@@ -155,9 +155,9 @@ exports.deleteProduct = async (req,res) => {
 
         const product = productResult.rows[0];
 
-        if (Number(product.user_id) !== Number(userId)) {
+        /*if (Number(product.user_id) !== Number(userId)) {
             return res.status(403).json({ message: 'kamu tidak berhak menghapus produk ini' });
-        }
+        }*/
 
         if (product.image) {
             const imagePath = path.join(__dirname, '../uploads', product.image);
