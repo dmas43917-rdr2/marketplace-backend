@@ -16,7 +16,7 @@ router.post('/products',authMiddleware,
 
 router.get('/products',productController.getAllProducts);
 router.get('/products/:id',productController.getProductById);
-router.put('/products/:id',authMiddleware,productController.updateProduct);
+router.put('/products/:id',authMiddleware,upload.single('image'),productController.updateProduct);
 router.delete('/products/:id',authMiddleware,productController.deleteProduct);
 router.get('/my-products',authMiddleware,productController.getMyProducts);
 

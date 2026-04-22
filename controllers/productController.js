@@ -93,31 +93,37 @@ exports.createProduct = async (req,res) => {
 };
 
 exports.updateProduct = async (req, res) => {
-    const id = parseInt(req.params.id);
+    const productId = parseInt(req.params.id);
     const { name, price } = req.body;
     const userId = req.user.id;
 
     try {
-        const result = await db.query(
+        const productResult = await db.query(
             'SELECT * FROM products WHERE id = $1',
-            [id]
+            [productId]
         );
 
-        if (result.rows.length === 0) {
+        if (productResult.rows.length === 0) {
             return res.status(404).json({ message: 'Produk tidak ditemukan' });
         }
 
-        const product = result.rows[0];
+        const product = productResult.rows[0];
 
         if (Number(product.user_id) !== Number(userId)) {
             return res.status(403).json({ message: 'Kamu tidak berhak mengedit produk ini' });
         } 
 
-        await db.query('UPDATE products SET name = $1, price = $2 WHERE id = $3',
-            [name, price, id]
+        const image = req.file ? req.file.filename : product.image
+
+         const result = await db.query('UPDATE products SET name = $1, price = $2, image =$3 WHERE id = $4 RETURNING *',
+            [name, price, image, productId]
         );
 
-        res.json({ message: 'Produk berhasil diupdate' });
+        res.json({
+            message: 'Produk berhasil diupdate',
+            data: result.rows[0]
+         });
+         
     } catch (err) {
         res.status(500),json({ message: err.message });
     }
