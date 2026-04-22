@@ -14,6 +14,7 @@
 - Sorting products (price asc/desc,newest)
 - Upload image for products and url for response
 - Update product with image
+- Image validation (type & size limit)
 
 ## Tech Stack 
 - Node.js
