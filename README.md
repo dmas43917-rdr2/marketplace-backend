@@ -16,6 +16,7 @@
 - Update product with image
 - Image validation (type & size limit)
 - Role-based acces (admin & user)
+- API documentation with Swagger (/api-docs)
 
 ## Tech Stack 
 - Node.js
