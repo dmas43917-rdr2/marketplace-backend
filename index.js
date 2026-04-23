@@ -4,10 +4,14 @@ const express = require('express');
 const productRoutes = require('./routes/productRoutes');
 const authRoutes = require('./routes/authRoutes');
 const orderRoutes = require('./routes/orderRoutes');
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./swagger');
 const app = express();
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
+
+app.use('/api-docs', swaggerUi.serve,swaggerUi.setup(swaggerSpec))
 
 app.use('/uploads',express.static('uploads'));
 

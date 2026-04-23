@@ -15,6 +15,15 @@ router.post('/products',authMiddleware,
     productController.createProduct
 );
 
+/**
+ * @swagger
+ * /products:
+ *   get:
+ *     summary: Get all products
+ *     responses:
+ *       200:
+ *         description: Success
+ */
 router.get('/products',productController.getAllProducts);
 router.get('/products/:id',productController.getProductById);
 router.put('/products/:id',authMiddleware,upload.single('image'),productController.updateProduct);
