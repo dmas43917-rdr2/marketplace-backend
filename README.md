@@ -1,20 +1,20 @@
 # Marketplace Backend API
 
-Backend API untuk aplikasi marketplace sederhana menggunakan node.js. 
+Backend API untuk aplikasi marketplace sederhana menggunakan node.js,dengan fitur autentikasi, manajemen produk, upload gambar, dan sistem order. 
 
 ## API Documentation
 Gunakan Swagger untuk melihat dan mencoba endpoint secara langsung.
 
 ## Fitur
 - Authentication register & Login (JWT)
-- CRUD Produk
+- CRUD Product
 - Authorization (produk milik sendiri)
 - Order (beli produk)
 - Validasi order:
   - Tidak bisa beli produk sendiri
   - Tidak bisa beli produk  yang sama 2x
 - Order history (my orders)
-- Relasi database (join)
+- Relation database (join)
 - Pagination & search products
 - Sorting products (price asc/desc,newest)
 - Upload image for products and url for response
@@ -105,4 +105,6 @@ Response
 {
    "token": "jwt_token"
 }
+Gunakan token JWT:
+Authorization: Bearer your_token
 
