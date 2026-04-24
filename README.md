@@ -2,6 +2,9 @@
 
 Backend API untuk aplikasi marketplace sederhana menggunakan node.js. 
 
+## API Documentation
+Gunakan Swagger untuk melihat dan mencoba endpoint secara langsung.
+
 ## Fitur
 - Authentication register & Login (JWT)
 - CRUD Produk
