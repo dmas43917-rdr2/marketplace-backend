@@ -3,6 +3,8 @@ const { validationResult } = require('express-validator');
 const fs = require('fs');
 const path = require('path');
 
+const productService = require('../services/productService')
+
 exports.getAllProducts = async (req, res) => {
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
@@ -19,19 +21,14 @@ exports.getAllProducts = async (req, res) => {
     }
 
     try {
-        const result = await db.query(
-            `SELECT
-              products.*,
-              users.email 
-            FROM products
-            JOIN users ON 
-        products.user_id = users.id
-            WHERE products.name ILIKE $1 ${orderQuery}
-            LIMIT $2 OFFSET $3
-            `, [`%${search}%`, limit, offset]
-        );
+        const result = await productService.getAllProducts({
+            search,
+            limit,
+            offset,
+            orderQuery,
+        });
 
-        const products = result.rows.map((product) => {
+        const products = result.map((product) => {
             return {
                 ...product,
                 image_url: product.image ?`http://localhost:3000/uploads/${product.image}` : null
