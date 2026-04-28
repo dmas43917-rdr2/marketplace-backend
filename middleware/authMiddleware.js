@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken');
-
-const SECRET_KEY = process.env.JWT_SECRET;
+const config = require('../config/env');
 
 module.exports = (req, res, next) => {
     const authHeader = req.headers.authorization;
@@ -12,7 +11,7 @@ module.exports = (req, res, next) => {
     const token = authHeader.split(' ')[1];
 
     try {
-        const decoded = jwt.verify(token, SECRET_KEY);
+        const decoded = jwt.verify(token, config.jwtSecret);
         req.user = {
             id: decoded.id,
             role: decoded.role
@@ -21,6 +20,4 @@ module.exports = (req, res, next) => {
     } catch (err) {
         return res.status(403).json({ message: 'Token tidak valid' });
     }
-
-    console.log(req.user)
 };

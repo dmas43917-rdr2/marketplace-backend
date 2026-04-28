@@ -1,5 +1,6 @@
-require('dotenv').config()
-const db = require('./config/db')
+require('dotenv').config();
+const db = require('./config/db');
+const config = require('./config/env');
 const express = require('express');
 const productRoutes = require('./routes/productRoutes');
 const authRoutes = require('./routes/authRoutes');
@@ -9,7 +10,6 @@ const swaggerSpec = require('./swagger');
 const app = express();
 app.use(express.json());
 
-const PORT = process.env.PORT || 3000;
 
 app.use('/api-docs', swaggerUi.serve,swaggerUi.setup(swaggerSpec))
 
@@ -37,8 +37,8 @@ app.get('/', (req, res) => {
     res.send('Server Jalan Bro!');
 });
 
-app.listen(PORT, '0.0.0.0',() => {
-    console.log(`Server running on port ${PORT}`);
+app.listen(config.port, '0.0.0.0',() => {
+    console.log(`Server running on port ${config.port}`);
 });
 
 
