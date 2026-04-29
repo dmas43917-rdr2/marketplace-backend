@@ -11,10 +11,12 @@ const orderRoutes = require('./routes/orderRoutes');
 
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./swagger');
+const morgan = require('morgan');
 
 const app = express();
 app.use(express.json());
 
+app.use(morgan('combined', { stream: logger.stream }));
 
 app.use('/api-docs', swaggerUi.serve,swaggerUi.setup(swaggerSpec))
 

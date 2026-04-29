@@ -1,3 +1,5 @@
 2026-04-28T10:31:26.063Z [ERROR] File too large
 2026-04-28T10:38:48.044Z [ERROR] File too large
 2026-04-29T11:22:48.842Z [ERROR] File too large
+2026-04-29T11:39:24.638Z [ERROR] Cannot destructure property 'email' of 'req.body' as it is undefined.
+2026-04-29T11:41:09.095Z [ERROR] File too large
