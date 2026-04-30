@@ -3,3 +3,5 @@
 2026-04-29T11:22:48.842Z [ERROR] File too large
 2026-04-29T11:39:24.638Z [ERROR] Cannot destructure property 'email' of 'req.body' as it is undefined.
 2026-04-29T11:41:09.095Z [ERROR] File too large
+2026-04-30T11:48:36.481Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`
+2026-04-30T11:49:32.661Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`

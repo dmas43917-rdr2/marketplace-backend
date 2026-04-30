@@ -65,3 +65,17 @@
 2026-04-30T10:43:51.903Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:43:51 +0000] "GET /products HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
 2026-04-30T10:43:52.899Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:43:52 +0000] "GET /products HTTP/1.1" 429 53 "-" "PostmanRuntime/7.53.0"
 2026-04-30T10:43:53.881Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:43:53 +0000] "GET /products HTTP/1.1" 429 53 "-" "PostmanRuntime/7.53.0"
+2026-04-30T11:48:20.144Z [INFO] Server running on port 3000
+2026-04-30T11:48:36.481Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`
+2026-04-30T11:48:36.485Z [INFO] 127.0.0.1 - - [30/Apr/2026:11:48:36 +0000] "GET /products HTTP/1.1" 500 35 "-" "PostmanRuntime/7.53.0"
+2026-04-30T11:49:32.661Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`
+2026-04-30T11:49:32.663Z [INFO] 127.0.0.1 - - [30/Apr/2026:11:49:32 +0000] "GET /products HTTP/1.1" 500 35 "-" "PostmanRuntime/7.53.0"
+2026-04-30T11:52:22.957Z [INFO] Server running on port 3000
+2026-04-30T11:52:27.863Z [INFO] 127.0.0.1 - - [30/Apr/2026:11:52:27 +0000] "GET /products HTTP/1.1" 200 932 "-" "PostmanRuntime/7.53.0"
+2026-04-30T11:52:31.535Z [INFO] 127.0.0.1 - - [30/Apr/2026:11:52:31 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-04-30T11:53:32.788Z [INFO] 127.0.0.1 - - [30/Apr/2026:11:53:32 +0000] "GET /products HTTP/1.1" 200 932 "-" "PostmanRuntime/7.53.0"
+2026-04-30T11:53:34.048Z [INFO] 127.0.0.1 - - [30/Apr/2026:11:53:34 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-04-30T11:53:35.065Z [INFO] 127.0.0.1 - - [30/Apr/2026:11:53:35 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-04-30T11:53:36.067Z [INFO] 127.0.0.1 - - [30/Apr/2026:11:53:36 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-04-30T11:53:37.052Z [INFO] 127.0.0.1 - - [30/Apr/2026:11:53:37 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-04-30T11:53:38.031Z [INFO] 127.0.0.1 - - [30/Apr/2026:11:53:38 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"

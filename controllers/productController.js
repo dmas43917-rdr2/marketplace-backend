@@ -2,6 +2,7 @@ const db = require('../config/db');
 const { validationResult } = require('express-validator');
 const fs = require('fs');
 const path = require('path');
+const cache = require('../config/cache');
 
 const productService = require('../services/productService')
 
@@ -11,6 +12,16 @@ exports.getAllProducts = async (req, res) => {
     const search = req.query.search || '';
     const offset = (page - 1) * limit;
     const sort = req.query.sort || 'newest';
+    
+    const cacheKey = req.originalUrl;
+    const cacheData = cache.get(cacheKey);
+
+    if (cacheData) {
+        return res.json({
+            source: 'cache',
+            ...cacheData,
+        });
+    }
 
     let orderQuery = 'ORDER BY products.id DESC';
 
@@ -35,10 +46,17 @@ exports.getAllProducts = async (req, res) => {
             };
         });
 
-        res.json({
+        const responseData = {
             page,
             limit,
             data: products
+        };
+
+        cache.set(cacheKey, responseData);
+
+        res.json({
+            source: 'database',
+            ...responseData,
         });
         
     } catch (err) {
