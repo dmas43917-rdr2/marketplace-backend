@@ -1,48 +1,67 @@
-2026-04-28T10:21:09.777Z [INFO] Server running on port 3000
-2026-04-28T10:28:48.351Z [INFO] Server running on port 3000
-2026-04-28T10:28:50.433Z [INFO] Server running on port 3000
-2026-04-28T10:28:54.057Z [INFO] Server running on port 3000
-2026-04-28T10:28:56.453Z [INFO] Server running on port 3000
-2026-04-28T10:29:01.286Z [INFO] Server running on port 3000
-2026-04-28T10:29:03.798Z [INFO] Server running on port 3000
-2026-04-28T10:29:06.766Z [INFO] Server running on port 3000
-2026-04-28T10:29:08.284Z [INFO] Server running on port 3000
-2026-04-28T10:29:09.585Z [INFO] Server running on port 3000
-2026-04-28T10:29:12.413Z [INFO] Server running on port 3000
-2026-04-28T10:29:15.222Z [INFO] Server running on port 3000
-2026-04-28T10:29:16.969Z [INFO] Server running on port 3000
-2026-04-28T10:29:21.127Z [INFO] Server running on port 3000
-2026-04-28T10:30:36.955Z [INFO] Server running on port 3000
-2026-04-28T10:30:38.793Z [INFO] Server running on port 3000
-2026-04-28T10:30:41.849Z [INFO] Server running on port 3000
-2026-04-28T10:30:45.176Z [INFO] Server running on port 3000
-2026-04-28T10:30:51.514Z [INFO] Server running on port 3000
-2026-04-28T10:30:55.071Z [INFO] Server running on port 3000
-2026-04-28T10:30:56.514Z [INFO] Server running on port 3000
-2026-04-28T10:30:59.500Z [INFO] Server running on port 3000
-2026-04-28T10:31:01.389Z [INFO] Server running on port 3000
-2026-04-28T10:31:04.539Z [INFO] Server running on port 3000
-2026-04-28T10:31:05.803Z [INFO] Server running on port 3000
-2026-04-28T10:31:09.525Z [INFO] Server running on port 3000
-2026-04-28T10:31:11.110Z [INFO] Server running on port 3000
-2026-04-28T10:31:17.756Z [INFO] Server running on port 3000
-2026-04-28T10:31:26.063Z [ERROR] File too large
-2026-04-28T10:38:48.044Z [ERROR] File too large
-2026-04-28T11:31:09.207Z [INFO] Server running on port 3000
-2026-04-29T10:34:44.214Z [INFO] Server running on port 3000
-2026-04-29T10:35:10.612Z [WARN] Cannot destructure property 'email' of 'req.body' as it is undefined.
-2026-04-29T10:37:24.177Z [WARN] File too large
-2026-04-29T10:40:08.010Z [WARN] File too large
-2026-04-29T11:22:45.798Z [INFO] Server running on port 3000
-2026-04-29T11:22:48.842Z [ERROR] File too large
-2026-04-29T11:23:14.010Z [INFO] Server running on port 3000
-2026-04-29T11:38:21.608Z [INFO] Server running on port 3000
-2026-04-29T11:38:29.500Z [INFO] 127.0.0.1 - - [29/Apr/2026:11:38:29 +0000] "GET /products HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
-2026-04-29T11:38:53.982Z [INFO] 127.0.0.1 - - [29/Apr/2026:11:38:53 +0000] "POST /products HTTP/1.1" 403 31 "-" "PostmanRuntime/7.53.0"
-2026-04-29T11:39:24.638Z [ERROR] Cannot destructure property 'email' of 'req.body' as it is undefined.
-2026-04-29T11:39:24.639Z [INFO] 127.0.0.1 - - [29/Apr/2026:11:39:24 +0000] "POST /login HTTP/1.1" 500 35 "-" "PostmanRuntime/7.53.0"
-2026-04-29T11:39:40.123Z [INFO] 127.0.0.1 - - [29/Apr/2026:11:39:40 +0000] "POST /login HTTP/1.1" 200 230 "-" "PostmanRuntime/7.53.0"
-2026-04-29T11:40:45.281Z [INFO] 127.0.0.1 - - [29/Apr/2026:11:40:45 +0000] "POST /products HTTP/1.1" 400 166 "-" "PostmanRuntime/7.53.0"
-2026-04-29T11:41:09.095Z [ERROR] File too large
-2026-04-29T11:41:09.096Z [INFO] 127.0.0.1 - - [29/Apr/2026:11:41:09 +0000] "POST /products HTTP/1.1" 400 42 "-" "PostmanRuntime/7.53.0"
-2026-04-29T11:41:21.092Z [INFO] 127.0.0.1 - - [29/Apr/2026:11:41:21 +0000] "GET /products/1 HTTP/1.1" 404 36 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:13:53.745Z [INFO] Server running on port 3000
+2026-04-30T10:14:11.083Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:14:11 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:15:11.981Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:15:11 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:15:18.611Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:15:18 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:15:51.251Z [INFO] Server running on port 3000
+2026-04-30T10:16:01.629Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:16:01 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:16:38.408Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:16:38 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:16:39.641Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:16:39 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:16:40.708Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:16:40 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:16:41.675Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:16:41 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:16:53.909Z [INFO] Server running on port 3000
+2026-04-30T10:16:59.399Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:16:59 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:00.376Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:00 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:01.343Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:01 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:02.343Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:02 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:03.343Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:03 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:04.359Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:04 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:05.342Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:05 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:06.275Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:06 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:07.277Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:07 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:08.260Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:08 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:09.208Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:09 +0000] "GET /products/ HTTP/1.1" 429 53 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:39.076Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:39 +0000] "GET /products/ HTTP/1.1" 429 53 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:17:40.174Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:17:40 +0000] "GET /products/ HTTP/1.1" 429 53 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:22:09.826Z [INFO] Server running on port 3000
+2026-04-30T10:22:14.941Z [INFO] Server running on port 3000
+2026-04-30T10:22:17.350Z [INFO] Server running on port 3000
+2026-04-30T10:22:31.946Z [INFO] Server running on port 3000
+2026-04-30T10:22:36.779Z [INFO] Server running on port 3000
+2026-04-30T10:22:40.110Z [INFO] Server running on port 3000
+2026-04-30T10:22:41.708Z [INFO] Server running on port 3000
+2026-04-30T10:22:49.063Z [INFO] Server running on port 3000
+2026-04-30T10:23:42.532Z [INFO] Server running on port 3000
+2026-04-30T10:23:45.815Z [INFO] Server running on port 3000
+2026-04-30T10:23:50.791Z [INFO] Server running on port 3000
+2026-04-30T10:24:02.066Z [INFO] Server running on port 3000
+2026-04-30T10:24:03.890Z [INFO] Server running on port 3000
+2026-04-30T10:24:07.472Z [INFO] Server running on port 3000
+2026-04-30T10:24:09.164Z [INFO] Server running on port 3000
+2026-04-30T10:36:46.010Z [INFO] Server running on port 3000
+2026-04-30T10:37:05.280Z [INFO] Server running on port 3000
+2026-04-30T10:37:27.489Z [INFO] Server running on port 3000
+2026-04-30T10:37:47.961Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:37:47 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:37:49.117Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:37:49 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:37:50.232Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:37:50 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:37:51.416Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:37:51 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:37:52.534Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:37:52 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:37:53.624Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:37:53 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:37:54.633Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:37:54 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:37:55.700Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:37:55 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:37:56.666Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:37:56 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:37:57.766Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:37:57 +0000] "GET /products/ HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:37:58.799Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:37:58 +0000] "GET /products/ HTTP/1.1" 429 53 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:39:17.669Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:39:17 +0000] "POST /login HTTP/1.1" 429 53 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:39:35.027Z [INFO] Server running on port 3000
+2026-04-30T10:39:40.681Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:39:40 +0000] "POST /login HTTP/1.1" 200 230 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:39:42.178Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:39:42 +0000] "POST /login HTTP/1.1" 200 230 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:39:43.512Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:39:43 +0000] "POST /login HTTP/1.1" 200 230 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:39:44.779Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:39:44 +0000] "POST /login HTTP/1.1" 200 230 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:39:46.089Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:39:46 +0000] "POST /login HTTP/1.1" 200 230 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:39:47.335Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:39:47 +0000] "POST /login HTTP/1.1" 429 44 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:43:48.636Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:43:48 +0000] "GET /products HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:43:49.801Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:43:49 +0000] "GET /products HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:43:50.884Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:43:50 +0000] "GET /products HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:43:51.903Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:43:51 +0000] "GET /products HTTP/1.1" 200 912 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:43:52.899Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:43:52 +0000] "GET /products HTTP/1.1" 429 53 "-" "PostmanRuntime/7.53.0"
+2026-04-30T10:43:53.881Z [INFO] 127.0.0.1 - - [30/Apr/2026:10:43:53 +0000] "GET /products HTTP/1.1" 429 53 "-" "PostmanRuntime/7.53.0"

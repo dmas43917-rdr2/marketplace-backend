@@ -3,6 +3,7 @@ require('dotenv').config();
 const db = require('./config/db');
 const config = require('./config/env');
 const logger = require('./config/logger');
+const { limiter } = require('./middleware/rateLimiter');
 const express = require('express');
 
 const productRoutes = require('./routes/productRoutes');
@@ -15,8 +16,11 @@ const morgan = require('morgan');
 
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use(morgan('combined', { stream: logger.stream }));
+
+app.use(limiter);
 
 app.use('/api-docs', swaggerUi.serve,swaggerUi.setup(swaggerSpec))
 
