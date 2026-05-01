@@ -31,7 +31,6 @@ exports.getAllProducts = async (req, res) => {
         orderQuery = 'ORDER BY products.price DESC';
     }
 
-    try {
         const result = await productService.getAllProducts({
             search,
             limit,
@@ -59,9 +58,6 @@ exports.getAllProducts = async (req, res) => {
             ...responseData,
         });
         
-    } catch (err) {
-        res.status(500).json({ message: err.message });
-    }
 };
 
 exports.getProductById = async (req, res) => {

@@ -28,3 +28,42 @@
 2026-05-01T10:03:07.921Z [INFO] 127.0.0.1 - - [01/May/2026:10:03:07 +0000] "GET /products HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
 2026-05-01T10:03:09.566Z [INFO] 127.0.0.1 - - [01/May/2026:10:03:09 +0000] "GET /products HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
 2026-05-01T10:03:11.387Z [INFO] 127.0.0.1 - - [01/May/2026:10:03:11 +0000] "GET /products HTTP/1.1" 429 53 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-05-01T11:00:23.314Z [INFO] Server running on port 3000
+2026-05-01T11:00:28.363Z [INFO] Server running on port 3000
+2026-05-01T11:00:30.592Z [INFO] Server running on port 3000
+2026-05-01T11:00:33.485Z [INFO] Server running on port 3000
+2026-05-01T11:00:40.981Z [INFO] Server running on port 3000
+2026-05-01T11:00:54.813Z [INFO] 127.0.0.1 - - [01/May/2026:11:00:54 +0000] "GET /products HTTP/1.1" 200 932 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:00:56.764Z [INFO] 127.0.0.1 - - [01/May/2026:11:00:56 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:00:57.831Z [INFO] 127.0.0.1 - - [01/May/2026:11:00:57 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:00:58.762Z [INFO] 127.0.0.1 - - [01/May/2026:11:00:58 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:00:59.629Z [INFO] 127.0.0.1 - - [01/May/2026:11:00:59 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:01:00.696Z [INFO] 127.0.0.1 - - [01/May/2026:11:01:00 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:01:01.595Z [INFO] 127.0.0.1 - - [01/May/2026:11:01:01 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:01:02.528Z [INFO] 127.0.0.1 - - [01/May/2026:11:01:02 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:01:03.432Z [INFO] 127.0.0.1 - - [01/May/2026:11:01:03 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:01:04.297Z [INFO] 127.0.0.1 - - [01/May/2026:11:01:04 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:01:05.166Z [INFO] 127.0.0.1 - - [01/May/2026:11:01:05 +0000] "GET /products HTTP/1.1" 429 53 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:01:06.062Z [INFO] 127.0.0.1 - - [01/May/2026:11:01:06 +0000] "GET /products HTTP/1.1" 429 53 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:01:32.214Z [INFO] Server running on port 3000
+2026-05-01T11:02:39.493Z [INFO] 127.0.0.1 - - [01/May/2026:11:02:39 +0000] "GET /products?page=1&limit=5&sort=price_desc HTTP/1.1" 200 931 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:02:43.697Z [INFO] 127.0.0.1 - - [01/May/2026:11:02:43 +0000] "GET /products?page=1&limit=5&sort=price_des HTTP/1.1" 200 931 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:02:50.712Z [INFO] 127.0.0.1 - - [01/May/2026:11:02:50 +0000] "GET /products?page=1&limit=5&sort=price_ HTTP/1.1" 200 931 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:03:02.860Z [INFO] 127.0.0.1 - - [01/May/2026:11:03:02 +0000] "GET /products?page=1&limit=5&sort HTTP/1.1" 200 931 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:03:14.278Z [INFO] 127.0.0.1 - - [01/May/2026:11:03:14 +0000] "GET /products?pae=1&limit=5&sort HTTP/1.1" 200 931 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:03:26.693Z [INFO] 127.0.0.1 - - [01/May/2026:11:03:26 +0000] "GET /productse=1&limit=5&sort HTTP/1.1" 404 171 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:04:59.822Z [INFO] Server running on port 3000
+2026-05-01T11:05:16.277Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`
+2026-05-01T11:05:16.280Z [INFO] 127.0.0.1 - - [01/May/2026:11:05:16 +0000] "GET /products HTTP/1.1" 500 35 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:06:29.928Z [INFO] Server running on port 3000
+2026-05-01T11:06:40.091Z [INFO] 127.0.0.1 - - [01/May/2026:11:06:40 +0000] "GET /products HTTP/1.1" 200 932 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:06:47.318Z [INFO] Server running on port 3000
+2026-05-01T11:06:54.154Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`
+2026-05-01T11:06:54.157Z [INFO] 127.0.0.1 - - [01/May/2026:11:06:54 +0000] "GET /products HTTP/1.1" 500 35 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:06:56.102Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`
+2026-05-01T11:06:56.103Z [INFO] 127.0.0.1 - - [01/May/2026:11:06:56 +0000] "GET /products HTTP/1.1" 500 35 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:06:57.187Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`
+2026-05-01T11:06:57.188Z [INFO] 127.0.0.1 - - [01/May/2026:11:06:57 +0000] "GET /products HTTP/1.1" 500 35 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:07:11.500Z [INFO] Server running on port 3000
+2026-05-01T11:07:16.531Z [INFO] 127.0.0.1 - - [01/May/2026:11:07:16 +0000] "GET /products HTTP/1.1" 200 932 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:07:17.722Z [INFO] 127.0.0.1 - - [01/May/2026:11:07:17 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
