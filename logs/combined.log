@@ -67,3 +67,79 @@
 2026-05-01T11:07:11.500Z [INFO] Server running on port 3000
 2026-05-01T11:07:16.531Z [INFO] 127.0.0.1 - - [01/May/2026:11:07:16 +0000] "GET /products HTTP/1.1" 200 932 "-" "PostmanRuntime/7.53.0"
 2026-05-01T11:07:17.722Z [INFO] 127.0.0.1 - - [01/May/2026:11:07:17 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:19:43.044Z [INFO] Server running on port 3000
+2026-05-01T11:19:48.788Z [INFO] 127.0.0.1 - - [01/May/2026:11:19:48 +0000] "GET /products HTTP/1.1" 200 932 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:19:53.189Z [INFO] 127.0.0.1 - - [01/May/2026:11:19:53 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:20:12.924Z [INFO] Server running on port 3000
+2026-05-01T11:20:19.315Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`
+2026-05-01T11:20:19.320Z [INFO] 127.0.0.1 - - [01/May/2026:11:20:19 +0000] "GET /products HTTP/1.1" 500 89 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:21:37.766Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`
+2026-05-01T11:21:37.768Z [INFO] 127.0.0.1 - - [01/May/2026:11:21:37 +0000] "GET /products HTTP/1.1" 500 89 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:22:09.632Z [INFO] Server running on port 3000
+2026-05-01T11:22:11.073Z [INFO] Server running on port 3000
+2026-05-01T11:22:13.840Z [INFO] Server running on port 3000
+2026-05-01T11:22:19.889Z [INFO] Server running on port 3000
+2026-05-01T11:22:21.698Z [INFO] Server running on port 3000
+2026-05-01T11:22:28.034Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`
+2026-05-01T11:22:28.037Z [INFO] 127.0.0.1 - - [01/May/2026:11:22:28 +0000] "GET /products HTTP/1.1" 500 35 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:23:01.803Z [ERROR] The key argument has to be of type `string` or `number`. Found: `undefined`
+2026-05-01T11:23:01.804Z [INFO] 127.0.0.1 - - [01/May/2026:11:23:01 +0000] "GET /products HTTP/1.1" 500 35 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:24:06.009Z [INFO] Server running on port 3000
+2026-05-01T11:24:10.833Z [INFO] 127.0.0.1 - - [01/May/2026:11:24:10 +0000] "GET /products HTTP/1.1" 200 932 "-" "PostmanRuntime/7.53.0"
+2026-05-01T11:24:12.418Z [INFO] 127.0.0.1 - - [01/May/2026:11:24:12 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:17:12.725Z [INFO] Server running on port 3000
+2026-05-02T10:28:09.327Z [INFO] 127.0.0.1 - - [02/May/2026:10:28:09 +0000] "POST /login HTTP/1.1" 200 228 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:29:16.135Z [INFO] 127.0.0.1 - - [02/May/2026:10:29:16 +0000] "POST /orders HTTP/1.1" 404 36 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:29:24.085Z [INFO] 127.0.0.1 - - [02/May/2026:10:29:24 +0000] "POST /orders HTTP/1.1" 404 36 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:29:32.789Z [INFO] 127.0.0.1 - - [02/May/2026:10:29:32 +0000] "POST /orders HTTP/1.1" 200 28 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:29:52.990Z [INFO] Server running on port 3000
+2026-05-02T10:30:46.668Z [INFO] 127.0.0.1 - - [02/May/2026:10:30:46 +0000] "POST /orders HTTP/1.1" 404 36 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:42:18.977Z [INFO] Server running on port 3000
+2026-05-02T10:42:27.031Z [INFO] Server running on port 3000
+2026-05-02T10:42:33.429Z [INFO] Server running on port 3000
+2026-05-02T10:42:34.708Z [INFO] Server running on port 3000
+2026-05-02T10:42:41.805Z [INFO] Server running on port 3000
+2026-05-02T10:42:48.610Z [INFO] Server running on port 3000
+2026-05-02T10:42:58.649Z [INFO] Server running on port 3000
+2026-05-02T10:43:21.173Z [ERROR] 'sintaks error' pada atau didekat « ROOLBACK »
+2026-05-02T10:43:21.176Z [INFO] 127.0.0.1 - - [02/May/2026:10:43:21 +0000] "POST /orders HTTP/1.1" 500 35 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:44:29.653Z [INFO] Server running on port 3000
+2026-05-02T10:44:45.410Z [ERROR] 'sintaks error' pada atau didekat « ROOLBACK »
+2026-05-02T10:44:45.413Z [INFO] 127.0.0.1 - - [02/May/2026:10:44:45 +0000] "POST /orders HTTP/1.1" 500 35 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:46:11.216Z [INFO] Server running on port 3000
+2026-05-02T10:46:15.069Z [INFO] Server running on port 3000
+2026-05-02T10:46:16.669Z [INFO] Server running on port 3000
+2026-05-02T10:46:29.457Z [ERROR] Unexpected token '}', ..."ct_id": 
+}" is not valid JSON
+2026-05-02T10:46:37.067Z [ERROR] 'sintaks error' pada atau didekat « ROOLBACK »
+2026-05-02T10:46:37.069Z [INFO] 127.0.0.1 - - [02/May/2026:10:46:37 +0000] "POST /orders HTTP/1.1" 500 62 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:47:07.697Z [ERROR] 'sintaks error' pada atau didekat « ROOLBACK »
+2026-05-02T10:47:07.698Z [INFO] 127.0.0.1 - - [02/May/2026:10:47:07 +0000] "POST /orders HTTP/1.1" 500 62 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:48:35.218Z [INFO] Server running on port 3000
+2026-05-02T10:48:47.602Z [ERROR] Unexpected token '}', ..."ct_id": 
+}" is not valid JSON
+2026-05-02T10:48:54.143Z [ERROR] 'sintaks error' pada atau didekat « ROOLBACK »
+2026-05-02T10:48:54.144Z [INFO] 127.0.0.1 - - [02/May/2026:10:48:54 +0000] "POST /orders HTTP/1.1" 500 62 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:49:50.784Z [INFO] 127.0.0.1 - - [02/May/2026:10:49:50 +0000] "POST /orders HTTP/1.1" 400 43 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:49:59.505Z [ERROR] 'sintaks error' pada atau didekat « ROOLBACK »
+2026-05-02T10:49:59.506Z [INFO] 127.0.0.1 - - [02/May/2026:10:49:59 +0000] "POST /orders HTTP/1.1" 500 62 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:49:59.869Z [ERROR] 'sintaks error' pada atau didekat « ROOLBACK »
+2026-05-02T10:49:59.870Z [INFO] 127.0.0.1 - - [02/May/2026:10:49:59 +0000] "POST /orders HTTP/1.1" 500 62 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:55:37.579Z [INFO] Server running on port 3000
+2026-05-02T10:55:38.801Z [INFO] Server running on port 3000
+2026-05-02T10:55:43.613Z [INFO] Server running on port 3000
+2026-05-02T10:56:04.415Z [ERROR] Produk tidak ditemukan
+2026-05-02T10:56:04.418Z [INFO] 127.0.0.1 - - [02/May/2026:10:56:04 +0000] "POST /orders HTTP/1.1" 500 36 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:57:09.781Z [INFO] Server running on port 3000
+2026-05-02T10:57:14.659Z [ERROR] Produk tidak ditemukan
+2026-05-02T10:57:14.663Z [INFO] 127.0.0.1 - - [02/May/2026:10:57:14 +0000] "POST /orders HTTP/1.1" 500 36 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:57:24.253Z [INFO] 127.0.0.1 - - [02/May/2026:10:57:24 +0000] "POST /orders HTTP/1.1" 400 43 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:57:32.370Z [ERROR] clien is not defined
+2026-05-02T10:57:32.372Z [INFO] 127.0.0.1 - - [02/May/2026:10:57:32 +0000] "POST /orders HTTP/1.1" 500 34 "-" "PostmanRuntime/7.53.0"
+2026-05-02T10:57:43.984Z [INFO] Server running on port 3000
+2026-05-02T11:17:16.171Z [INFO] Server running on port 3000
+2026-05-02T11:56:17.723Z [INFO] Server running on port 3000
+2026-05-02T11:57:12.145Z [INFO] 127.0.0.1 - - [02/May/2026:11:57:12 +0000] "POST /login HTTP/1.1" 200 228 "-" "PostmanRuntime/7.53.0"
+2026-05-02T11:58:02.508Z [ERROR] Produk tidak ditemukan
+2026-05-02T11:58:02.509Z [INFO] 127.0.0.1 - - [02/May/2026:11:58:02 +0000] "POST /orders HTTP/1.1" 500 36 "-" "PostmanRuntime/7.53.0"
+2026-05-02T11:58:11.948Z [INFO] 127.0.0.1 - - [02/May/2026:11:58:11 +0000] "POST /orders HTTP/1.1" 200 111 "-" "PostmanRuntime/7.53.0"

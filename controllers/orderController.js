@@ -1,17 +1,22 @@
 const db = require('../config/db');
 
 exports.createOrder = async (req, res) => {
-    const userId = req.user.id;
-    const { product_id } = req.body;
+    const client = await db.connect();
 
     try {
-        const productResult = await db.query(
+        await client.query('BEGIN');
+
+        const userId = req.user.id;
+        const { product_id } = req.body;
+
+    
+        const productResult = await client.query(
             'SELECT * FROM products WHERE id = $1',
             [product_id]
         );
 
         if (productResult.rows.length === 0) {
-            return res.status(404).json({ message: 'Produk tidak ditemukan' });
+            throw new Error('Produk tidak ditemukan')
         }
 
         const product = productResult.rows[0];
@@ -20,7 +25,7 @@ exports.createOrder = async (req, res) => {
             return res.status(403).json({ message: 'Tidak bisa membeli produk sendiri' });
         }
 
-        const existingOrders = await db.query(
+        const existingOrders = await client.query(
             'SELECT * FROM orders WHERE user_id = $1 AND  product_id = $2',
             [userId, product_id]
         );
@@ -29,17 +34,23 @@ exports.createOrder = async (req, res) => {
             return res.status(400).json({ message: 'Kamu sudah membeli produk ini' });
         }
 
-        const result = await db.query(
+        const result = await client.query(
             'INSERT INTO orders (user_id, product_id) VALUES ($1, $2) RETURNING*',
             [userId, product_id]
         );
+
+        await client.query('COMMIT');
 
         res.json({
             message: 'Order berhasil',
             data: result.rows[0]
         });
     } catch (err) {
-        res.status(500).json({ message: err.message });
+        await client.query('ROLLBACK');
+        throw err;
+
+    } finally {
+        client.release();
     }
 };
 

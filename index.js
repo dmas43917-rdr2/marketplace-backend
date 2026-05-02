@@ -41,7 +41,7 @@ app.use((err, req, res, next) => {
     if (err.code === 'LIMIT_FILE_SIZE') {
         return res.status(400).json({ message: 'File terlalu besar (max 2MB)' });
     }
-    res.status(500).json({ message: 'Internal Server Error' });
+    res.status(500).json({ message: err.message });
 });
 
 app.get('/', (req, res) => {
