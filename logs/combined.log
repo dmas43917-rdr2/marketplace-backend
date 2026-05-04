@@ -143,3 +143,22 @@
 2026-05-02T11:58:02.508Z [ERROR] Produk tidak ditemukan
 2026-05-02T11:58:02.509Z [INFO] 127.0.0.1 - - [02/May/2026:11:58:02 +0000] "POST /orders HTTP/1.1" 500 36 "-" "PostmanRuntime/7.53.0"
 2026-05-02T11:58:11.948Z [INFO] 127.0.0.1 - - [02/May/2026:11:58:11 +0000] "POST /orders HTTP/1.1" 200 111 "-" "PostmanRuntime/7.53.0"
+2026-05-04T11:05:13.959Z [INFO] Server running on port 3000
+2026-05-04T11:14:47.237Z [INFO] Server running on port 3000
+2026-05-04T11:15:05.195Z [INFO] Server running on port 3000
+2026-05-04T11:15:06.582Z [INFO] Server running on port 3000
+2026-05-04T11:18:17.447Z [INFO] Server running on port 3000
+2026-05-04T11:34:23.304Z [INFO] Server running on port 3000
+2026-05-04T11:36:09.358Z [INFO] Server running on port 3000
+2026-05-04T11:47:15.075Z [INFO] Server running on port 3000
+2026-05-04T11:55:05.948Z [INFO] Server running on port 3000
+2026-05-04T12:02:01.897Z [INFO] Server running on port 3000
+2026-05-04T12:02:39.487Z [ERROR] Unexpected token 'o', "[object Promise]" is not valid JSON
+2026-05-04T12:02:39.514Z [INFO] 127.0.0.1 - - [04/May/2026:12:02:39 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.53.0"
+2026-05-04T12:03:56.953Z [ERROR] Unexpected token 'o', "[object Promise]" is not valid JSON
+2026-05-04T12:03:56.963Z [INFO] 127.0.0.1 - - [04/May/2026:12:03:56 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.53.0"
+2026-05-04T12:04:21.950Z [INFO] Server running on port 3000
+2026-05-04T12:04:59.095Z [INFO] Server running on port 3000
+2026-05-04T12:05:00.285Z [INFO] Server running on port 3000
+2026-05-04T12:06:08.577Z [INFO] 127.0.0.1 - - [04/May/2026:12:06:08 +0000] "GET /products HTTP/1.1" 200 932 "-" "PostmanRuntime/7.53.0"
+2026-05-04T12:06:10.966Z [INFO] 127.0.0.1 - - [04/May/2026:12:06:10 +0000] "GET /products HTTP/1.1" 200 929 "-" "PostmanRuntime/7.53.0"

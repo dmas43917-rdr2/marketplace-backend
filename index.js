@@ -5,6 +5,7 @@ const config = require('./config/env');
 const logger = require('./config/logger');
 const { limiter } = require('./middleware/rateLimiter');
 const express = require('express');
+const redisClient = require('./config/redis')
 
 const productRoutes = require('./routes/productRoutes');
 const authRoutes = require('./routes/authRoutes');

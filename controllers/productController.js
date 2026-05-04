@@ -2,7 +2,8 @@ const db = require('../config/db');
 const { validationResult } = require('express-validator');
 const fs = require('fs');
 const path = require('path');
-const cache = require('../config/cache');
+//const cache = require('../config/cache');
+const redisClient = require('../config/redis');
 
 const productService = require('../services/productService')
 
@@ -14,12 +15,12 @@ exports.getAllProducts = async (req, res) => {
     const sort = req.query.sort || 'newest';
     
     const cacheKey = req.originalUrl;
-    const cacheData = cache.get(cacheKey);
+    const cacheData = await redisClient.get(cacheKey);
 
     if (cacheData) {
         return res.json({
-            source: 'cache',
-            ...cacheData,
+            source: 'redis',
+            ...JSON.parse(cacheData),
         });
     }
 
@@ -51,7 +52,11 @@ exports.getAllProducts = async (req, res) => {
             data: products
         };
 
-        cache.set(cacheKey, responseData);
+        await redisClient.setEx(
+            cacheKey,
+            60,
+            JSON.stringify(responseData)
+        )
 
         res.json({
             source: 'database',

@@ -28,3 +28,5 @@
 2026-05-02T10:57:14.659Z [ERROR] Produk tidak ditemukan
 2026-05-02T10:57:32.370Z [ERROR] clien is not defined
 2026-05-02T11:58:02.508Z [ERROR] Produk tidak ditemukan
+2026-05-04T12:02:39.487Z [ERROR] Unexpected token 'o', "[object Promise]" is not valid JSON
+2026-05-04T12:03:56.953Z [ERROR] Unexpected token 'o', "[object Promise]" is not valid JSON
