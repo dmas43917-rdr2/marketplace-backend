@@ -93,7 +93,7 @@ exports.createProduct = async (req,res) => {
 
     const { name, price } = req.body;
     const  userId = req.user.id;
-    const image = req.file ? req.file.filename : null;
+    const image = req.file ? req.file.path : null;
 
     try {
         const result = await db.query(
