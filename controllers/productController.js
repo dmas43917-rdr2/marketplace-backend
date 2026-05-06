@@ -2,7 +2,6 @@ const db = require('../config/db');
 const { validationResult } = require('express-validator');
 const fs = require('fs');
 const path = require('path');
-//const cache = require('../config/cache');
 const redisClient = require('../config/redis');
 
 const productService = require('../services/productService')
@@ -24,7 +23,6 @@ exports.getAllProducts = async (req, res) => {
         console.log('Redis GET error:', err.message);
     }
     }
-    console.log('Redis status:', redisClient.isOpen)
 
     if (cacheData) {
         return res.json({
