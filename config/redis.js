@@ -11,10 +11,12 @@ client.on('error', (err) => {
     console.log('Redis Error:', err);
 });
 
-client.connect();
-
 client.on('connect', () => {
     console.log('Redis Connected');
 });
 
-module.exports = client
+client.connect().catch((err) => {
+    console.log('Redis connect failed:', err.message);
+});
+
+module.exports = client;

@@ -14,15 +14,21 @@ exports.getAllProducts = async (req, res) => {
     const offset = (page - 1) * limit;
     const sort = req.query.sort || 'newest';
     
-    /*const cacheKey = req.originalUrl;
-    const cacheData = await redisClient.get(cacheKey);
+    const cacheKey = req.originalUrl;
+    let cacheData = null;
+    
+    try {
+        cacheData = await redisClient.get(cacheKey);
+    } catch (err) {
+        console.log('Redis GET error:', err.message);
+    }
 
     if (cacheData) {
         return res.json({
             source: 'redis',
             ...JSON.parse(cacheData),
         });
-    }*/
+    }
 
     let orderQuery = 'ORDER BY products.id DESC';
 
@@ -52,12 +58,15 @@ exports.getAllProducts = async (req, res) => {
             data: products
         };
 
-        /*await redisClient.setEx(
+        try {
+          await redisClient.setEx(
             cacheKey,
             60,
             JSON.stringify(responseData)
-        )*/
-
+          );
+        }  catch (err) {
+            console.log('Redis SET error:', err.message)
+        }
         res.json({
             source: 'database',
             ...responseData,

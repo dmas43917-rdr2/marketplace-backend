@@ -354,3 +354,9 @@
 2026-05-06T01:53:12.194Z [INFO] 127.0.0.1 - - [06/May/2026:01:53:12 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.53.0"
 2026-05-06T01:53:13.243Z [INFO] 127.0.0.1 - - [06/May/2026:01:53:13 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.53.0"
 2026-05-06T01:53:14.425Z [INFO] 127.0.0.1 - - [06/May/2026:01:53:14 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.53.0"
+2026-05-06T02:20:16.161Z [INFO] Server running on port 3000
+2026-05-06T02:20:33.138Z [INFO] 127.0.0.1 - - [06/May/2026:02:20:33 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.53.0"
+2026-05-06T02:20:34.786Z [INFO] 127.0.0.1 - - [06/May/2026:02:20:34 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.53.0"
+2026-05-06T02:20:36.022Z [INFO] 127.0.0.1 - - [06/May/2026:02:20:36 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.53.0"
+2026-05-06T02:20:37.072Z [INFO] 127.0.0.1 - - [06/May/2026:02:20:37 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.53.0"
+2026-05-06T02:20:38.004Z [INFO] 127.0.0.1 - - [06/May/2026:02:20:38 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.53.0"
