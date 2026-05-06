@@ -342,3 +342,15 @@
 2026-05-05T12:58:11.896Z [INFO] Server running on port 3000
 2026-05-05T12:58:54.287Z [INFO] Server running on port 3000
 2026-05-05T13:06:00.106Z [INFO] Server running on port 3000
+2026-05-06T01:50:29.595Z [INFO] Server running on port 3000
+2026-05-06T01:51:04.039Z [INFO] Server running on port 3000
+2026-05-06T01:51:21.543Z [INFO] 127.0.0.1 - - [06/May/2026:01:51:21 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.53.0"
+2026-05-06T01:51:23.230Z [INFO] 127.0.0.1 - - [06/May/2026:01:51:23 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.53.0"
+2026-05-06T01:52:10.464Z [INFO] Server running on port 3000
+2026-05-06T01:52:24.447Z [ERROR] cacheKey is not defined
+2026-05-06T01:52:24.452Z [INFO] 127.0.0.1 - - [06/May/2026:01:52:24 +0000] "GET /products HTTP/1.1" 500 37 "-" "PostmanRuntime/7.53.0"
+2026-05-06T01:53:07.463Z [INFO] Server running on port 3000
+2026-05-06T01:53:11.050Z [INFO] 127.0.0.1 - - [06/May/2026:01:53:11 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.53.0"
+2026-05-06T01:53:12.194Z [INFO] 127.0.0.1 - - [06/May/2026:01:53:12 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.53.0"
+2026-05-06T01:53:13.243Z [INFO] 127.0.0.1 - - [06/May/2026:01:53:13 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.53.0"
+2026-05-06T01:53:14.425Z [INFO] 127.0.0.1 - - [06/May/2026:01:53:14 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.53.0"

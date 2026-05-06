@@ -14,7 +14,7 @@ exports.getAllProducts = async (req, res) => {
     const offset = (page - 1) * limit;
     const sort = req.query.sort || 'newest';
     
-    const cacheKey = req.originalUrl;
+    /*const cacheKey = req.originalUrl;
     const cacheData = await redisClient.get(cacheKey);
 
     if (cacheData) {
@@ -22,7 +22,7 @@ exports.getAllProducts = async (req, res) => {
             source: 'redis',
             ...JSON.parse(cacheData),
         });
-    }
+    }*/
 
     let orderQuery = 'ORDER BY products.id DESC';
 
@@ -52,11 +52,11 @@ exports.getAllProducts = async (req, res) => {
             data: products
         };
 
-        await redisClient.setEx(
+        /*await redisClient.setEx(
             cacheKey,
             60,
             JSON.stringify(responseData)
-        )
+        )*/
 
         res.json({
             source: 'database',
