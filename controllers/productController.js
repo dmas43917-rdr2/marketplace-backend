@@ -17,11 +17,14 @@ exports.getAllProducts = async (req, res) => {
     const cacheKey = req.originalUrl;
     let cacheData = null;
     
+    if (redisClient.isOpen) {
     try {
         cacheData = await redisClient.get(cacheKey);
     } catch (err) {
         console.log('Redis GET error:', err.message);
     }
+    }
+    console.log('Redis status:', redisClient.isOpen)
 
     if (cacheData) {
         return res.json({
