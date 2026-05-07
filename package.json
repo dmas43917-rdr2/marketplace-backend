@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "worker": "nodemon workers/emailWorker.js",
+    "start:all": "concurrently \"npm run dev\" \"npm run worker\""
   },
   "keywords": [],
   "author": "",
@@ -13,7 +15,9 @@
   "type": "commonjs",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "bullmq": "^5.76.5",
     "cloudinary": "^1.41.3",
+    "concurrently": "^9.2.1",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "express-rate-limit": "^8.4.1",

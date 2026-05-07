@@ -1,9 +1,9 @@
-require('dotenv').config()
 const db = require('../config/db');
 const config = require('../config/env');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const transporter = require('../config/mailer');
+const emailQueue = require('../queues/emailQueue');
 
 exports.register = async (req, res) => {
     const { email, password } = req.body;
@@ -50,18 +50,13 @@ exports.login = async (req, res) => {
             config.jwtSecret,
             { expiresIn: '1h' }
         );
-
-        try {
-            await transporter.sendMail({
-            from: 'test@system.com',
-            to: 'bebas@mail.com',
-            subject: 'Test Email',
-            text: 'Halo Dani, email kamu berhasil',
+        
+        await emailQueue.add('sendEmail', {
+            to: 'test@mail.com',
+            subject: 'Hello Dani',
+            text: 'Email dari queue berhasil',
         });
-        console.log('Email terkirim');
-      } catch (err) {
-        console.log('EMAIL ERROR:', err);
-      }
+
         res.json({
             message: 'Login berhasil',
             token
