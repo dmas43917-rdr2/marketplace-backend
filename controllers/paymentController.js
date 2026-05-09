@@ -27,4 +27,32 @@ exports.createPayment = async (req, res) => {
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
-}
+};
+
+exports.handleWebhook = async (req, res) => {
+    try {
+        const notification = req.body;
+
+        console.log('webhook:', notification);
+
+        const orderId = notification.order_id;
+        const status = notification.transaction_status;
+
+        if (status === 'settlememt') {
+            console.log('Pembayaran sukses:', orderId);
+        }
+
+        if (status === 'pending') {
+            console.log('Menunggu pembayaran:', orderId);
+        }
+
+        if (status === 'cancel' || status === 'expire') {
+            console.log('Pembayaran gagal:', orderId);
+        }
+
+        res.status(200).json({ message: 'webhook received' });
+
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+};
