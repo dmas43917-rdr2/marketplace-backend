@@ -7,3 +7,226 @@
 2026-05-08T12:00:37.543Z [INFO] 127.0.0.1 - - [08/May/2026:12:00:37 +0000] "POST /payment HTTP/1.1" 200 183 "-" "PostmanRuntime/7.54.0"
 2026-05-08T12:55:14.588Z [INFO] Server running on port 3000
 2026-05-09T10:13:52.955Z [INFO] Server running on port 3000
+2026-05-09T11:42:47.616Z [INFO] Server running on port 3000
+2026-05-09T12:26:24.575Z [INFO] Server running on port 3000
+2026-05-10T09:42:39.561Z [INFO] Server running on port 3000
+2026-05-10T09:43:12.547Z [INFO] Server running on port 3000
+2026-05-10T09:44:15.567Z [INFO] Server running on port 3000
+2026-05-10T09:45:25.502Z [INFO] Server running on port 3000
+2026-05-10T10:44:04.122Z [INFO] Server running on port 3000
+2026-05-10T10:44:45.566Z [INFO] Server running on port 3000
+2026-05-10T10:52:42.350Z [INFO] Server running on port 3000
+2026-05-10T10:53:15.156Z [INFO] Server running on port 3000
+2026-05-10T10:53:42.804Z [INFO] Server running on port 3000
+2026-05-10T10:56:57.463Z [INFO] Server running on port 3000
+2026-05-10T11:01:52.737Z [INFO] Server running on port 3000
+2026-05-10T11:07:20.678Z [INFO] Server running on port 3000
+2026-05-10T11:07:37.621Z [ERROR] getaddrinfo ENOTFOUND postgres
+2026-05-10T11:07:37.633Z [INFO] 127.0.0.1 - - [10/May/2026:11:07:37 +0000] "GET /products HTTP/1.1" 500 44 "-" "PostmanRuntime/7.54.0"
+2026-05-10T11:16:40.041Z [INFO] Server running on port 3000
+2026-05-10T11:18:05.841Z [INFO] Server running on port 3000
+2026-05-10T11:30:23.005Z [INFO] Server running on port 3000
+2026-05-10T11:48:13.470Z [INFO] Server running on port 3000
+2026-05-10T12:34:10.348Z [INFO] Server running on port 3000
+2026-05-10T12:39:06.969Z [INFO] Server running on port 3000
+2026-05-10T12:39:56.876Z [INFO] Server running on port 3000
+2026-05-10T12:40:53.552Z [INFO] Server running on port 3000
+2026-05-10T12:41:26.985Z [INFO] Server running on port 3000
+2026-05-10T12:42:01.232Z [INFO] Server running on port 3000
+2026-05-10T12:47:30.180Z [INFO] Server running on port 3000
+2026-05-10T12:49:29.045Z [INFO] Server running on port 3000
+2026-05-10T12:50:04.293Z [INFO] Server running on port 3000
+2026-05-10T12:50:46.951Z [INFO] Server running on port 3000
+2026-05-11T11:04:10.622Z [INFO] Server running on port 3000
+2026-05-11T11:05:39.828Z [INFO] Server running on port 3000
+2026-05-11T11:06:15.517Z [INFO] Server running on port 3000
+2026-05-11T11:07:53.618Z [INFO] Server running on port 3000
+2026-05-11T11:08:59.613Z [INFO] Server running on port 3000
+2026-05-11T11:15:15.564Z [INFO] Server running on port 3000
+2026-05-11T11:15:34.186Z [INFO] Server running on port 3000
+2026-05-11T11:17:38.910Z [INFO] Server running on port 3000
+2026-05-11T11:18:01.808Z [INFO] Server running on port 3000
+2026-05-11T11:25:44.025Z [INFO] Server running on port 3000
+2026-05-11T11:30:21.667Z [INFO] Server running on port 3000
+2026-05-11T11:30:30.743Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T11:30:30.747Z [INFO] 127.0.0.1 - - [11/May/2026:11:30:30 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-11T11:31:24.445Z [INFO] Server running on port 3000
+2026-05-11T11:31:29.031Z [INFO] 127.0.0.1 - - [11/May/2026:11:31:29 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.54.0"
+2026-05-11T11:32:24.481Z [INFO] 127.0.0.1 - - [11/May/2026:11:32:24 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.54.0"
+2026-05-11T11:32:25.728Z [INFO] 127.0.0.1 - - [11/May/2026:11:32:25 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.54.0"
+2026-05-11T11:40:18.491Z [INFO] Server running on port 3000
+2026-05-11T11:41:35.980Z [INFO] Server running on port 3000
+2026-05-11T11:42:16.709Z [INFO] Server running on port 3000
+2026-05-11T11:43:49.949Z [INFO] Server running on port 3000
+2026-05-11T11:44:46.425Z [INFO] Server running on port 3000
+2026-05-11T11:45:29.930Z [INFO] Server running on port 3000
+2026-05-11T11:46:49.212Z [INFO] Server running on port 3000
+2026-05-11T11:46:56.779Z [INFO] 127.0.0.1 - - [11/May/2026:11:46:56 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.54.0"
+2026-05-11T11:46:59.065Z [INFO] 127.0.0.1 - - [11/May/2026:11:46:59 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.54.0"
+2026-05-11T11:48:16.077Z [INFO] 127.0.0.1 - - [11/May/2026:11:48:16 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.54.0"
+2026-05-11T11:48:17.336Z [INFO] 127.0.0.1 - - [11/May/2026:11:48:17 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:06:39.197Z [INFO] Server running on port 3000
+2026-05-11T12:07:15.941Z [INFO] Server running on port 3000
+2026-05-11T12:07:24.317Z [INFO] 127.0.0.1 - - [11/May/2026:12:07:24 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:07:28.482Z [INFO] 127.0.0.1 - - [11/May/2026:12:07:28 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:08:19.364Z [INFO] Server running on port 3000
+2026-05-11T12:08:42.828Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T12:08:42.831Z [INFO] 127.0.0.1 - - [11/May/2026:12:08:42 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:09:49.083Z [INFO] Server running on port 3000
+2026-05-11T12:09:55.349Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T12:09:55.354Z [INFO] 127.0.0.1 - - [11/May/2026:12:09:55 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:09:57.492Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T12:09:57.493Z [INFO] 127.0.0.1 - - [11/May/2026:12:09:57 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:11:23.094Z [INFO] Server running on port 3000
+2026-05-11T12:11:29.579Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T12:11:29.583Z [INFO] 127.0.0.1 - - [11/May/2026:12:11:29 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:17:36.168Z [INFO] Server running on port 3000
+2026-05-11T12:17:41.666Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T12:17:41.670Z [INFO] 127.0.0.1 - - [11/May/2026:12:17:41 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:25:41.392Z [INFO] Server running on port 3000
+2026-05-11T12:25:49.337Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T12:25:49.340Z [INFO] 127.0.0.1 - - [11/May/2026:12:25:49 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:30:58.117Z [INFO] Server running on port 3000
+2026-05-11T12:31:05.254Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T12:31:05.257Z [INFO] 127.0.0.1 - - [11/May/2026:12:31:05 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:36:02.371Z [INFO] Server running on port 3000
+2026-05-11T12:36:07.709Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T12:36:07.713Z [INFO] 127.0.0.1 - - [11/May/2026:12:36:07 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:36:57.029Z [INFO] Server running on port 3000
+2026-05-11T12:37:02.547Z [ERROR] database � marketplace � tidak ada
+2026-05-11T12:37:02.550Z [INFO] 127.0.0.1 - - [11/May/2026:12:37:02 +0000] "GET /products HTTP/1.1" 500 52 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:40:28.417Z [INFO] Server running on port 3000
+2026-05-11T12:40:36.746Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T12:40:36.750Z [INFO] 127.0.0.1 - - [11/May/2026:12:40:36 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-11T12:52:45.264Z [INFO] Server running on port 3000
+2026-05-11T12:53:01.556Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T12:53:01.560Z [INFO] 127.0.0.1 - - [11/May/2026:12:53:01 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-11T13:01:17.661Z [INFO] Server running on port 3000
+2026-05-11T13:01:27.837Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-11T13:01:27.840Z [INFO] 127.0.0.1 - - [11/May/2026:13:01:27 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:34:38.679Z [INFO] Server running on port 3000
+2026-05-12T09:34:55.067Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-12T09:34:55.070Z [INFO] 127.0.0.1 - - [12/May/2026:09:34:55 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:36:39.158Z [INFO] Server running on port 3000
+2026-05-12T09:36:48.865Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-12T09:36:48.869Z [INFO] 127.0.0.1 - - [12/May/2026:09:36:48 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:37:04.704Z [INFO] Server running on port 3000
+2026-05-12T09:37:14.045Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-12T09:37:14.048Z [INFO] 127.0.0.1 - - [12/May/2026:09:37:14 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:37:34.407Z [INFO] Server running on port 3000
+2026-05-12T09:37:40.890Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-12T09:37:40.893Z [INFO] 127.0.0.1 - - [12/May/2026:09:37:40 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:38:12.038Z [INFO] Server running on port 3000
+2026-05-12T09:38:16.614Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-12T09:38:16.617Z [INFO] 127.0.0.1 - - [12/May/2026:09:38:16 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:38:57.939Z [INFO] Server running on port 3000
+2026-05-12T09:39:03.344Z [INFO] 127.0.0.1 - - [12/May/2026:09:39:03 +0000] "GET /products HTTP/1.1" 200 1586 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:39:04.404Z [INFO] 127.0.0.1 - - [12/May/2026:09:39:04 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:39:32.526Z [INFO] Server running on port 3000
+2026-05-12T09:39:36.250Z [INFO] 127.0.0.1 - - [12/May/2026:09:39:36 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:39:37.720Z [INFO] 127.0.0.1 - - [12/May/2026:09:39:37 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:39:54.945Z [INFO] Server running on port 3000
+2026-05-12T09:40:00.767Z [INFO] 127.0.0.1 - - [12/May/2026:09:40:00 +0000] "GET /products HTTP/1.1" 200 1583 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:40:38.450Z [INFO] Server running on port 3000
+2026-05-12T09:40:43.697Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-12T09:40:43.702Z [INFO] 127.0.0.1 - - [12/May/2026:09:40:43 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-12T09:50:53.290Z [INFO] Server running on port 3000
+2026-05-12T09:51:03.345Z [ERROR] relation "products" does not exist
+2026-05-12T09:51:03.349Z [INFO] 127.0.0.1 - - [12/May/2026:09:51:03 +0000] "GET /products HTTP/1.1" 500 50 "-" "PostmanRuntime/7.54.0"
+2026-05-12T11:04:44.881Z [INFO] Server running on port 3000
+2026-05-12T11:04:58.009Z [INFO] Server running on port 3000
+2026-05-12T11:06:11.332Z [INFO] Server running on port 3000
+2026-05-12T11:07:20.733Z [INFO] Server running on port 3000
+2026-05-12T11:07:28.604Z [ERROR] relation "products" does not exist
+2026-05-12T11:07:28.607Z [INFO] 127.0.0.1 - - [12/May/2026:11:07:28 +0000] "GET /products HTTP/1.1" 500 50 "-" "PostmanRuntime/7.54.0"
+2026-05-12T11:12:58.860Z [INFO] Server running on port 3000
+2026-05-12T11:13:08.736Z [ERROR] getaddrinfo ENOTFOUND postgres
+2026-05-12T11:13:08.739Z [INFO] 127.0.0.1 - - [12/May/2026:11:13:08 +0000] "GET /products HTTP/1.1" 500 44 "-" "PostmanRuntime/7.54.0"
+2026-05-12T11:14:22.297Z [INFO] Server running on port 3000
+2026-05-12T11:14:27.948Z [ERROR] relation "products" does not exist
+2026-05-12T11:14:27.952Z [INFO] 127.0.0.1 - - [12/May/2026:11:14:27 +0000] "GET /products HTTP/1.1" 500 50 "-" "PostmanRuntime/7.54.0"
+2026-05-12T11:30:45.151Z [INFO] Server running on port 3000
+2026-05-12T11:30:54.142Z [INFO] Server running on port 3000
+2026-05-12T11:31:23.525Z [ERROR] relation "products" does not exist
+2026-05-12T11:31:23.529Z [INFO] 127.0.0.1 - - [12/May/2026:11:31:23 +0000] "GET /products HTTP/1.1" 500 50 "-" "PostmanRuntime/7.54.0"
+2026-05-12T11:34:27.698Z [INFO] Server running on port 3000
+2026-05-12T11:34:30.273Z [INFO] Server running on port 3000
+2026-05-12T11:56:47.668Z [INFO] Server running on port 3000
+2026-05-12T11:57:02.971Z [INFO] 127.0.0.1 - - [12/May/2026:11:57:02 +0000] "POST /login HTTP/1.1" 200 210 "-" "PostmanRuntime/7.54.0"
+2026-05-12T12:06:40.069Z [INFO] 127.0.0.1 - - [12/May/2026:12:06:40 +0000] "POST /products HTTP/1.1" 200 157 "-" "PostmanRuntime/7.54.0"
+2026-05-12T12:06:47.792Z [INFO] 127.0.0.1 - - [12/May/2026:12:06:47 +0000] "GET /products HTTP/1.1" 200 201 "-" "PostmanRuntime/7.54.0"
+2026-05-12T12:06:48.935Z [INFO] 127.0.0.1 - - [12/May/2026:12:06:48 +0000] "GET /products HTTP/1.1" 200 198 "-" "PostmanRuntime/7.54.0"
+2026-05-12T12:24:29.716Z [INFO] Server running on port 3000
+2026-05-12T12:24:35.624Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-12T12:24:35.628Z [INFO] 127.0.0.1 - - [12/May/2026:12:24:35 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-12T12:24:37.440Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-12T12:24:37.441Z [INFO] 127.0.0.1 - - [12/May/2026:12:24:37 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-12T12:32:28.862Z [INFO] Server running on port 3000
+2026-05-12T12:41:20.408Z [INFO] Server running on port 3000
+2026-05-12T12:41:47.233Z [INFO] Server running on port 3000
+2026-05-12T12:57:25.217Z [INFO] Server running on port 3000
+2026-05-13T10:02:58.537Z [INFO] Server running on port 3000
+2026-05-13T10:03:06.724Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-13T10:03:06.727Z [INFO] 127.0.0.1 - - [13/May/2026:10:03:06 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-13T10:10:43.108Z [INFO] Server running on port 3000
+2026-05-13T10:11:02.818Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-13T10:11:02.821Z [INFO] 127.0.0.1 - - [13/May/2026:10:11:02 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-13T10:22:01.524Z [INFO] Server running on port 3000
+2026-05-13T10:22:13.600Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-13T10:22:13.605Z [INFO] 127.0.0.1 - - [13/May/2026:10:22:13 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-13T10:29:45.081Z [INFO] Server running on port 3000
+2026-05-13T10:29:52.863Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-13T10:29:52.869Z [INFO] 127.0.0.1 - - [13/May/2026:10:29:52 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-13T10:32:01.053Z [INFO] Server running on port 3000
+2026-05-13T10:32:22.877Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-13T10:32:22.880Z [INFO] 127.0.0.1 - - [13/May/2026:10:32:22 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-13T10:32:42.222Z [ERROR] password gagal diotentikasi untuk pengguna  � postgres �
+2026-05-13T10:32:42.223Z [INFO] 127.0.0.1 - - [13/May/2026:10:32:42 +0000] "GET /products HTTP/1.1" 500 74 "-" "PostmanRuntime/7.54.0"
+2026-05-13T10:38:19.687Z [INFO] Server running on port 3000
+2026-05-13T10:38:21.737Z [INFO] Server running on port 3000
+2026-05-13T10:38:26.229Z [INFO] Server running on port 3000
+2026-05-13T10:40:26.799Z [INFO] Server running on port 3000
+2026-05-13T10:41:02.832Z [INFO] Server running on port 3000
+2026-05-13T10:46:01.537Z [INFO] Server running on port 3000
+2026-05-13T10:46:29.439Z [ERROR] relation "products" does not exist
+2026-05-13T10:46:29.443Z [INFO] 127.0.0.1 - - [13/May/2026:10:46:29 +0000] "GET /products HTTP/1.1" 500 50 "-" "PostmanRuntime/7.54.0"
+2026-05-13T10:53:06.557Z [ERROR] relation "products" does not exist
+2026-05-13T10:53:06.558Z [INFO] 127.0.0.1 - - [13/May/2026:10:53:06 +0000] "GET /products HTTP/1.1" 500 50 "-" "PostmanRuntime/7.54.0"
+2026-05-13T10:56:15.143Z [INFO] Server running on port 3000
+2026-05-13T10:56:35.683Z [ERROR] relation "products" does not exist
+2026-05-13T10:56:35.686Z [INFO] 127.0.0.1 - - [13/May/2026:10:56:35 +0000] "GET /products HTTP/1.1" 500 50 "-" "PostmanRuntime/7.54.0"
+2026-05-13T11:35:54.149Z [INFO] Server running on port 3000
+2026-05-13T11:36:22.096Z [INFO] 127.0.0.1 - - [13/May/2026:11:36:22 +0000] "POST /register HTTP/1.1" 200 151 "-" "PostmanRuntime/7.54.0"
+2026-05-13T11:36:35.450Z [INFO] 127.0.0.1 - - [13/May/2026:11:36:35 +0000] "POST /login HTTP/1.1" 200 210 "-" "PostmanRuntime/7.54.0"
+2026-05-13T11:37:43.674Z [INFO] 127.0.0.1 - - [13/May/2026:11:37:43 +0000] "POST /products HTTP/1.1" 500 70 "-" "PostmanRuntime/7.54.0"
+2026-05-13T11:44:43.387Z [INFO] 127.0.0.1 - - [13/May/2026:11:44:43 +0000] "POST /products HTTP/1.1" 200 111 "-" "PostmanRuntime/7.54.0"
+2026-05-13T11:45:02.552Z [INFO] 127.0.0.1 - - [13/May/2026:11:45:02 +0000] "GET /products HTTP/1.1" 200 155 "-" "PostmanRuntime/7.54.0"
+2026-05-13T11:45:04.609Z [INFO] 127.0.0.1 - - [13/May/2026:11:45:04 +0000] "GET /products HTTP/1.1" 200 152 "-" "PostmanRuntime/7.54.0"
+2026-05-13T11:50:33.645Z [INFO] Server running on port 3000
+2026-05-13T11:51:07.178Z [INFO] Server running on port 3000
+2026-05-13T11:51:23.245Z [ERROR] relation "products" does not exist
+2026-05-13T11:51:23.248Z [INFO] 127.0.0.1 - - [13/May/2026:11:51:23 +0000] "GET /products HTTP/1.1" 500 50 "-" "PostmanRuntime/7.54.0"
+2026-05-13T11:51:25.851Z [ERROR] relation "products" does not exist
+2026-05-13T11:51:25.852Z [INFO] 127.0.0.1 - - [13/May/2026:11:51:25 +0000] "GET /products HTTP/1.1" 500 50 "-" "PostmanRuntime/7.54.0"
+2026-05-13T11:51:31.668Z [ERROR] relation "products" does not exist
+2026-05-13T11:51:31.669Z [INFO] 127.0.0.1 - - [13/May/2026:11:51:31 +0000] "GET /products HTTP/1.1" 500 50 "-" "PostmanRuntime/7.54.0"
+2026-05-13T11:52:44.198Z [ERROR] relation "products" does not exist
+2026-05-13T11:52:44.198Z [INFO] 127.0.0.1 - - [13/May/2026:11:52:44 +0000] "GET /products HTTP/1.1" 500 50 "-" "PostmanRuntime/7.54.0"
+2026-05-13T12:08:28.868Z [INFO] Server running on port 3000
+2026-05-13T12:09:28.000Z [INFO] Server running on port 3000
+2026-05-13T12:09:47.946Z [INFO] 127.0.0.1 - - [13/May/2026:12:09:47 +0000] "GET /products HTTP/1.1" - - "-" "PostmanRuntime/7.54.0"
+2026-05-13T12:09:51.273Z [INFO] 127.0.0.1 - - [13/May/2026:12:09:51 +0000] "GET /products HTTP/1.1" - - "-" "PostmanRuntime/7.54.0"
+2026-05-13T12:09:55.982Z [ERROR] connect ETIMEDOUT 27.0.0.1:5432
+2026-05-13T12:10:10.602Z [ERROR] connect ETIMEDOUT 27.0.0.1:5432
+2026-05-14T10:13:46.241Z [INFO] Server running on port 3000
+2026-05-14T10:16:01.627Z [INFO] Server running on port 3000
+2026-05-14T10:16:23.193Z [INFO] 127.0.0.1 - - [14/May/2026:10:16:23 +0000] "POST /register HTTP/1.1" - - "-" "PostmanRuntime/7.54.0"
+2026-05-14T10:16:53.299Z [INFO] Server running on port 3000
+2026-05-14T10:17:03.019Z [INFO] 127.0.0.1 - - [14/May/2026:10:17:03 +0000] "POST /register HTTP/1.1" 200 151 "-" "PostmanRuntime/7.54.0"
+2026-05-14T10:17:40.465Z [INFO] 127.0.0.1 - - [14/May/2026:10:17:40 +0000] "POST /login HTTP/1.1" 200 210 "-" "PostmanRuntime/7.54.0"
+2026-05-14T10:20:14.393Z [INFO] Server running on port 3000
+2026-05-14T10:21:42.140Z [INFO] Server running on port 3000
+2026-05-14T10:25:57.760Z [INFO] Server running on port 3000
+2026-05-14T10:26:02.328Z [INFO] 127.0.0.1 - - [14/May/2026:10:26:02 +0000] "POST /login HTTP/1.1" 200 210 "-" "PostmanRuntime/7.54.0"
+2026-05-14T10:26:04.764Z [INFO] 127.0.0.1 - - [14/May/2026:10:26:04 +0000] "POST /login HTTP/1.1" 200 210 "-" "PostmanRuntime/7.54.0"
+2026-05-14T10:50:03.258Z [INFO] Server running on port 3000
