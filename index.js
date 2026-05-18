@@ -11,6 +11,7 @@ const productRoutes = require('./routes/productRoutes');
 const authRoutes = require('./routes/authRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const paymentRoutes = require('./routes/paymentRoutes');
+const healthRoutes = require('./routes/healthRoutes');
 
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./swagger');
@@ -33,6 +34,7 @@ app.use('/', productRoutes);
 app.use('/', authRoutes);
 app.use('/', orderRoutes);
 app.use('/', paymentRoutes);
+app.use('/', healthRoutes);
 
 app.use((err, req, res, next) => {
     logger.error(err.message)
