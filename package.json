@@ -7,7 +7,8 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "worker": "nodemon workers/emailWorker.js",
-    "start:all": "concurrently \"npm run dev\" \"npm run worker\""
+    "start:all": "concurrently \"npm run dev\" \"npm run worker\"",
+    "migrate": "knex migrate:latest"
   },
   "keywords": [],
   "author": "",
