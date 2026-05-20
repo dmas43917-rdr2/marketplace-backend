@@ -3,9 +3,10 @@ require('dotenv').config();
 const db = require('./config/db');
 const config = require('./config/env');
 const logger = require('./config/logger');
-const { limiter } = require('./middleware/rateLimiter');
+const { limiter } = require('./middlewares/rateLimiter');
 const express = require('express');
-const redisClient = require('./config/redis')
+const redisClient = require('./config/redis');
+const errorMiddleware = require('./middlewares/errorMiddleware');
 
 const productRoutes = require('./routes/productRoutes');
 const authRoutes = require('./routes/authRoutes');
@@ -26,20 +27,21 @@ app.use(morgan('combined', { stream: logger.stream }));
 
 app.use(limiter);
 
-app.use('/api-docs', swaggerUi.serve,swaggerUi.setup(swaggerSpec))
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
-app.use('/uploads',express.static('uploads'));
+app.use('/uploads', express.static('uploads'));
 
 app.use('/', productRoutes);
 app.use('/', authRoutes);
 app.use('/', orderRoutes);
 app.use('/', paymentRoutes);
 app.use('/', healthRoutes);
+app.use(errorMiddleware);
 
-app.use((err, req, res, next) => {
+/*app.use((err, req, res, next) => {
     logger.error(err.message)
 
-    if(err.message.includes('Hanya file gambar')) {
+    if (err.message.includes('Hanya file gambar')) {
         return res.status(400).json({ message: err.message });
     }
 
@@ -51,9 +53,9 @@ app.use((err, req, res, next) => {
 
 app.get('/', (req, res) => {
     res.send('Server Jalan Bro!');
-});
+});*/
 
-app.listen(config.port, '0.0.0.0',() => {
+app.listen(config.port, '0.0.0.0', () => {
     logger.info(`Server running on port ${config.port}`);
 });
 

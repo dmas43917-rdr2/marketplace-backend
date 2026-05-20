@@ -2,17 +2,17 @@ const express = require('express');
 const router = express.Router();
 
 const productController = require('../controllers/productController');
-const authMiddleware = require('../middleware/authMiddleware');
-const upload = require('../middleware/uploadMiddleware');
-const roleMiddleware = require('../middleware/roleMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
+const upload = require('../middlewares/uploadMiddleware');
+const roleMiddleware = require('../middlewares/authorize');
 const asyncHandler = require('../utils/asyncHandler');
 
 const { body } = require('express-validator');
 
-router.post('/products',authMiddleware,
-    upload.single('image'),[
+router.post('/products', authMiddleware,
+    upload.single('image'), [
     body('name').notEmpty().withMessage('Nama wajib diisi'),
-    body('price').isInt({ min: 1}).withMessage('Harga harus angka > 0')],
+    body('price').isInt({ min: 1 }).withMessage('Harga harus angka > 0')],
     productController.createProduct
 );
 
@@ -25,10 +25,10 @@ router.post('/products',authMiddleware,
  *       200:
  *         description: Success
  */
-router.get('/products',asyncHandler(productController.getAllProducts));
-router.get('/products/:id',productController.getProductById);
-router.put('/products/:id',authMiddleware,upload.single('image'),productController.updateProduct);
-router.delete('/products/:id',authMiddleware,roleMiddleware("admin"),productController.deleteProduct);
-router.get('/my-products',authMiddleware,productController.getMyProducts);
+router.get('/products', asyncHandler(productController.getAllProducts));
+router.get('/products/:id', productController.getProductById);
+router.put('/products/:id', authMiddleware, upload.single('image'), productController.updateProduct);
+router.delete('/products/:id', authMiddleware, roleMiddleware("admin"), productController.deleteProduct);
+router.get('/my-products', authMiddleware, productController.getMyProducts);
 
 module.exports = router

@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const transporter = require('../config/mailer');
 const emailQueue = require('../queues/emailQueue');
+const response = require('../utils/response');
 
 exports.register = async (req, res) => {
     const { email, password } = req.body;
@@ -24,7 +25,7 @@ exports.register = async (req, res) => {
     }
 };
 
-exports.login = async (req, res) => {
+exports.login = async (req, res, next) => {
     const { email, password } = req.body;
 
     try {
@@ -57,12 +58,14 @@ exports.login = async (req, res) => {
             text: 'Email dari queue berhasil',
         });
 
-        res.json({
+        response.success(res, 'Login berhasil', token)
+
+        /*res.json({
             message: 'Login berhasil',
             token
-        });
+        });*/
     } catch (err) {
-        res.status(500).json({ message: err.message });
+        next(err);
     }
 };
 
