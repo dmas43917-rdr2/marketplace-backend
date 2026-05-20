@@ -4,7 +4,7 @@ const router = express.Router();
 const productController = require('../controllers/productController');
 const authMiddleware = require('../middlewares/authMiddleware');
 const upload = require('../middlewares/uploadMiddleware');
-const roleMiddleware = require('../middlewares/authorize');
+const authorize = require('../middlewares/authorize');
 const asyncHandler = require('../utils/asyncHandler');
 
 const { body } = require('express-validator');
@@ -28,7 +28,7 @@ router.post('/products', authMiddleware,
 router.get('/products', asyncHandler(productController.getAllProducts));
 router.get('/products/:id', productController.getProductById);
 router.put('/products/:id', authMiddleware, upload.single('image'), productController.updateProduct);
-router.delete('/products/:id', authMiddleware, roleMiddleware("admin"), productController.deleteProduct);
+router.delete('/products/:id', authMiddleware, authorize("admin"), productController.deleteProduct);
 router.get('/my-products', authMiddleware, productController.getMyProducts);
 
 module.exports = router
