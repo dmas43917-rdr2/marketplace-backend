@@ -1,42 +1,10 @@
 require('dotenv').config();
 
-const db = require('./config/db');
+const app = require('./app');
 const config = require('./config/env');
 const logger = require('./config/logger');
-const { limiter } = require('./middlewares/rateLimiter');
-const express = require('express');
-const redisClient = require('./config/redis');
-const errorMiddleware = require('./middlewares/errorMiddleware');
 
-const productRoutes = require('./routes/productRoutes');
-const authRoutes = require('./routes/authRoutes');
-const orderRoutes = require('./routes/orderRoutes');
-const paymentRoutes = require('./routes/paymentRoutes');
-const healthRoutes = require('./routes/healthRoutes');
 
-const swaggerUi = require('swagger-ui-express');
-const swaggerSpec = require('./swagger');
-const morgan = require('morgan');
-
-const app = express();
-app.set('trust proxy', 1);
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-app.use(morgan('combined', { stream: logger.stream }));
-
-app.use(limiter);
-
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
-
-app.use('/uploads', express.static('uploads'));
-
-app.use('/', productRoutes);
-app.use('/', authRoutes);
-app.use('/', orderRoutes);
-app.use('/', paymentRoutes);
-app.use('/', healthRoutes);
-app.use(errorMiddleware);
 
 /*app.use((err, req, res, next) => {
     logger.error(err.message)
