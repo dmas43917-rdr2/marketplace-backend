@@ -23,3 +23,8 @@
     at Object.compare (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:200:25)
     at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:43:38)
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-21T12:46:23.679Z [ERROR] Error: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\services\productService.js:4:20)
+    at async exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:42:24)

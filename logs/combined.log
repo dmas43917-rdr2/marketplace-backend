@@ -102,3 +102,36 @@
 2026-05-21T12:00:47.079Z [INFO] 127.0.0.1 - - [21/May/2026:12:00:47 +0000] "GET /products HTTP/1.1" 200 48 "-" "PostmanRuntime/7.54.0"
 2026-05-21T12:01:19.883Z [INFO] Server running on port 3000
 2026-05-21T12:06:33.049Z [INFO] ::ffff:127.0.0.1 - - [21/May/2026:12:06:33 +0000] "GET /health HTTP/1.1" 200 116 "-" "-"
+2026-05-21T12:23:54.376Z [INFO] Server running on port 3000
+2026-05-21T12:24:29.582Z [INFO] 127.0.0.1 - - [21/May/2026:12:24:29 +0000] "GET /products HTTP/1.1" 200 51 "-" "PostmanRuntime/7.54.0"
+2026-05-21T12:24:30.846Z [INFO] 127.0.0.1 - - [21/May/2026:12:24:30 +0000] "GET /products HTTP/1.1" 200 48 "-" "PostmanRuntime/7.54.0"
+2026-05-21T12:24:52.740Z [INFO] Server running on port 3000
+2026-05-21T12:25:08.592Z [INFO] 127.0.0.1 - - [21/May/2026:12:25:08 +0000] "GET /products HTTP/1.1" 200 48 "-" "PostmanRuntime/7.54.0"
+2026-05-21T12:25:10.100Z [INFO] 127.0.0.1 - - [21/May/2026:12:25:10 +0000] "GET /products HTTP/1.1" 200 48 "-" "PostmanRuntime/7.54.0"
+2026-05-21T12:25:25.686Z [INFO] 127.0.0.1 - - [21/May/2026:12:25:25 +0000] "GET /health HTTP/1.1" 200 117 "-" "PostmanRuntime/7.54.0"
+2026-05-21T12:25:32.505Z [INFO] 127.0.0.1 - - [21/May/2026:12:25:32 +0000] "GET /products HTTP/1.1" 200 51 "-" "PostmanRuntime/7.54.0"
+2026-05-21T12:32:32.196Z [INFO] Server running on port 3000
+2026-05-21T12:32:42.850Z [INFO] 127.0.0.1 - - [21/May/2026:12:32:42 +0000] "GET /products HTTP/1.1" 200 51 "-" "PostmanRuntime/7.54.0"
+2026-05-21T12:32:44.023Z [INFO] 127.0.0.1 - - [21/May/2026:12:32:44 +0000] "GET /products HTTP/1.1" 200 48 "-" "PostmanRuntime/7.54.0"
+2026-05-21T12:39:19.918Z [INFO] Server running on port 3000
+2026-05-21T12:39:37.997Z [INFO] 127.0.0.1 - - [21/May/2026:12:39:37 +0000] "GET /products HTTP/1.1" 200 51 "-" "PostmanRuntime/7.54.0"
+2026-05-21T12:39:39.133Z [INFO] 127.0.0.1 - - [21/May/2026:12:39:39 +0000] "GET /products HTTP/1.1" 200 48 "-" "PostmanRuntime/7.54.0"
+2026-05-21T12:39:46.847Z [INFO] Server running on port 3000
+2026-05-21T12:39:55.833Z [INFO] Server running on port 3000
+2026-05-21T12:45:51.343Z [INFO] Server running on port 3000
+2026-05-21T12:46:06.791Z [INFO] Server running on port 3000
+2026-05-21T12:46:13.583Z [INFO] Server running on port 3000
+2026-05-21T12:46:23.679Z [ERROR] Error: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\services\productService.js:4:20)
+    at async exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:42:24)
+2026-05-21T12:46:23.682Z [INFO] 127.0.0.1 - - [21/May/2026:12:46:23 +0000] "GET /products HTTP/1.1" 500 97 "-" "PostmanRuntime/7.54.0"
+2026-05-21T12:46:36.875Z [INFO] Server running on port 3000
+2026-05-21T12:46:51.338Z [INFO] Server running on port 3000
+2026-05-21T12:46:56.110Z [INFO] Server running on port 3000
+2026-05-21T12:47:08.381Z [INFO] ::ffff:127.0.0.1 - - [21/May/2026:12:47:08 +0000] "GET /health HTTP/1.1" 500 146 "-" "-"
+2026-05-22T09:48:29.771Z [INFO] Server running on port 3000
+2026-05-22T09:49:13.780Z [INFO] Server running on port 3000
+2026-05-22T09:49:28.273Z [INFO] 127.0.0.1 - - [22/May/2026:09:49:28 +0000] "GET /products HTTP/1.1" 200 51 "-" "PostmanRuntime/7.54.0"
+2026-05-22T09:49:29.581Z [INFO] 127.0.0.1 - - [22/May/2026:09:49:29 +0000] "GET /products HTTP/1.1" 200 48 "-" "PostmanRuntime/7.54.0"

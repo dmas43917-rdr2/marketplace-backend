@@ -21,6 +21,7 @@
     "cloudinary": "^1.41.3",
     "concurrently": "^9.2.1",
     "dotenv": "^17.4.2",
+    "dotenv-safe": "^9.1.0",
     "express": "^5.2.1",
     "express-rate-limit": "^8.4.1",
     "express-validator": "^7.3.2",
