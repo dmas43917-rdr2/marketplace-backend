@@ -1,9 +1,10 @@
 const  { Queue } = require('bullmq');
 const redisClient = require('../config/redis');
+const config = require('../config')
 
 const emailQueue = new Queue('emailQueue', {
     connection: {
-        url: process.env.REDIS_URL
+        url: config.redisUrl,
     },
 });
 

@@ -1,14 +1,14 @@
-const config = require('./env');
+const config = require('../config');
 
 const { Pool } = require('pg');
 
 const isProduction = config.nodeEnv === 'production';
 
 console.log(process.env.DB_PASSWORD)
-console.log(JSON.stringify(process.env.DATABASE_URL))
+console.log(JSON.stringify(config.dbUrl))
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL,
-    ssl: isProduction
+  connectionString: config.dbUrl,
+  ssl: isProduction
     ? { rejectUnauthorized: false }
     : false,
 });

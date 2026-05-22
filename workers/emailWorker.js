@@ -1,12 +1,13 @@
 require('dotenv').config()
 const { Worker } = require('bullmq');
 const transporter = require('../config/mailer');
+const config = require('../config');
 
 const worker = new Worker('emailQueue', async (job) => {
     const { to, subject, text } = job.data;
 
     await transporter.sendMail({
-        from: process.env.EMAIL_USER,
+        from: config.user,
         to,
         subject,
         text,
@@ -16,7 +17,7 @@ const worker = new Worker('emailQueue', async (job) => {
   },
   {
     connection: {
-        url: process.env.REDIS_URL
+        url: config.redisUrl,
     },
   }
 );

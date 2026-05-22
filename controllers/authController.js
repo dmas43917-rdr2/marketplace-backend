@@ -1,5 +1,5 @@
 const db = require('../config/db');
-const config = require('../config/env');
+const config = require('../config');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const transporter = require('../config/mailer');
@@ -11,7 +11,7 @@ exports.register = async (req, res) => {
 
     try {
         const hashedPassword = await bcrypt.hash(password, 10);
-        const result = await db.query (
+        const result = await db.query(
             'INSERT INTO users (email, password) VALUES ($1, $2) RETURNING *',
             [email, hashedPassword]
         );
@@ -21,7 +21,7 @@ exports.register = async (req, res) => {
             user: result.rows[0]
         });
     } catch (err) {
-        res.status(500).json({ message: err.message})
+        res.status(500).json({ message: err.message })
     }
 };
 
@@ -51,7 +51,7 @@ exports.login = async (req, res, next) => {
             config.jwtSecret,
             { expiresIn: '1h' }
         );
-        
+
         await emailQueue.add('sendEmail', {
             to: 'test@mail.com',
             subject: 'Hello Dani',

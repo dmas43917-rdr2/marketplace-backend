@@ -1,7 +1,7 @@
 const request = require('supertest');
 const app = require('../app');
 
-describe('Health Check', () => {
+describe('Health Check',  () => {
     it('should return status OK', async () => {
         const res = await request(app).get('/health');
 
