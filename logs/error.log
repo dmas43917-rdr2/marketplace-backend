@@ -28,3 +28,47 @@
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
     at async exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\services\productService.js:4:20)
     at async exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:42:24)
+2026-05-23T10:29:50.585Z [ERROR] Error: data and salt arguments required
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:129:25)
+    at exports.register (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:13:45)
+    at Layer.handleRequest (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:435:11)
+2026-05-23T10:30:14.514Z [ERROR] Error: data and salt arguments required
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:129:25)
+    at exports.register (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:13:45)
+    at Layer.handleRequest (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:435:11)
+2026-05-23T10:35:09.017Z [ERROR] Error: data and salt arguments required
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:129:25)
+    at exports.register (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:13:45)
+    at Layer.handleRequest (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:435:11)
+2026-05-23T11:33:39.645Z [ERROR] ReferenceError: shcema is not defined
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\middlewares\validate.js:3:27
+    at Layer.handleRequest (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:291:5)
+    at router.handle (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:186:3)

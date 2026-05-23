@@ -216,3 +216,91 @@
 2026-05-22T11:37:24.932Z [INFO] Server running on port 3000
 2026-05-22T11:38:00.055Z [INFO] 127.0.0.1 - - [22/May/2026:11:38:00 +0000] "GET /health HTTP/1.1" 200 117 "-" "PostmanRuntime/7.54.0"
 2026-05-22T11:38:01.361Z [INFO] 127.0.0.1 - - [22/May/2026:11:38:01 +0000] "GET /health HTTP/1.1" 200 117 "-" "PostmanRuntime/7.54.0"
+2026-05-23T09:58:39.725Z [INFO] Server running on port 3000
+2026-05-23T09:59:00.476Z [INFO] 127.0.0.1 - - [23/May/2026:09:59:00 +0000] "GET /products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-23T09:59:05.894Z [INFO] 127.0.0.1 - - [23/May/2026:09:59:05 +0000] "GET /products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-23T09:59:07.266Z [INFO] 127.0.0.1 - - [23/May/2026:09:59:07 +0000] "GET /products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-23T10:20:05.582Z [INFO] Server running on port 3000
+2026-05-23T10:20:21.579Z [INFO] Server running on port 3000
+2026-05-23T10:20:39.863Z [INFO] Server running on port 3000
+2026-05-23T10:21:22.327Z [INFO] 127.0.0.1 - - [23/May/2026:10:21:22 +0000] "POST /register HTTP/1.1" 400 38 "-" "PostmanRuntime/7.54.0"
+2026-05-23T10:23:13.332Z [INFO] 127.0.0.1 - - [23/May/2026:10:23:13 +0000] "POST /register HTTP/1.1" 400 35 "-" "PostmanRuntime/7.54.0"
+2026-05-23T10:23:31.598Z [INFO] 127.0.0.1 - - [23/May/2026:10:23:31 +0000] "POST /register HTTP/1.1" 400 35 "-" "PostmanRuntime/7.54.0"
+2026-05-23T10:23:39.946Z [INFO] 127.0.0.1 - - [23/May/2026:10:23:39 +0000] "POST /register HTTP/1.1" 200 245 "-" "PostmanRuntime/7.54.0"
+2026-05-23T10:27:21.033Z [INFO] Server running on port 3000
+2026-05-23T10:27:23.403Z [INFO] Server running on port 3000
+2026-05-23T10:27:48.765Z [INFO] Server running on port 3000
+2026-05-23T10:27:51.770Z [INFO] Server running on port 3000
+2026-05-23T10:27:53.163Z [INFO] Server running on port 3000
+2026-05-23T10:28:04.603Z [INFO] 127.0.0.1 - - [23/May/2026:10:28:04 +0000] "POST /register HTTP/1.1" 400 38 "-" "PostmanRuntime/7.54.0"
+2026-05-23T10:28:49.182Z [INFO] Server running on port 3000
+2026-05-23T10:28:53.309Z [INFO] Server running on port 3000
+2026-05-23T10:28:55.876Z [INFO] Server running on port 3000
+2026-05-23T10:29:04.747Z [INFO] 127.0.0.1 - - [23/May/2026:10:29:04 +0000] "POST /register HTTP/1.1" 400 38 "-" "PostmanRuntime/7.54.0"
+2026-05-23T10:29:45.427Z [INFO] Server running on port 3000
+2026-05-23T10:29:50.585Z [ERROR] Error: data and salt arguments required
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:129:25)
+    at exports.register (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:13:45)
+    at Layer.handleRequest (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:435:11)
+2026-05-23T10:29:50.591Z [INFO] 127.0.0.1 - - [23/May/2026:10:29:50 +0000] "POST /register HTTP/1.1" 500 52 "-" "PostmanRuntime/7.54.0"
+2026-05-23T10:30:14.514Z [ERROR] Error: data and salt arguments required
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:129:25)
+    at exports.register (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:13:45)
+    at Layer.handleRequest (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:435:11)
+2026-05-23T10:30:14.517Z [INFO] 127.0.0.1 - - [23/May/2026:10:30:14 +0000] "POST /register HTTP/1.1" 500 52 "-" "PostmanRuntime/7.54.0"
+2026-05-23T10:30:22.144Z [INFO] Server running on port 3000
+2026-05-23T10:30:26.979Z [INFO] 127.0.0.1 - - [23/May/2026:10:30:26 +0000] "POST /register HTTP/1.1" 400 38 "-" "PostmanRuntime/7.54.0"
+2026-05-23T10:33:47.688Z [INFO] Server running on port 3000
+2026-05-23T10:34:29.223Z [INFO] Server running on port 3000
+2026-05-23T10:34:35.688Z [INFO] Server running on port 3000
+2026-05-23T10:34:39.240Z [INFO] Server running on port 3000
+2026-05-23T10:34:43.196Z [INFO] Server running on port 3000
+2026-05-23T10:35:03.643Z [INFO] Server running on port 3000
+2026-05-23T10:35:09.017Z [ERROR] Error: data and salt arguments required
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:129:25)
+    at exports.register (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:13:45)
+    at Layer.handleRequest (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:435:11)
+2026-05-23T10:35:09.022Z [INFO] 127.0.0.1 - - [23/May/2026:10:35:09 +0000] "POST /register HTTP/1.1" 500 63 "-" "PostmanRuntime/7.54.0"
+2026-05-23T10:35:24.532Z [INFO] Server running on port 3000
+2026-05-23T10:35:31.726Z [INFO] 127.0.0.1 - - [23/May/2026:10:35:31 +0000] "POST /register HTTP/1.1" 400 38 "-" "PostmanRuntime/7.54.0"
+2026-05-23T11:21:37.868Z [INFO] Server running on port 3000
+2026-05-23T11:21:39.095Z [INFO] Server running on port 3000
+2026-05-23T11:21:49.592Z [INFO] Server running on port 3000
+2026-05-23T11:22:12.736Z [INFO] Server running on port 3000
+2026-05-23T11:22:20.579Z [INFO] 127.0.0.1 - - [23/May/2026:11:22:20 +0000] "POST /register HTTP/1.1" 400 40 "-" "PostmanRuntime/7.54.0"
+2026-05-23T11:33:30.562Z [INFO] Server running on port 3000
+2026-05-23T11:33:39.645Z [ERROR] ReferenceError: shcema is not defined
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\middlewares\validate.js:3:27
+    at Layer.handleRequest (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:291:5)
+    at router.handle (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:186:3)
+2026-05-23T11:33:39.651Z [INFO] 127.0.0.1 - - [23/May/2026:11:33:39 +0000] "POST /register HTTP/1.1" 500 52 "-" "PostmanRuntime/7.54.0"
+2026-05-23T11:35:58.510Z [INFO] Server running on port 3000
+2026-05-23T11:36:02.980Z [INFO] 127.0.0.1 - - [23/May/2026:11:36:02 +0000] "POST /register HTTP/1.1" 400 40 "-" "PostmanRuntime/7.54.0"

@@ -6,7 +6,7 @@ const transporter = require('../config/mailer');
 const emailQueue = require('../queues/emailQueue');
 const response = require('../utils/response');
 
-exports.register = async (req, res) => {
+exports.register = async (req, res, next) => {
     const { email, password } = req.body;
 
     try {
@@ -21,7 +21,7 @@ exports.register = async (req, res) => {
             user: result.rows[0]
         });
     } catch (err) {
-        res.status(500).json({ message: err.message })
+        next(err)
     }
 };
 
