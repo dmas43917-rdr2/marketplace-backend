@@ -304,3 +304,110 @@
 2026-05-23T11:33:39.651Z [INFO] 127.0.0.1 - - [23/May/2026:11:33:39 +0000] "POST /register HTTP/1.1" 500 52 "-" "PostmanRuntime/7.54.0"
 2026-05-23T11:35:58.510Z [INFO] Server running on port 3000
 2026-05-23T11:36:02.980Z [INFO] 127.0.0.1 - - [23/May/2026:11:36:02 +0000] "POST /register HTTP/1.1" 400 40 "-" "PostmanRuntime/7.54.0"
+2026-05-23T12:17:35.903Z [INFO] Server running on port 3000
+2026-05-23T12:18:01.025Z [INFO] Server running on port 3000
+2026-05-23T12:18:02.594Z [INFO] Server running on port 3000
+2026-05-23T12:18:09.548Z [INFO] Server running on port 3000
+2026-05-23T12:18:12.936Z [INFO] Server running on port 3000
+2026-05-23T12:18:14.030Z [INFO] Server running on port 3000
+2026-05-23T12:18:16.701Z [INFO] Server running on port 3000
+2026-05-23T12:18:23.874Z [INFO] Server running on port 3000
+2026-05-23T12:18:28.422Z [INFO] Server running on port 3000
+2026-05-23T12:18:30.166Z [INFO] Server running on port 3000
+2026-05-23T12:18:32.123Z [INFO] Server running on port 3000
+2026-05-23T12:18:35.753Z [INFO] Server running on port 3000
+2026-05-23T12:18:37.822Z [INFO] Server running on port 3000
+2026-05-23T12:18:40.316Z [INFO] Server running on port 3000
+2026-05-23T12:18:42.182Z [INFO] Server running on port 3000
+2026-05-23T12:18:47.751Z [INFO] Server running on port 3000
+2026-05-23T12:18:50.633Z [INFO] Server running on port 3000
+2026-05-23T12:18:54.517Z [INFO] Server running on port 3000
+2026-05-23T12:18:57.259Z [INFO] Server running on port 3000
+2026-05-23T12:19:04.305Z [INFO] Server running on port 3000
+2026-05-23T12:19:07.711Z [INFO] Server running on port 3000
+2026-05-23T12:19:10.555Z [INFO] Server running on port 3000
+2026-05-23T12:19:18.375Z [INFO] Server running on port 3000
+2026-05-23T12:19:20.286Z [INFO] Server running on port 3000
+2026-05-23T12:19:23.808Z [INFO] Server running on port 3000
+2026-05-23T12:19:25.069Z [INFO] Server running on port 3000
+2026-05-23T12:19:27.724Z [INFO] Server running on port 3000
+2026-05-23T12:19:30.907Z [INFO] Server running on port 3000
+2026-05-23T12:19:33.293Z [INFO] Server running on port 3000
+2026-05-23T12:19:34.855Z [INFO] Server running on port 3000
+2026-05-23T12:19:37.319Z [INFO] Server running on port 3000
+2026-05-23T12:19:41.717Z [INFO] Server running on port 3000
+2026-05-23T12:19:44.844Z [INFO] Server running on port 3000
+2026-05-23T12:19:46.254Z [INFO] Server running on port 3000
+2026-05-23T12:19:50.275Z [INFO] Server running on port 3000
+2026-05-23T12:19:52.223Z [INFO] Server running on port 3000
+2026-05-23T12:19:54.137Z [INFO] Server running on port 3000
+2026-05-23T12:19:56.863Z [INFO] Server running on port 3000
+2026-05-23T12:19:59.269Z [INFO] Server running on port 3000
+2026-05-23T12:20:02.115Z [INFO] Server running on port 3000
+2026-05-23T12:20:07.935Z [INFO] Server running on port 3000
+2026-05-23T12:20:10.286Z [INFO] Server running on port 3000
+2026-05-23T12:20:11.936Z [INFO] Server running on port 3000
+2026-05-23T12:20:13.353Z [INFO] Server running on port 3000
+2026-05-23T12:20:15.457Z [INFO] Server running on port 3000
+2026-05-23T12:20:19.565Z [INFO] Server running on port 3000
+2026-05-23T12:20:22.454Z [INFO] Server running on port 3000
+2026-05-23T12:20:25.813Z [INFO] Server running on port 3000
+2026-05-23T12:20:26.958Z [INFO] Server running on port 3000
+2026-05-23T12:20:29.933Z [INFO] Server running on port 3000
+2026-05-23T12:20:33.112Z [INFO] Server running on port 3000
+2026-05-23T12:21:56.792Z [INFO] Server running on port 3000
+2026-05-23T12:22:12.514Z [INFO] Server running on port 3000
+2026-05-23T12:22:16.093Z [INFO] Server running on port 3000
+2026-05-23T12:22:35.231Z [INFO] Server running on port 3000
+2026-05-23T12:23:31.932Z [INFO] Server running on port 3000
+2026-05-23T12:23:44.148Z [INFO] Server running on port 3000
+2026-05-23T12:23:47.820Z [INFO] Server running on port 3000
+2026-05-23T12:24:08.039Z [INFO] Server running on port 3000
+2026-05-23T12:24:10.666Z [INFO] Server running on port 3000
+2026-05-23T12:53:25.959Z [INFO] Server running on port 3000
+2026-05-23T12:53:38.152Z [INFO] 127.0.0.1 - - [23/May/2026:12:53:38 +0000] "POST /register HTTP/1.1" 404 148 "-" "PostmanRuntime/7.54.0"
+2026-05-23T12:53:53.933Z [INFO] 127.0.0.1 - - [23/May/2026:12:53:53 +0000] "GET /products HTTP/1.1" 404 147 "-" "PostmanRuntime/7.54.0"
+2026-05-24T09:36:16.036Z [INFO] Server running on port 3000
+2026-05-24T09:44:08.077Z [INFO] Server running on port 3000
+2026-05-24T09:45:55.348Z [INFO] Server running on port 3000
+2026-05-24T09:45:56.786Z [INFO] Server running on port 3000
+2026-05-24T09:46:03.347Z [INFO] Server running on port 3000
+2026-05-24T09:46:26.447Z [INFO] Server running on port 3000
+2026-05-24T09:47:46.435Z [INFO] Server running on port 3000
+2026-05-24T09:47:47.587Z [INFO] Server running on port 3000
+2026-05-24T09:48:10.063Z [INFO] Server running on port 3000
+2026-05-24T09:48:30.768Z [INFO] Server running on port 3000
+2026-05-24T09:48:42.482Z [INFO] Server running on port 3000
+2026-05-24T09:48:50.476Z [INFO] Server running on port 3000
+2026-05-24T09:48:52.076Z [INFO] Server running on port 3000
+2026-05-24T09:49:22.281Z [INFO] 127.0.0.1 - - [24/May/2026:09:49:22 +0000] "GET /products HTTP/1.1" 404 147 "-" "PostmanRuntime/7.54.0"
+2026-05-24T09:49:49.988Z [INFO] 127.0.0.1 - - [24/May/2026:09:49:49 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T09:49:51.567Z [INFO] 127.0.0.1 - - [24/May/2026:09:49:51 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T09:50:19.664Z [INFO] 127.0.0.1 - - [24/May/2026:09:50:19 +0000] "GET /api/v1/auth/register HTTP/1.1" 404 159 "-" "PostmanRuntime/7.54.0"
+2026-05-24T09:50:31.400Z [INFO] 127.0.0.1 - - [24/May/2026:09:50:31 +0000] "POST /api/v1/auth/register HTTP/1.1" 400 40 "-" "PostmanRuntime/7.54.0"
+2026-05-24T09:51:02.169Z [INFO] 127.0.0.1 - - [24/May/2026:09:51:02 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-24T09:52:43.630Z [INFO] 127.0.0.1 - - [24/May/2026:09:52:43 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T09:52:45.030Z [INFO] 127.0.0.1 - - [24/May/2026:09:52:45 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T09:58:43.055Z [INFO] Server running on port 3000
+2026-05-24T09:58:52.571Z [INFO] Server running on port 3000
+2026-05-24T09:59:00.740Z [INFO] Server running on port 3000
+2026-05-24T09:59:25.742Z [INFO] Server running on port 3000
+2026-05-24T10:04:23.640Z [INFO] Server running on port 3000
+2026-05-24T10:04:26.297Z [INFO] Server running on port 3000
+2026-05-24T10:05:53.212Z [INFO] Server running on port 3000
+2026-05-24T10:05:57.984Z [INFO] Server running on port 3000
+2026-05-24T10:05:59.519Z [INFO] Server running on port 3000
+2026-05-24T10:09:39.471Z [INFO] Server running on port 3000
+2026-05-24T10:09:42.308Z [INFO] Server running on port 3000
+2026-05-24T10:09:44.120Z [INFO] Server running on port 3000
+2026-05-24T10:11:30.041Z [INFO] 127.0.0.1 - - [24/May/2026:10:11:30 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T10:11:31.158Z [INFO] 127.0.0.1 - - [24/May/2026:10:11:31 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T10:13:05.502Z [INFO] Server running on port 3000
+2026-05-24T10:13:13.393Z [INFO] Server running on port 3000
+2026-05-24T10:18:34.071Z [INFO] Server running on port 3000
+2026-05-24T10:18:47.351Z [INFO] Server running on port 3000
+2026-05-24T10:39:28.786Z [INFO] 127.0.0.1 - - [24/May/2026:10:39:28 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T10:39:29.866Z [INFO] 127.0.0.1 - - [24/May/2026:10:39:29 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T10:39:50.110Z [INFO] Server running on port 3000
+2026-05-24T10:40:02.851Z [INFO] 127.0.0.1 - - [24/May/2026:10:40:02 +0000] "GET /api/v1/health HTTP/1.1" 200 117 "-" "PostmanRuntime/7.54.0"
+2026-05-24T10:40:04.190Z [INFO] 127.0.0.1 - - [24/May/2026:10:40:04 +0000] "GET /api/v1/health HTTP/1.1" 200 117 "-" "PostmanRuntime/7.54.0"

@@ -1,0 +1,17 @@
+const express = require('express');
+const router = express.Router();
+
+const authRoutes = require('./authRoutes');
+const productRoutes = require('./productRoutes');
+const orderRoutes = require('./orderRoutes');
+const paymentRoutes = require('./paymentRoutes');
+const healthRoutes = require('./healthRoutes');
+
+router.use('/auth', authRoutes);
+router.use('/products', productRoutes);
+router.use('/orders', orderRoutes);
+router.use('/payment', paymentRoutes);
+router.use('/health', healthRoutes);
+
+
+module.exports = router;

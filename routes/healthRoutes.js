@@ -13,7 +13,7 @@ const redisClient = require('../config/redis');
     });
 });*/
 
-router.get('/health', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     await db.query('SELECT 1');
     const redisPing = await redisClient.ping();

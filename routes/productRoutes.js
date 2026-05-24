@@ -9,7 +9,7 @@ const asyncHandler = require('../utils/asyncHandler');
 
 const { body } = require('express-validator');
 
-router.post('/products', authMiddleware,
+router.post('/', authMiddleware,
     upload.single('image'), [
     body('name').notEmpty().withMessage('Nama wajib diisi'),
     body('price').isInt({ min: 1 }).withMessage('Harga harus angka > 0')],
@@ -25,10 +25,11 @@ router.post('/products', authMiddleware,
  *       200:
  *         description: Success
  */
-router.get('/products', asyncHandler(productController.getAllProducts));
-router.get('/products/:id', productController.getProductById);
-router.put('/products/:id', authMiddleware, upload.single('image'), productController.updateProduct);
-router.delete('/products/:id', authMiddleware, authorize("admin"), productController.deleteProduct);
+router.get('/', asyncHandler(productController.getAllProducts));
 router.get('/my-products', authMiddleware, productController.getMyProducts);
+router.get('/:id', productController.getProductById);
+router.put('/:id', authMiddleware, upload.single('image'), productController.updateProduct);
+router.delete('/:id', authMiddleware, authorize("admin"), productController.deleteProduct);
+
 
 module.exports = router
