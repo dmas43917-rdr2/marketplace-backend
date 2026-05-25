@@ -604,3 +604,38 @@
 2026-05-25T10:02:55.931Z [INFO] 127.0.0.1 - - [25/May/2026:10:02:55 +0000] "GET /api/v1/products HTTP/1.1" 200 1207 "-" "PostmanRuntime/7.54.0"
 2026-05-25T10:02:57.114Z [INFO] 127.0.0.1 - - [25/May/2026:10:02:57 +0000] "GET /api/v1/products HTTP/1.1" 200 1207 "-" "PostmanRuntime/7.54.0"
 2026-05-25T10:03:23.524Z [INFO] Server running on port 3000
+2026-05-25T10:55:53.046Z [INFO] Server running on port 3000
+2026-05-25T10:56:19.001Z [INFO] 127.0.0.1 - - [25/May/2026:10:56:19 +0000] "GET /api/v1/products HTTP/1.1" 200 1210 "-" "PostmanRuntime/7.54.0"
+2026-05-25T10:56:20.388Z [INFO] 127.0.0.1 - - [25/May/2026:10:56:20 +0000] "GET /api/v1/products HTTP/1.1" 200 1207 "-" "PostmanRuntime/7.54.0"
+2026-05-25T11:11:29.791Z [INFO] 127.0.0.1 - - [25/May/2026:11:11:29 +0000] "POST /api/v1/products HTTP/1.1" 403 31 "-" "PostmanRuntime/7.54.0"
+2026-05-25T11:11:43.369Z [INFO] 127.0.0.1 - - [25/May/2026:11:11:43 +0000] "POST /api/v1/auth/login HTTP/1.1" 404 34 "-" "PostmanRuntime/7.54.0"
+2026-05-25T11:12:43.316Z [ERROR] Error: data and hash arguments required
+    at Object.compare (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:204:17)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:17:12)
+    at Object.compare (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:200:25)
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:43:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-25T11:12:43.317Z [INFO] 127.0.0.1 - - [25/May/2026:11:12:43 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 63 "-" "PostmanRuntime/7.54.0"
+2026-05-25T11:14:39.889Z [ERROR] SyntaxError: Bad control character in string literal in JSON at position 58 (line 3 column 24)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\body-parser\lib\types\json.js:72:19)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\body-parser\lib\read.js:162:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:508:28)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+2026-05-25T11:17:34.608Z [INFO] Server running on port 3000
+2026-05-25T11:19:52.564Z [INFO] Server running on port 3000
+2026-05-25T11:20:13.479Z [INFO] 127.0.0.1 - - [25/May/2026:11:20:13 +0000] "GET /api/v1/products HTTP/1.1" 200 1210 "-" "PostmanRuntime/7.54.0"
+2026-05-25T11:20:55.971Z [INFO] 127.0.0.1 - - [25/May/2026:11:20:55 +0000] "GET /api/v1/products HTTP/1.1" 200 1207 "-" "PostmanRuntime/7.54.0"
+2026-05-25T11:26:26.206Z [INFO] Server running on port 3000
+2026-05-25T11:28:21.916Z [INFO] Server running on port 3000
+2026-05-25T11:28:27.155Z [INFO] 127.0.0.1 - - [25/May/2026:11:28:27 +0000] "GET /api/v1/products HTTP/1.1" 200 1210 "-" "curl/8.19.0"
+2026-05-25T11:29:09.626Z [INFO] 127.0.0.1 - - [25/May/2026:11:29:09 +0000] "HEAD /api/v1/products HTTP/1.1" 200 1207 "-" "curl/8.19.0"
+2026-05-25T11:31:43.833Z [INFO] Server running on port 3000
+2026-05-25T11:32:03.434Z [INFO] Server running on port 3000

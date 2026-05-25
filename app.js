@@ -1,11 +1,14 @@
 require('dotenv-safe').config();
 const express = require('express');
 const app = express();
+const helmet = require('helmet');
+const cors = require('cors');
 
 const redisClient = require('./config/redis');
 const db = require('./config/db');
 const logger = require('./config/logger');
 const { limiter } = require('./middlewares/rateLimiter');
+
 
 /*const productRoutes = require('./routes/productRoutes');
 const authRoutes = require('./routes/authRoutes');
@@ -19,8 +22,19 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./config/swagger');
 const morgan = require('morgan');
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(helmet());
+
+app.use(cors({
+    origin: 'http://localhost:5173',
+}));
+
+app.use(express.json({
+    limit: '10kb'
+}));
+app.use(express.urlencoded({
+    extended: true,
+    limit: '10kb' 
+}));
 app.set('trust proxy', 1);
 
 app.use(morgan('combined', { stream: logger.stream }));
