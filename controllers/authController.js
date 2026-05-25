@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 const transporter = require('../config/mailer');
 const emailQueue = require('../queues/emailQueue');
 const response = require('../utils/response');
+const AppError = require('../utils/appError');
 
 exports.register = async (req, res, next) => {
     const { email, password } = req.body;
@@ -35,7 +36,7 @@ exports.login = async (req, res, next) => {
         );
 
         if (result.rows.length === 0) {
-            return res.status(404).json({ message: 'User tidak ditemukan' });
+            throw new AppError('User tidak ditemukan', 404);
         }
 
         const user = result.rows[0];

@@ -3,6 +3,7 @@ const { validationResult } = require('express-validator');
 const fs = require('fs');
 const path = require('path');
 const redisClient = require('../config/redis');
+const AppError = require('../utils/appError');
 
 const productService = require('../services/productService');
 

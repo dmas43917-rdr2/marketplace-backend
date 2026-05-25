@@ -639,3 +639,128 @@
 2026-05-25T11:29:09.626Z [INFO] 127.0.0.1 - - [25/May/2026:11:29:09 +0000] "HEAD /api/v1/products HTTP/1.1" 200 1207 "-" "curl/8.19.0"
 2026-05-25T11:31:43.833Z [INFO] Server running on port 3000
 2026-05-25T11:32:03.434Z [INFO] Server running on port 3000
+2026-05-25T11:39:04.405Z [INFO] Server running on port 3000
+2026-05-25T12:06:56.997Z [INFO] Server running on port 3000
+2026-05-25T12:06:58.429Z [INFO] Server running on port 3000
+2026-05-25T12:07:03.906Z [INFO] Server running on port 3000
+2026-05-25T12:07:05.348Z [INFO] Server running on port 3000
+2026-05-25T12:07:08.305Z [INFO] Server running on port 3000
+2026-05-25T12:07:11.488Z [INFO] Server running on port 3000
+2026-05-25T12:07:12.916Z [INFO] Server running on port 3000
+2026-05-25T12:07:14.713Z [INFO] Server running on port 3000
+2026-05-25T12:07:16.223Z [INFO] Server running on port 3000
+2026-05-25T12:07:18.269Z [INFO] Server running on port 3000
+2026-05-25T12:07:28.782Z [INFO] Server running on port 3000
+2026-05-25T12:07:30.308Z [INFO] Server running on port 3000
+2026-05-25T12:07:32.403Z [INFO] Server running on port 3000
+2026-05-25T12:07:34.406Z [INFO] Server running on port 3000
+2026-05-25T12:07:40.756Z [INFO] Server running on port 3000
+2026-05-25T12:07:43.175Z [INFO] Server running on port 3000
+2026-05-25T12:07:46.459Z [INFO] Server running on port 3000
+2026-05-25T12:07:48.144Z [INFO] Server running on port 3000
+2026-05-25T12:07:50.859Z [INFO] Server running on port 3000
+2026-05-25T12:07:52.929Z [INFO] Server running on port 3000
+2026-05-25T12:07:58.280Z [INFO] Server running on port 3000
+2026-05-25T12:07:59.604Z [INFO] Server running on port 3000
+2026-05-25T12:08:01.255Z [INFO] Server running on port 3000
+2026-05-25T12:08:03.154Z [INFO] Server running on port 3000
+2026-05-25T12:08:10.660Z [INFO] Server running on port 3000
+2026-05-25T12:08:12.271Z [INFO] Server running on port 3000
+2026-05-25T12:08:14.930Z [INFO] Server running on port 3000
+2026-05-25T12:08:23.471Z [INFO] Server running on port 3000
+2026-05-25T12:08:26.275Z [INFO] Server running on port 3000
+2026-05-25T12:08:30.031Z [INFO] Server running on port 3000
+2026-05-25T12:08:33.146Z [INFO] Server running on port 3000
+2026-05-25T12:08:38.742Z [INFO] Server running on port 3000
+2026-05-25T12:08:41.787Z [INFO] Server running on port 3000
+2026-05-25T12:08:43.513Z [INFO] Server running on port 3000
+2026-05-25T12:08:48.837Z [INFO] Server running on port 3000
+2026-05-25T12:08:52.894Z [INFO] Server running on port 3000
+2026-05-25T12:08:59.669Z [INFO] Server running on port 3000
+2026-05-25T12:09:03.374Z [INFO] Server running on port 3000
+2026-05-25T12:09:07.716Z [INFO] Server running on port 3000
+2026-05-25T12:09:11.811Z [INFO] Server running on port 3000
+2026-05-25T12:09:13.373Z [INFO] Server running on port 3000
+2026-05-25T12:09:15.836Z [INFO] Server running on port 3000
+2026-05-25T12:09:19.489Z [INFO] Server running on port 3000
+2026-05-25T12:09:21.056Z [INFO] Server running on port 3000
+2026-05-25T12:09:22.655Z [INFO] Server running on port 3000
+2026-05-25T12:09:24.405Z [INFO] Server running on port 3000
+2026-05-25T12:09:27.507Z [INFO] Server running on port 3000
+2026-05-25T12:09:32.341Z [INFO] Server running on port 3000
+2026-05-25T12:09:34.644Z [INFO] Server running on port 3000
+2026-05-25T12:09:36.505Z [INFO] Server running on port 3000
+2026-05-25T12:09:38.780Z [INFO] Server running on port 3000
+2026-05-25T12:09:40.545Z [INFO] Server running on port 3000
+2026-05-25T12:09:44.016Z [INFO] Server running on port 3000
+2026-05-25T12:09:47.154Z [INFO] Server running on port 3000
+2026-05-25T12:09:48.639Z [INFO] Server running on port 3000
+2026-05-25T12:09:58.415Z [INFO] Server running on port 3000
+2026-05-25T12:09:59.741Z [INFO] Server running on port 3000
+2026-05-25T12:10:02.512Z [INFO] Server running on port 3000
+2026-05-25T12:10:04.028Z [INFO] Server running on port 3000
+2026-05-25T12:10:06.862Z [INFO] Server running on port 3000
+2026-05-25T12:10:09.664Z [INFO] Server running on port 3000
+2026-05-25T12:10:12.793Z [INFO] Server running on port 3000
+2026-05-25T12:10:15.132Z [INFO] Server running on port 3000
+2026-05-25T12:10:18.731Z [INFO] Server running on port 3000
+2026-05-25T12:10:22.837Z [INFO] Server running on port 3000
+2026-05-25T12:10:24.755Z [INFO] Server running on port 3000
+2026-05-25T12:10:27.421Z [INFO] Server running on port 3000
+2026-05-25T12:10:29.322Z [INFO] Server running on port 3000
+2026-05-25T12:11:29.631Z [INFO] Server running on port 3000
+2026-05-25T12:11:31.327Z [INFO] Server running on port 3000
+2026-05-25T12:11:32.668Z [INFO] Server running on port 3000
+2026-05-25T12:11:34.153Z [INFO] Server running on port 3000
+2026-05-25T12:11:36.033Z [INFO] Server running on port 3000
+2026-05-25T12:11:37.285Z [INFO] Server running on port 3000
+2026-05-25T12:11:38.959Z [INFO] Server running on port 3000
+2026-05-25T12:11:40.948Z [INFO] Server running on port 3000
+2026-05-25T12:11:42.178Z [INFO] Server running on port 3000
+2026-05-25T12:11:45.286Z [INFO] Server running on port 3000
+2026-05-25T12:11:47.553Z [INFO] Server running on port 3000
+2026-05-25T12:11:48.717Z [INFO] Server running on port 3000
+2026-05-25T12:11:58.676Z [INFO] Server running on port 3000
+2026-05-25T12:24:36.980Z [INFO] Server running on port 3000
+2026-05-25T12:24:42.670Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-25T12:24:42.673Z [INFO] 127.0.0.1 - - [25/May/2026:12:24:42 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 51 "-" "PostmanRuntime/7.54.0"
+2026-05-25T12:32:14.131Z [INFO] Server running on port 3000
+2026-05-25T12:32:16.894Z [INFO] Server running on port 3000
+2026-05-25T12:32:25.701Z [INFO] Server running on port 3000
+2026-05-25T12:32:38.222Z [INFO] Server running on port 3000
+2026-05-25T12:32:40.338Z [INFO] Server running on port 3000
+2026-05-25T12:32:42.062Z [INFO] Server running on port 3000
+2026-05-25T12:32:45.994Z [INFO] Server running on port 3000
+2026-05-25T12:32:47.280Z [INFO] Server running on port 3000
+2026-05-25T12:33:03.408Z [INFO] Server running on port 3000
+2026-05-25T12:33:04.723Z [INFO] Server running on port 3000
+2026-05-25T12:33:17.400Z [INFO] Server running on port 3000
+2026-05-25T12:33:21.240Z [INFO] Server running on port 3000
+2026-05-25T12:33:29.249Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-25T12:33:29.252Z [INFO] 127.0.0.1 - - [25/May/2026:12:33:29 +0000] "POST /api/v1/auth/login HTTP/1.1" 404 51 "-" "PostmanRuntime/7.54.0"
+2026-05-25T12:34:16.052Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-25T12:34:16.053Z [INFO] 127.0.0.1 - - [25/May/2026:12:34:16 +0000] "POST /api/v1/auth/login HTTP/1.1" 404 51 "-" "PostmanRuntime/7.54.0"
+2026-05-25T12:34:28.732Z [ERROR] Error: data and hash arguments required
+    at Object.compare (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:204:17)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:17:12)
+    at Object.compare (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:200:25)
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:44:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-25T12:34:28.734Z [INFO] 127.0.0.1 - - [25/May/2026:12:34:28 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 63 "-" "PostmanRuntime/7.54.0"
+2026-05-25T12:34:36.841Z [INFO] 127.0.0.1 - - [25/May/2026:12:34:36 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-25T12:36:35.925Z [INFO] Server running on port 3000
+2026-05-25T12:36:39.375Z [INFO] Server running on port 3000
+2026-05-25T12:36:41.202Z [INFO] Server running on port 3000
+2026-05-25T12:36:47.399Z [INFO] Server running on port 3000
+2026-05-25T12:37:00.318Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-25T12:37:00.320Z [INFO] 127.0.0.1 - - [25/May/2026:12:37:00 +0000] "POST /api/v1/auth/login HTTP/1.1" 404 51 "-" "PostmanRuntime/7.54.0"

@@ -124,3 +124,23 @@
     at IncomingMessage.emit (node:events:508:28)
     at endReadableNT (node:internal/streams/readable:1701:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+2026-05-25T12:24:42.670Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-25T12:33:29.249Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-25T12:34:16.052Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-25T12:34:28.732Z [ERROR] Error: data and hash arguments required
+    at Object.compare (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:204:17)
+    at C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\promises.js:17:12)
+    at Object.compare (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\bcrypt\bcrypt.js:200:25)
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:44:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-25T12:37:00.318Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
