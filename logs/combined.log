@@ -411,3 +411,196 @@
 2026-05-24T10:39:50.110Z [INFO] Server running on port 3000
 2026-05-24T10:40:02.851Z [INFO] 127.0.0.1 - - [24/May/2026:10:40:02 +0000] "GET /api/v1/health HTTP/1.1" 200 117 "-" "PostmanRuntime/7.54.0"
 2026-05-24T10:40:04.190Z [INFO] 127.0.0.1 - - [24/May/2026:10:40:04 +0000] "GET /api/v1/health HTTP/1.1" 200 117 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:24:58.276Z [INFO] Server running on port 3000
+2026-05-24T11:25:29.139Z [INFO] 127.0.0.1 - - [24/May/2026:11:25:29 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:25:30.540Z [INFO] 127.0.0.1 - - [24/May/2026:11:25:30 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:26:22.134Z [INFO] Server running on port 3000
+2026-05-24T11:26:27.473Z [INFO] Server running on port 3000
+2026-05-24T11:26:31.284Z [INFO] Server running on port 3000
+2026-05-24T11:26:32.624Z [INFO] Server running on port 3000
+2026-05-24T11:26:42.106Z [INFO] 127.0.0.1 - - [24/May/2026:11:26:42 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:26:43.438Z [ERROR] ReferenceError: response is not defined
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:28:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:26:43.439Z [INFO] 127.0.0.1 - - [24/May/2026:11:26:43 +0000] "GET /api/v1/products HTTP/1.1" 500 54 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:26:46.401Z [ERROR] ReferenceError: response is not defined
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:28:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:26:46.402Z [INFO] 127.0.0.1 - - [24/May/2026:11:26:46 +0000] "GET /api/v1/products HTTP/1.1" 500 54 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:26:49.983Z [ERROR] ReferenceError: response is not defined
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:28:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:26:49.984Z [INFO] 127.0.0.1 - - [24/May/2026:11:26:49 +0000] "GET /api/v1/products HTTP/1.1" 500 54 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:26:51.134Z [ERROR] ReferenceError: response is not defined
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:28:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:26:51.135Z [INFO] 127.0.0.1 - - [24/May/2026:11:26:51 +0000] "GET /api/v1/products HTTP/1.1" 500 54 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:29:16.552Z [INFO] Server running on port 3000
+2026-05-24T11:29:19.412Z [INFO] Server running on port 3000
+2026-05-24T11:29:31.787Z [INFO] Server running on port 3000
+2026-05-24T11:29:40.623Z [INFO] Server running on port 3000
+2026-05-24T11:29:43.831Z [INFO] Server running on port 3000
+2026-05-24T11:29:51.007Z [INFO] 127.0.0.1 - - [24/May/2026:11:29:51 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:29:52.322Z [ERROR] TypeError: res.status is not a function
+    at exports.success (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\utils\response.js:2:16)
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:29:52.324Z [INFO] 127.0.0.1 - - [24/May/2026:11:29:52 +0000] "GET /api/v1/products HTTP/1.1" 500 59 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:32:23.523Z [INFO] Server running on port 3000
+2026-05-24T11:32:25.975Z [INFO] Server running on port 3000
+2026-05-24T11:32:37.770Z [INFO] 127.0.0.1 - - [24/May/2026:11:32:37 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:32:39.019Z [ERROR] TypeError: res.status is not a function
+    at exports.success (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\utils\response.js:2:16)
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:32:39.020Z [INFO] 127.0.0.1 - - [24/May/2026:11:32:39 +0000] "GET /api/v1/products HTTP/1.1" 500 59 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:32:41.617Z [ERROR] TypeError: res.status is not a function
+    at exports.success (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\utils\response.js:2:16)
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:32:41.618Z [INFO] 127.0.0.1 - - [24/May/2026:11:32:41 +0000] "GET /api/v1/products HTTP/1.1" 500 59 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:34:15.420Z [INFO] Server running on port 3000
+2026-05-24T11:34:35.094Z [INFO] Server running on port 3000
+2026-05-24T11:34:38.614Z [INFO] Server running on port 3000
+2026-05-24T11:34:46.174Z [INFO] 127.0.0.1 - - [24/May/2026:11:34:46 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:34:47.461Z [ERROR] TypeError: Spread syntax requires ...iterable[Symbol.iterator] to be a function
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:34:47.462Z [INFO] 127.0.0.1 - - [24/May/2026:11:34:47 +0000] "GET /api/v1/products HTTP/1.1" 500 99 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:35:01.828Z [ERROR] TypeError: Spread syntax requires ...iterable[Symbol.iterator] to be a function
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:35:01.829Z [INFO] 127.0.0.1 - - [24/May/2026:11:35:01 +0000] "GET /api/v1/products HTTP/1.1" 500 99 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:35:03.009Z [ERROR] TypeError: Spread syntax requires ...iterable[Symbol.iterator] to be a function
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:35:03.009Z [INFO] 127.0.0.1 - - [24/May/2026:11:35:03 +0000] "GET /api/v1/products HTTP/1.1" 500 99 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:35:35.259Z [INFO] Server running on port 3000
+2026-05-24T11:35:45.742Z [INFO] Server running on port 3000
+2026-05-24T11:35:47.424Z [INFO] Server running on port 3000
+2026-05-24T11:35:48.664Z [INFO] Server running on port 3000
+2026-05-24T11:35:51.027Z [INFO] Server running on port 3000
+2026-05-24T11:36:25.971Z [INFO] 127.0.0.1 - - [24/May/2026:11:36:25 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:36:27.183Z [INFO] 127.0.0.1 - - [24/May/2026:11:36:27 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:36:28.298Z [INFO] 127.0.0.1 - - [24/May/2026:11:36:28 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:36:41.792Z [INFO] Server running on port 3000
+2026-05-24T11:38:30.875Z [INFO] Server running on port 3000
+2026-05-24T11:38:35.273Z [INFO] Server running on port 3000
+2026-05-24T11:38:40.315Z [INFO] Server running on port 3000
+2026-05-24T11:38:43.903Z [INFO] Server running on port 3000
+2026-05-24T11:38:45.278Z [INFO] Server running on port 3000
+2026-05-24T11:38:47.006Z [INFO] Server running on port 3000
+2026-05-24T11:38:50.874Z [INFO] Server running on port 3000
+2026-05-24T11:38:53.569Z [INFO] Server running on port 3000
+2026-05-24T11:38:58.656Z [INFO] Server running on port 3000
+2026-05-24T11:41:57.881Z [INFO] Server running on port 3000
+2026-05-24T11:42:26.054Z [INFO] Server running on port 3000
+2026-05-24T11:42:32.498Z [INFO] Server running on port 3000
+2026-05-24T11:42:35.021Z [INFO] Server running on port 3000
+2026-05-24T11:42:36.942Z [INFO] Server running on port 3000
+2026-05-24T11:42:41.801Z [INFO] Server running on port 3000
+2026-05-24T11:42:47.396Z [INFO] Server running on port 3000
+2026-05-24T11:42:50.840Z [INFO] Server running on port 3000
+2026-05-24T11:43:13.362Z [INFO] Server running on port 3000
+2026-05-24T11:43:21.249Z [INFO] Server running on port 3000
+2026-05-24T11:43:22.765Z [INFO] Server running on port 3000
+2026-05-24T11:43:25.908Z [INFO] Server running on port 3000
+2026-05-24T11:43:30.106Z [INFO] Server running on port 3000
+2026-05-24T11:43:34.116Z [INFO] Server running on port 3000
+2026-05-24T11:44:47.474Z [INFO] 127.0.0.1 - - [24/May/2026:11:44:47 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:44:48.906Z [INFO] 127.0.0.1 - - [24/May/2026:11:44:48 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:44:55.506Z [INFO] 127.0.0.1 - - [24/May/2026:11:44:55 +0000] "POST /api/v1/products HTTP/1.1" 403 31 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:45:51.860Z [INFO] Server running on port 3000
+2026-05-24T11:45:55.371Z [INFO] Server running on port 3000
+2026-05-24T11:46:08.734Z [INFO] 127.0.0.1 - - [24/May/2026:11:46:08 +0000] "POST /api/v1/login HTTP/1.1" 404 152 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:46:25.817Z [INFO] 127.0.0.1 - - [24/May/2026:11:46:25 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:47:25.618Z [INFO] 127.0.0.1 - - [24/May/2026:11:47:25 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:48:11.145Z [INFO] 127.0.0.1 - - [24/May/2026:11:48:11 +0000] "GET /api/v1/products HTTP/1.1" 200 195 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:48:12.481Z [INFO] 127.0.0.1 - - [24/May/2026:11:48:12 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:48:18.319Z [INFO] 127.0.0.1 - - [24/May/2026:11:48:18 +0000] "POST /api/v1/products HTTP/1.1" 400 112 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:48:32.866Z [INFO] 127.0.0.1 - - [24/May/2026:11:48:32 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:48:34.280Z [INFO] 127.0.0.1 - - [24/May/2026:11:48:34 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:48:54.632Z [INFO] 127.0.0.1 - - [24/May/2026:11:48:54 +0000] "POST /api/v1/products HTTP/1.1" 200 151 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:49:01.931Z [INFO] 127.0.0.1 - - [24/May/2026:11:49:01 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:49:11.030Z [INFO] 127.0.0.1 - - [24/May/2026:11:49:11 +0000] "GET /api/v1/products HTTP/1.1" 429 53 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:49:26.076Z [INFO] Server running on port 3000
+2026-05-24T11:49:30.819Z [INFO] 127.0.0.1 - - [24/May/2026:11:49:30 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:49:32.883Z [INFO] 127.0.0.1 - - [24/May/2026:11:49:32 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:51:08.800Z [INFO] 127.0.0.1 - - [24/May/2026:11:51:08 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:54:46.966Z [INFO] Server running on port 3000
+2026-05-24T11:55:58.426Z [INFO] Server running on port 3000
+2026-05-24T11:56:13.040Z [INFO] Server running on port 3000
+2026-05-24T11:56:21.214Z [INFO] 127.0.0.1 - - [24/May/2026:11:56:21 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:56:23.005Z [INFO] 127.0.0.1 - - [24/May/2026:11:56:23 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:56:29.686Z [INFO] 127.0.0.1 - - [24/May/2026:11:56:29 +0000] "POST /api/v1/products HTTP/1.1" 200 151 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:56:36.138Z [INFO] 127.0.0.1 - - [24/May/2026:11:56:36 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:56:38.155Z [INFO] 127.0.0.1 - - [24/May/2026:11:56:38 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:58:14.752Z [INFO] Server running on port 3000
+2026-05-24T11:58:18.269Z [INFO] 127.0.0.1 - - [24/May/2026:11:58:18 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T11:58:24.522Z [INFO] 127.0.0.1 - - [24/May/2026:11:58:24 +0000] "POST /api/v1/products HTTP/1.1" 500 37 "-" "PostmanRuntime/7.54.0"
+2026-05-24T12:00:25.079Z [INFO] Server running on port 3000
+2026-05-24T12:00:28.957Z [INFO] Server running on port 3000
+2026-05-24T12:01:13.296Z [INFO] Server running on port 3000
+2026-05-24T12:01:22.366Z [INFO] 127.0.0.1 - - [24/May/2026:12:01:22 +0000] "GET /api/v1/products HTTP/1.1" 200 192 "-" "PostmanRuntime/7.54.0"
+2026-05-24T12:01:29.664Z [INFO] 127.0.0.1 - - [24/May/2026:12:01:29 +0000] "POST /api/v1/products HTTP/1.1" 200 151 "-" "PostmanRuntime/7.54.0"
+2026-05-24T12:01:36.013Z [INFO] 127.0.0.1 - - [24/May/2026:12:01:36 +0000] "GET /api/v1/products HTTP/1.1" 200 775 "-" "PostmanRuntime/7.54.0"
+2026-05-24T12:01:38.461Z [INFO] 127.0.0.1 - - [24/May/2026:12:01:38 +0000] "GET /api/v1/products HTTP/1.1" 200 772 "-" "PostmanRuntime/7.54.0"
+2026-05-24T12:01:59.130Z [INFO] 127.0.0.1 - - [24/May/2026:12:01:59 +0000] "GET /api/v1/products HTTP/1.1" 200 772 "-" "PostmanRuntime/7.54.0"
+2026-05-24T12:02:04.987Z [INFO] 127.0.0.1 - - [24/May/2026:12:02:04 +0000] "POST /api/v1/products HTTP/1.1" 200 151 "-" "PostmanRuntime/7.54.0"
+2026-05-24T12:02:10.828Z [INFO] 127.0.0.1 - - [24/May/2026:12:02:10 +0000] "GET /api/v1/products HTTP/1.1" 200 920 "-" "PostmanRuntime/7.54.0"
+2026-05-24T12:02:43.802Z [INFO] Server running on port 3000
+2026-05-24T12:02:46.184Z [INFO] Server running on port 3000
+2026-05-24T12:02:50.144Z [INFO] Server running on port 3000
+2026-05-24T12:03:01.368Z [INFO] Server running on port 3000
+2026-05-24T12:03:02.756Z [INFO] Server running on port 3000
+2026-05-24T12:03:16.402Z [INFO] Server running on port 3000
+2026-05-24T12:03:21.387Z [INFO] Server running on port 3000
+2026-05-24T12:03:33.108Z [INFO] Server running on port 3000
+2026-05-24T12:20:38.043Z [INFO] Server running on port 3000
+2026-05-25T09:32:56.814Z [INFO] Server running on port 3000
+2026-05-25T09:33:11.635Z [INFO] 127.0.0.1 - - [25/May/2026:09:33:11 +0000] "GET /api/v1/products HTTP/1.1" 200 920 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:33:13.018Z [INFO] 127.0.0.1 - - [25/May/2026:09:33:13 +0000] "GET /api/v1/products HTTP/1.1" 200 917 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:33:16.014Z [INFO] 127.0.0.1 - - [25/May/2026:09:33:16 +0000] "GET /api/v1/products HTTP/1.1" 200 917 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:37:03.348Z [INFO] Server running on port 3000
+2026-05-25T09:37:17.280Z [INFO] Server running on port 3000
+2026-05-25T09:37:23.775Z [INFO] Server running on port 3000
+2026-05-25T09:37:28.546Z [INFO] Server running on port 3000
+2026-05-25T09:37:30.875Z [INFO] Server running on port 3000
+2026-05-25T09:37:48.559Z [INFO] Server running on port 3000
+2026-05-25T09:37:51.061Z [INFO] Server running on port 3000
+2026-05-25T09:37:58.447Z [INFO] Server running on port 3000
+2026-05-25T09:38:00.166Z [INFO] Server running on port 3000
+2026-05-25T09:38:21.152Z [INFO] Server running on port 3000
+2026-05-25T09:38:28.631Z [INFO] Server running on port 3000
+2026-05-25T09:38:45.910Z [INFO] Server running on port 3000
+2026-05-25T09:38:50.899Z [INFO] Server running on port 3000
+2026-05-25T09:38:56.090Z [INFO] Server running on port 3000
+2026-05-25T09:38:57.420Z [INFO] Server running on port 3000
+2026-05-25T09:39:00.836Z [INFO] Server running on port 3000
+2026-05-25T09:39:04.192Z [INFO] Server running on port 3000
+2026-05-25T09:39:10.466Z [INFO] Server running on port 3000
+2026-05-25T09:39:37.992Z [INFO] Server running on port 3000
+2026-05-25T09:40:02.501Z [INFO] 127.0.0.1 - - [25/May/2026:09:40:02 +0000] "GET /api/v1/products HTTP/1.1" 200 920 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:40:04.192Z [INFO] 127.0.0.1 - - [25/May/2026:09:40:04 +0000] "GET /api/v1/products HTTP/1.1" 200 917 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:40:13.474Z [INFO] 127.0.0.1 - - [25/May/2026:09:40:13 +0000] "POST /api/v1/products HTTP/1.1" 403 31 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:40:53.494Z [INFO] 127.0.0.1 - - [25/May/2026:09:40:53 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:41:20.380Z [INFO] 127.0.0.1 - - [25/May/2026:09:41:20 +0000] "GET /api/v1/products HTTP/1.1" 200 917 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:42:00.303Z [INFO] 127.0.0.1 - - [25/May/2026:09:42:00 +0000] "POST /api/v1/products HTTP/1.1" 200 151 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:42:07.409Z [INFO] 127.0.0.1 - - [25/May/2026:09:42:07 +0000] "GET /api/v1/products HTTP/1.1" 200 1065 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:42:08.954Z [INFO] 127.0.0.1 - - [25/May/2026:09:42:08 +0000] "GET /api/v1/products HTTP/1.1" 200 1062 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:42:11.489Z [INFO] 127.0.0.1 - - [25/May/2026:09:42:11 +0000] "GET /api/v1/products HTTP/1.1" 200 1062 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:42:19.452Z [INFO] 127.0.0.1 - - [25/May/2026:09:42:19 +0000] "POST /api/v1/products HTTP/1.1" 200 151 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:42:26.181Z [INFO] 127.0.0.1 - - [25/May/2026:09:42:26 +0000] "GET /api/v1/products HTTP/1.1" 429 53 "-" "PostmanRuntime/7.54.0"
+2026-05-25T09:55:56.031Z [INFO] Server running on port 3000
+2026-05-25T09:56:09.793Z [INFO] Server running on port 3000
+2026-05-25T09:56:12.167Z [INFO] Server running on port 3000
+2026-05-25T09:56:18.670Z [INFO] Server running on port 3000
+2026-05-25T09:56:26.696Z [INFO] Server running on port 3000
+2026-05-25T09:56:28.256Z [INFO] Server running on port 3000
+2026-05-25T09:56:38.501Z [INFO] Server running on port 3000
+2026-05-25T09:56:40.066Z [INFO] Server running on port 3000
+2026-05-25T09:56:42.461Z [INFO] Server running on port 3000
+2026-05-25T10:02:54.512Z [INFO] 127.0.0.1 - - [25/May/2026:10:02:54 +0000] "GET /api/v1/products HTTP/1.1" 200 1210 "-" "PostmanRuntime/7.54.0"
+2026-05-25T10:02:55.931Z [INFO] 127.0.0.1 - - [25/May/2026:10:02:55 +0000] "GET /api/v1/products HTTP/1.1" 200 1207 "-" "PostmanRuntime/7.54.0"
+2026-05-25T10:02:57.114Z [INFO] 127.0.0.1 - - [25/May/2026:10:02:57 +0000] "GET /api/v1/products HTTP/1.1" 200 1207 "-" "PostmanRuntime/7.54.0"
+2026-05-25T10:03:23.524Z [INFO] Server running on port 3000

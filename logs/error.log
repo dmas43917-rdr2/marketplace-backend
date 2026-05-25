@@ -72,3 +72,36 @@
     at processParams (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:582:12)
     at next (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:291:5)
     at router.handle (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\router\index.js:186:3)
+2026-05-24T11:26:43.438Z [ERROR] ReferenceError: response is not defined
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:28:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:26:46.401Z [ERROR] ReferenceError: response is not defined
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:28:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:26:49.983Z [ERROR] ReferenceError: response is not defined
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:28:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:26:51.134Z [ERROR] ReferenceError: response is not defined
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:28:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:29:52.322Z [ERROR] TypeError: res.status is not a function
+    at exports.success (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\utils\response.js:2:16)
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:32:39.019Z [ERROR] TypeError: res.status is not a function
+    at exports.success (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\utils\response.js:2:16)
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:32:41.617Z [ERROR] TypeError: res.status is not a function
+    at exports.success (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\utils\response.js:2:16)
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:34:47.461Z [ERROR] TypeError: Spread syntax requires ...iterable[Symbol.iterator] to be a function
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:35:01.828Z [ERROR] TypeError: Spread syntax requires ...iterable[Symbol.iterator] to be a function
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-24T11:35:03.009Z [ERROR] TypeError: Spread syntax requires ...iterable[Symbol.iterator] to be a function
+    at exports.getAllProducts (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\productController.js:29:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)

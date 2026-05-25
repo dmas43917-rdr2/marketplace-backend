@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const redisClient = require('../config/redis');
 
-const productService = require('../services/productService')
+const productService = require('../services/productService');
 
 exports.getAllProducts = async (req, res) => {
     const page = parseInt(req.query.page) || 1;
@@ -13,7 +13,7 @@ exports.getAllProducts = async (req, res) => {
     const offset = (page - 1) * limit;
     const sort = req.query.sort || 'newest';
     
-    const cacheKey = req.originalUrl;
+    const cacheKey = `products:page:${page}:limit:${limit}:sort:${sort}`;
     let cacheData = null;
     
     if (redisClient.isOpen) {
@@ -111,6 +111,12 @@ exports.createProduct = async (req,res) => {
             [name, price, userId, image] 
         );
 
+        const keys = await redisClient.keys('products:*');
+
+        for (const key of keys) {
+            await redisClient.del(key);
+        }
+
         res.json({
             message: 'Produk berhasil ditambahkan',
             data: result.rows[0]
@@ -155,6 +161,12 @@ exports.updateProduct = async (req, res) => {
             [name, price, image, productId]
         );
 
+        const keys = await redisClient.keys('products:*');
+
+        for (const key of keys) {
+            await redisClient.del(key);
+        }
+
         res.json({
             message: 'Produk berhasil diupdate',
             data: result.rows[0]
@@ -197,6 +209,12 @@ exports.deleteProduct = async (req,res) => {
             'DELETE FROM products WHERE id = $1 RETURNING *',
             [productId]
         );
+
+        const keys = await redisClient.keys('products:*');
+
+        for (const key of keys) {
+            await redisClient.del(key);
+        }
 
         res.json({
             message: 'Produk berhasil dihapus',
