@@ -764,3 +764,197 @@
     at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
 2026-05-25T12:37:00.320Z [INFO] 127.0.0.1 - - [25/May/2026:12:37:00 +0000] "POST /api/v1/auth/login HTTP/1.1" 404 51 "-" "PostmanRuntime/7.54.0"
+2026-05-26T10:15:15.023Z [INFO] Server running on port 3000
+2026-05-26T10:15:33.912Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-26T10:15:33.916Z [INFO] 127.0.0.1 - - [26/May/2026:10:15:33 +0000] "POST /api/v1/auth/login HTTP/1.1" 404 51 "-" "PostmanRuntime/7.54.0"
+2026-05-26T11:03:01.640Z [INFO] Server running on port 3000
+2026-05-26T11:03:03.104Z [INFO] Server running on port 3000
+2026-05-26T11:03:06.993Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-26T11:03:06.999Z [INFO] 127.0.0.1 - - [26/May/2026:11:03:06 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 51 "-" "PostmanRuntime/7.54.0"
+2026-05-26T11:03:21.384Z [INFO] Server running on port 3000
+2026-05-26T11:03:23.373Z [INFO] Server running on port 3000
+2026-05-26T11:40:29.063Z [INFO] Server running on port 3000
+2026-05-26T11:40:30.312Z [INFO] Server running on port 3000
+2026-05-27T09:40:01.198Z [INFO] Server running on port 3000
+2026-05-27T09:40:50.239Z [ERROR] ReplyError: ERR Lua redis lib command arguments must be strings or integers script: d898c9a1b24ab7ed9510995fa28eb5874d0cf10e, on @user_script:495.
+    at parseError (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\redis-parser\lib\parser.js:179:12)
+    at parseType (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\redis-parser\lib\parser.js:302:14)
+2026-05-27T09:40:50.244Z [INFO] 127.0.0.1 - - [27/May/2026:09:40:50 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 165 "-" "PostmanRuntime/7.54.0"
+2026-05-27T09:54:57.380Z [INFO] Server running on port 3000
+2026-05-27T09:55:11.495Z [INFO] Server running on port 3000
+2026-05-27T09:55:13.832Z [INFO] Server running on port 3000
+2026-05-27T09:55:25.376Z [INFO] Server running on port 3000
+2026-05-27T09:56:08.856Z [INFO] Server running on port 3000
+2026-05-27T09:56:10.318Z [INFO] Server running on port 3000
+2026-05-27T09:57:30.206Z [INFO] Server running on port 3000
+2026-05-27T09:57:31.535Z [INFO] Server running on port 3000
+2026-05-27T09:57:32.873Z [INFO] Server running on port 3000
+2026-05-27T09:57:35.958Z [INFO] Server running on port 3000
+2026-05-27T09:57:37.395Z [INFO] Server running on port 3000
+2026-05-27T09:57:41.835Z [INFO] Server running on port 3000
+2026-05-27T09:57:43.961Z [INFO] Server running on port 3000
+2026-05-27T09:57:46.010Z [INFO] Server running on port 3000
+2026-05-27T09:57:49.401Z [INFO] Server running on port 3000
+2026-05-27T10:02:51.062Z [INFO] Server running on port 3000
+2026-05-27T10:04:27.516Z [INFO] 127.0.0.1 - - [27/May/2026:10:04:27 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-27T10:05:49.476Z [INFO] Server running on port 3000
+2026-05-27T10:05:51.346Z [INFO] Server running on port 3000
+2026-05-27T10:06:04.493Z [INFO] 127.0.0.1 - - [27/May/2026:10:06:04 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-27T10:09:20.141Z [INFO] 127.0.0.1 - - [27/May/2026:10:09:20 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-27T10:11:31.655Z [INFO] Server running on port 3000
+2026-05-27T10:11:35.410Z [INFO] Server running on port 3000
+2026-05-27T10:11:42.392Z [INFO] Server running on port 3000
+2026-05-27T10:11:48.490Z [INFO] Server running on port 3000
+2026-05-27T10:11:50.149Z [INFO] Server running on port 3000
+2026-05-27T10:11:56.687Z [INFO] Server running on port 3000
+2026-05-27T10:12:02.386Z [INFO] Server running on port 3000
+2026-05-27T10:12:26.289Z [INFO] Server running on port 3000
+2026-05-27T10:12:32.117Z [INFO] Server running on port 3000
+2026-05-27T10:12:33.151Z [INFO] Server running on port 3000
+2026-05-27T10:12:35.950Z [INFO] Server running on port 3000
+2026-05-27T10:12:39.946Z [INFO] Server running on port 3000
+2026-05-27T10:12:48.526Z [INFO] Server running on port 3000
+2026-05-27T10:12:52.649Z [INFO] Server running on port 3000
+2026-05-27T10:12:54.457Z [INFO] Server running on port 3000
+2026-05-27T10:14:00.713Z [INFO] Server running on port 3000
+2026-05-27T10:14:02.171Z [INFO] Server running on port 3000
+2026-05-27T10:14:05.824Z [INFO] Server running on port 3000
+2026-05-27T10:14:07.338Z [INFO] Server running on port 3000
+2026-05-27T10:14:10.895Z [INFO] Server running on port 3000
+2026-05-27T10:14:15.118Z [INFO] Server running on port 3000
+2026-05-27T10:14:16.453Z [INFO] Server running on port 3000
+2026-05-27T10:14:22.127Z [INFO] Server running on port 3000
+2026-05-27T10:14:23.767Z [INFO] Server running on port 3000
+2026-05-27T10:14:28.612Z [INFO] Server running on port 3000
+2026-05-27T10:14:30.184Z [INFO] Server running on port 3000
+2026-05-27T10:14:33.764Z [INFO] Server running on port 3000
+2026-05-27T10:14:35.616Z [INFO] Server running on port 3000
+2026-05-27T10:14:45.673Z [INFO] Server running on port 3000
+2026-05-27T10:14:47.550Z [INFO] Server running on port 3000
+2026-05-27T10:14:50.984Z [INFO] Server running on port 3000
+2026-05-27T10:14:58.589Z [INFO] Server running on port 3000
+2026-05-27T10:15:01.588Z [INFO] Server running on port 3000
+2026-05-27T10:15:07.483Z [INFO] Server running on port 3000
+2026-05-27T10:15:10.850Z [INFO] Server running on port 3000
+2026-05-27T10:15:16.934Z [INFO] Server running on port 3000
+2026-05-27T10:15:20.817Z [INFO] Server running on port 3000
+2026-05-27T10:15:22.420Z [INFO] Server running on port 3000
+2026-05-27T10:15:25.436Z [INFO] Server running on port 3000
+2026-05-27T10:18:47.924Z [INFO] 127.0.0.1 - - [27/May/2026:10:18:47 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-27T10:22:09.545Z [INFO] 127.0.0.1 - - [27/May/2026:10:22:09 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-27T10:31:06.239Z [INFO] Server running on port 3000
+2026-05-27T10:31:07.463Z [INFO] Server running on port 3000
+2026-05-27T10:31:09.268Z [INFO] Server running on port 3000
+2026-05-27T10:31:22.409Z [INFO] Server running on port 3000
+2026-05-27T10:31:23.889Z [INFO] Server running on port 3000
+2026-05-27T10:31:26.290Z [INFO] Server running on port 3000
+2026-05-27T10:31:48.529Z [INFO] Server running on port 3000
+2026-05-27T10:31:49.831Z [INFO] Server running on port 3000
+2026-05-27T10:32:00.583Z [INFO] Server running on port 3000
+2026-05-27T10:32:01.961Z [INFO] Server running on port 3000
+2026-05-27T10:32:19.655Z [INFO] Server running on port 3000
+2026-05-27T10:32:21.076Z [INFO] Server running on port 3000
+2026-05-27T10:32:22.235Z [INFO] Server running on port 3000
+2026-05-27T10:32:23.552Z [INFO] Server running on port 3000
+2026-05-27T10:32:30.406Z [INFO] Server running on port 3000
+2026-05-27T10:32:31.848Z [INFO] Server running on port 3000
+2026-05-27T10:32:52.339Z [INFO] Server running on port 3000
+2026-05-27T10:32:53.741Z [INFO] Server running on port 3000
+2026-05-27T10:32:56.628Z [INFO] Server running on port 3000
+2026-05-27T10:32:58.137Z [INFO] Server running on port 3000
+2026-05-27T10:33:04.261Z [INFO] Server running on port 3000
+2026-05-27T10:33:16.012Z [INFO] Server running on port 3000
+2026-05-27T10:33:21.285Z [INFO] Server running on port 3000
+2026-05-27T10:33:23.004Z [INFO] Server running on port 3000
+2026-05-27T10:33:25.446Z [INFO] Server running on port 3000
+2026-05-27T10:33:27.345Z [INFO] Server running on port 3000
+2026-05-27T10:33:30.213Z [INFO] Server running on port 3000
+2026-05-27T10:33:31.763Z [INFO] Server running on port 3000
+2026-05-27T10:33:33.684Z [INFO] Server running on port 3000
+2026-05-27T10:33:35.636Z [INFO] Server running on port 3000
+2026-05-27T10:33:37.955Z [INFO] Server running on port 3000
+2026-05-27T10:33:42.365Z [INFO] Server running on port 3000
+2026-05-27T10:33:51.148Z [INFO] Server running on port 3000
+2026-05-27T10:33:52.575Z [INFO] Server running on port 3000
+2026-05-27T10:34:35.204Z [INFO] Server running on port 3000
+2026-05-27T10:34:36.290Z [INFO] Server running on port 3000
+2026-05-27T10:35:25.965Z [INFO] Server running on port 3000
+2026-05-27T10:35:27.350Z [INFO] Server running on port 3000
+2026-05-27T10:35:29.955Z [INFO] Server running on port 3000
+2026-05-27T10:35:34.846Z [INFO] Server running on port 3000
+2026-05-27T10:35:37.893Z [INFO] Server running on port 3000
+2026-05-27T10:35:41.204Z [INFO] Server running on port 3000
+2026-05-27T10:35:42.452Z [INFO] Server running on port 3000
+2026-05-27T10:35:44.746Z [INFO] Server running on port 3000
+2026-05-27T10:35:51.361Z [INFO] Server running on port 3000
+2026-05-27T10:35:52.637Z [INFO] Server running on port 3000
+2026-05-27T10:35:57.897Z [INFO] Server running on port 3000
+2026-05-27T10:36:01.372Z [INFO] Server running on port 3000
+2026-05-27T10:36:50.512Z [INFO] 127.0.0.1 - - [27/May/2026:10:36:50 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-27T10:39:50.690Z [INFO] Server running on port 3000
+2026-05-27T10:39:53.856Z [INFO] Server running on port 3000
+2026-05-27T10:40:04.576Z [INFO] 127.0.0.1 - - [27/May/2026:10:40:04 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-27T10:46:30.900Z [INFO] Server running on port 3000
+2026-05-27T10:46:39.498Z [INFO] Server running on port 3000
+2026-05-27T10:46:50.213Z [INFO] 127.0.0.1 - - [27/May/2026:10:46:50 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-27T10:50:02.912Z [INFO] Server running on port 3000
+2026-05-27T10:52:39.593Z [INFO] Server running on port 3000
+2026-05-28T09:40:50.128Z [INFO] Server running on port 3000
+2026-05-28T09:42:12.086Z [INFO] 127.0.0.1 - - [28/May/2026:09:42:12 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-28T09:47:38.800Z [INFO] Server running on port 3000
+2026-05-28T09:48:10.582Z [INFO] Server running on port 3000
+2026-05-28T09:48:12.329Z [INFO] Server running on port 3000
+2026-05-28T09:48:13.416Z [INFO] Server running on port 3000
+2026-05-28T09:48:16.148Z [INFO] Server running on port 3000
+2026-05-28T10:07:07.676Z [INFO] Server running on port 3000
+2026-05-28T10:07:12.034Z [INFO] Server running on port 3000
+2026-05-28T10:07:16.030Z [INFO] Server running on port 3000
+2026-05-28T10:07:19.353Z [INFO] Server running on port 3000
+2026-05-28T10:07:23.402Z [INFO] Server running on port 3000
+2026-05-28T10:07:28.709Z [INFO] Server running on port 3000
+2026-05-28T10:07:35.083Z [INFO] Server running on port 3000
+2026-05-28T10:07:39.499Z [INFO] Server running on port 3000
+2026-05-28T10:08:17.856Z [INFO] Server running on port 3000
+2026-05-28T10:21:46.307Z [INFO] 127.0.0.1 - - [28/May/2026:10:21:46 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-28T10:34:31.732Z [INFO] Server running on port 3000
+2026-05-28T10:34:33.695Z [INFO] Server running on port 3000
+2026-05-28T10:34:36.001Z [INFO] Server running on port 3000
+2026-05-28T10:34:37.486Z [INFO] Server running on port 3000
+2026-05-28T10:34:41.448Z [INFO] Server running on port 3000
+2026-05-28T10:34:53.203Z [INFO] Server running on port 3000
+2026-05-28T10:34:59.166Z [INFO] Server running on port 3000
+2026-05-28T10:35:00.535Z [INFO] Server running on port 3000
+2026-05-28T10:35:02.382Z [INFO] Server running on port 3000
+2026-05-28T10:35:04.074Z [INFO] Server running on port 3000
+2026-05-28T10:35:05.382Z [INFO] Server running on port 3000
+2026-05-28T10:35:09.613Z [INFO] Server running on port 3000
+2026-05-28T10:35:11.634Z [INFO] Server running on port 3000
+2026-05-28T10:35:13.392Z [INFO] Server running on port 3000
+2026-05-28T10:35:16.993Z [INFO] Server running on port 3000
+2026-05-28T10:35:22.140Z [INFO] Server running on port 3000
+2026-05-28T10:35:24.869Z [INFO] Server running on port 3000
+2026-05-28T10:35:26.845Z [INFO] Server running on port 3000
+2026-05-28T10:35:29.433Z [INFO] Server running on port 3000
+2026-05-28T10:35:31.595Z [INFO] Server running on port 3000
+2026-05-28T10:35:34.320Z [INFO] Server running on port 3000
+2026-05-28T10:35:36.255Z [INFO] Server running on port 3000
+2026-05-28T10:35:40.820Z [INFO] Server running on port 3000
+2026-05-28T10:35:43.203Z [INFO] Server running on port 3000
+2026-05-28T10:41:11.804Z [INFO] Server running on port 3000
+2026-05-28T10:41:13.790Z [INFO] Server running on port 3000
+2026-05-28T10:41:30.600Z [INFO] 127.0.0.1 - - [28/May/2026:10:41:30 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 246 "-" "PostmanRuntime/7.54.0"
+2026-05-28T11:19:34.686Z [INFO] Server running on port 3000
+2026-05-29T10:17:40.815Z [INFO] Server running on port 3000
+2026-05-29T10:28:29.039Z [INFO] Server running on port 3000
+2026-05-29T10:28:31.783Z [INFO] Server running on port 3000
+2026-05-29T10:40:15.920Z [INFO] ::ffff:127.0.0.1 - - [29/May/2026:10:40:15 +0000] "GET /health HTTP/1.1" 404 145 "-" "-"
+2026-05-29T10:41:38.616Z [INFO] ::ffff:127.0.0.1 - - [29/May/2026:10:41:38 +0000] "GET /v1/health HTTP/1.1" 404 148 "-" "-"
+2026-05-29T10:42:43.471Z [INFO] Server running on port 3000
+2026-05-29T10:43:17.584Z [INFO] 127.0.0.1 - - [29/May/2026:10:43:17 +0000] "GET /api/v1/health HTTP/1.1" 200 117 "-" "PostmanRuntime/7.54.0"
+2026-05-29T10:43:39.968Z [INFO] Server running on port 3000
+2026-05-29T10:43:41.682Z [INFO] Server running on port 3000
+2026-05-29T10:43:50.099Z [INFO] ::ffff:127.0.0.1 - - [29/May/2026:10:43:50 +0000] "GET /api/v1/health HTTP/1.1" 200 116 "-" "-"

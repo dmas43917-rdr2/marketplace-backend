@@ -3,9 +3,9 @@ const config = require('../config');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const transporter = require('../config/mailer');
-const emailQueue = require('../queues/emailQueue');
 const response = require('../utils/response');
 const AppError = require('../utils/appError');
+const sendEmailJob = require('../jobs/sendEmailJob');
 
 exports.register = async (req, res, next) => {
     const { email, password } = req.body;
@@ -53,10 +53,18 @@ exports.login = async (req, res, next) => {
             { expiresIn: '1h' }
         );
 
-        await emailQueue.add('sendEmail', {
+        /*await emailQueue.add('sendEmail', {
             to: 'test@mail.com',
             subject: 'Hello Dani',
             text: 'Email dari queue berhasil',
+        });*/
+
+        console.log('masuk controller email job');
+
+        await sendEmailJob({
+            to: user.email,
+            subject: 'wellcome',
+            text: 'login success',
         });
 
         response.success(res, 'Login berhasil', token)

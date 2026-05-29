@@ -1,23 +1,36 @@
-require('dotenv').config()
+require('dotenv').config();
+
 const { Worker } = require('bullmq');
 const transporter = require('../config/mailer');
+const emailQueue = require('../queues/emailQueue');
 const config = require('../config');
 
-const worker = new Worker('emailQueue', async (job) => {
-    const { to, subject, text } = job.data;
+console.log('worker email berjalan...')
 
-    await transporter.sendMail({
-        from: config.user,
+const worker = new Worker('emailQueue', async (job) => {
+    try {
+      console.log('worker menerima job:', job.data);
+
+      const { to, subject, text } = job.data;
+
+      const info = await transporter.sendMail({
+        from: config.mail.user,
         to,
         subject,
         text,
     });
 
-    console.log('Email terkirim ke:', to);
+      console.log('Email terkirim ke:', info.messageId);
+  
+    } catch (err) {
+    console.log('EMAIL ERROR:', err);
+    }
   },
+  
   {
     connection: {
         url: config.redisUrl,
     },
   }
 );
+

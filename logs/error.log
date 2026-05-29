@@ -144,3 +144,12 @@
 2026-05-25T12:37:00.318Z [ERROR] Error: User tidak ditemukan
     at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-26T10:15:33.912Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-26T11:03:06.993Z [ERROR] Error: User tidak ditemukan
+    at exports.login (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\controllers\authController.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-05-27T09:40:50.239Z [ERROR] ReplyError: ERR Lua redis lib command arguments must be strings or integers script: d898c9a1b24ab7ed9510995fa28eb5874d0cf10e, on @user_script:495.
+    at parseError (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\redis-parser\lib\parser.js:179:12)
+    at parseType (C:\Users\T14 G2\OneDrive\Documents\Belajar\marketplace-backend\node_modules\redis-parser\lib\parser.js:302:14)

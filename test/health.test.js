@@ -3,7 +3,7 @@ const app = require('../app');
 
 describe('Health Check',  () => {
     it('should return status OK', async () => {
-        const res = await request(app).get('/health');
+        const res = await request(app).get('/api/v1/health');
 
         expect(res.statusCode).toBe(200);
         expect(res.body.status).toBe('OK'); 
