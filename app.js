@@ -22,6 +22,8 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./config/swagger');
 const morgan = require('morgan');
 
+require('./listeners/userListener');
+
 app.use(helmet());
 
 app.use(cors({

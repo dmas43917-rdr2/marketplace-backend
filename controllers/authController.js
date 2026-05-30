@@ -6,6 +6,7 @@ const transporter = require('../config/mailer');
 const response = require('../utils/response');
 const AppError = require('../utils/appError');
 const sendEmailJob = require('../jobs/sendEmailJob');
+const eventBus = require('../events');
 
 exports.register = async (req, res, next) => {
     const { email, password } = req.body;
@@ -59,13 +60,18 @@ exports.login = async (req, res, next) => {
             text: 'Email dari queue berhasil',
         });*/
 
-        console.log('masuk controller email job');
+        /*console.log('masuk controller email job');
 
         await sendEmailJob({
             to: user.email,
             subject: 'wellcome',
             text: 'login success',
-        });
+        });*/
+
+        eventBus.emit('USER_LOGIN', {
+            userId: user.id,
+            email: user.email,
+        })
 
         response.success(res, 'Login berhasil', token)
 
