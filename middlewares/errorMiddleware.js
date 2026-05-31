@@ -1,11 +1,14 @@
 const response = require('../utils/response');
-const logger = require('../config/logger');
+const logger = require('../utils/logger');
 const config = require('../config');
 
 const isProduction = config.nodeEnv === 'production';
 
 module.exports = (err, req, res, next) => {
-    logger.error(err.stack);
+    logger.error({
+        message: err.message,
+        stack: err.stack,
+    });
 
     const statusCode = err.statusCode || 500;
 

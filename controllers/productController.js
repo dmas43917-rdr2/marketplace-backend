@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const redisClient = require('../config/redis');
 const AppError = require('../utils/appError');
+const logger = require('../utils/logger');
 
 const productService = require('../services/productService');
 
@@ -26,6 +27,8 @@ exports.getAllProducts = async (req, res) => {
     }
 
     if (cacheData) {
+        logger.info('user get product from redis');
+        
         return res.json({
             source: 'redis',
             ...JSON.parse(cacheData),
@@ -69,6 +72,9 @@ exports.getAllProducts = async (req, res) => {
         }  catch (err) {
             console.log('Redis SET error:', err.message)
         }
+
+        logger.info('user get product from database');
+
         res.json({
             source: 'database',
             ...responseData,

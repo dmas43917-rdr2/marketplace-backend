@@ -2,7 +2,7 @@ require('dotenv-safe').config();
 
 const app = require('./app');
 const config = require('./config');
-const logger = require('./config/logger');
+const logger = require('./utils/logger');
 
 
 

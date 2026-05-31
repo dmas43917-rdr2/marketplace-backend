@@ -7,6 +7,7 @@ const response = require('../utils/response');
 const AppError = require('../utils/appError');
 const sendEmailJob = require('../jobs/sendEmailJob');
 const eventBus = require('../events');
+const logger = require('../utils/logger');
 
 exports.register = async (req, res, next) => {
     const { email, password } = req.body;
@@ -70,6 +71,11 @@ exports.login = async (req, res, next) => {
 
         eventBus.emit('USER_LOGIN', {
             userId: user.id,
+            email: user.email,
+        })
+
+        logger.info('User login sukses',{
+            action: 'login',
             email: user.email,
         })
 

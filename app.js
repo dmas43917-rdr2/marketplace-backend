@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const redisClient = require('./config/redis');
 const db = require('./config/db');
-const logger = require('./config/logger');
+const logger = require('./utils/logger');
 const { limiter } = require('./middlewares/rateLimiter');
 
 
@@ -35,7 +35,7 @@ app.use(express.json({
 }));
 app.use(express.urlencoded({
     extended: true,
-    limit: '10kb' 
+    limit: '10kb'
 }));
 app.set('trust proxy', 1);
 
