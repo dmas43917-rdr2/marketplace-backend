@@ -16,6 +16,7 @@ const orderRoutes = require('./routes/orderRoutes');
 const paymentRoutes = require('./routes/paymentRoutes');
 const healthRoutes = require('./routes/healthRoutes');*/
 const errorMiddleware = require('./middlewares/errorMiddleware');
+const requestIdMiddleware = require('./middlewares/requestIdMiddleware');
 const apiRoutes = require('./routes');
 
 const swaggerUi = require('swagger-ui-express');
@@ -39,7 +40,19 @@ app.use(express.urlencoded({
 }));
 app.set('trust proxy', 1);
 
-app.use(morgan('combined', { stream: logger.stream }));
+app.use(requestIdMiddleware);
+
+morgan.token('requestId', (req) => {
+    return req.requestId;
+});
+
+app.use(morgan(
+    //':requestId :method :url :status :response-time ms',
+    'combined',
+    {
+        stream: logger.stream
+    }
+));
 
 app.use(limiter);
 

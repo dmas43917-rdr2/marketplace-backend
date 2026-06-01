@@ -72,14 +72,15 @@ exports.login = async (req, res, next) => {
         eventBus.emit('USER_LOGIN', {
             userId: user.id,
             email: user.email,
-        })
+        });
 
-        logger.info('User login sukses',{
+        logger.info('User login sukses', {
+            requestId: req.requestId,
             action: 'login',
             email: user.email,
-        })
+        });
 
-        response.success(res, 'Login berhasil', token)
+        response.success(res, 'Login berhasil', token);
 
         /*res.json({
             message: 'Login berhasil',

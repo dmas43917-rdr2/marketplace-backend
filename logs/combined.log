@@ -82,3 +82,41 @@
 {"level":"info","message":"127.0.0.1 - - [31/May/2026:09:43:25 +0000] \"GET /api/v1/products HTTP/1.1\" 200 1210 \"-\" \"PostmanRuntime/7.54.0\"","timestamp":"2026-05-31T09:43:25.910Z"}
 {"level":"info","message":"user get product from redis","timestamp":"2026-05-31T09:43:27.774Z"}
 {"level":"info","message":"127.0.0.1 - - [31/May/2026:09:43:27 +0000] \"GET /api/v1/products HTTP/1.1\" 200 1207 \"-\" \"PostmanRuntime/7.54.0\"","timestamp":"2026-05-31T09:43:27.777Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T10:30:30.410Z"}
+{"action":"login","email":"dani@gmail.com","level":"info","message":"User login sukses","requestId":"7a5b6510-2b40-4c7f-aa5b-c89b3c7cf35d","timestamp":"2026-05-31T10:31:03.837Z"}
+{"level":"info","message":"127.0.0.1 - - [31/May/2026:10:31:03 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 246 \"-\" \"PostmanRuntime/7.54.0\"","timestamp":"2026-05-31T10:31:03.842Z"}
+{"level":"info","message":"127.0.0.1 - - [31/May/2026:10:31:48 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 404 28 \"-\" \"PostmanRuntime/7.54.0\"","timestamp":"2026-05-31T10:31:48.179Z"}
+{"level":"info","message":"127.0.0.1 - - [31/May/2026:10:32:03 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 404 28 \"-\" \"PostmanRuntime/7.54.0\"","timestamp":"2026-05-31T10:32:03.231Z"}
+{"level":"info","message":"127.0.0.1 - - [31/May/2026:10:32:15 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 404 28 \"-\" \"PostmanRuntime/7.54.0\"","timestamp":"2026-05-31T10:32:15.484Z"}
+{"level":"info","message":"127.0.0.1 - - [31/May/2026:10:32:36 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 200 245 \"-\" \"PostmanRuntime/7.54.0\"","timestamp":"2026-05-31T10:32:36.483Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T10:33:05.601Z"}
+{"action":"login","email":"budi@gmail.com","level":"info","message":"User login sukses","requestId":"1a60d527-2f86-4506-8da0-19e46f919a0f","timestamp":"2026-05-31T10:33:25.211Z"}
+{"level":"info","message":"127.0.0.1 - - [31/May/2026:10:33:25 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 246 \"-\" \"PostmanRuntime/7.54.0\"","timestamp":"2026-05-31T10:33:25.215Z"}
+{"action":"login","email":"dani@gmail.com","level":"info","message":"User login sukses","requestId":"59d958a7-11b9-4908-bb54-3e2c20cfa738","timestamp":"2026-05-31T10:33:43.531Z"}
+{"level":"info","message":"127.0.0.1 - - [31/May/2026:10:33:43 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 246 \"-\" \"PostmanRuntime/7.54.0\"","timestamp":"2026-05-31T10:33:43.532Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T10:51:20.453Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T10:56:23.979Z"}
+{"action":"login","email":"dani@gmail.com","level":"info","message":"User login sukses","requestId":"aa760492-9cf5-4513-ac2d-7a1b9d45b492","timestamp":"2026-05-31T10:56:30.668Z"}
+{"level":"info","message":"aa760492-9cf5-4513-ac2d-7a1b9d45b492 POST /api/v1/auth/login 200 74.686 ms","timestamp":"2026-05-31T10:56:30.670Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T10:59:16.750Z"}
+{"email":"dani@gmail.com","level":"info","message":"User login sukses","requestId":"0785a8f9-bc8a-4b28-a753-460a2f43381e","timestamp":"2026-05-31T10:59:23.666Z","zaction":"login"}
+{"level":"info","message":"0785a8f9-bc8a-4b28-a753-460a2f43381e POST /api/v1/auth/login 200 89.870 ms","timestamp":"2026-05-31T10:59:23.668Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T11:00:30.789Z"}
+{"action":"login","email":"dani@gmail.com","level":"info","message":"User login sukses","requestId":"456fcc6d-f978-46e1-819a-aed7551e1645","timestamp":"2026-05-31T11:01:10.733Z"}
+{"level":"info","message":"456fcc6d-f978-46e1-819a-aed7551e1645 POST /api/v1/auth/login 200 85.885 ms","timestamp":"2026-05-31T11:01:10.739Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T11:51:51.055Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T11:51:55.113Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T11:52:00.805Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T11:52:06.563Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T12:18:37.346Z"}
+{"action":"login","email":"dani@gmail.com","level":"info","message":"User login sukses","requestId":"ee70214c-cc01-413b-ae2a-e1ed816aae6c","timestamp":"2026-05-31T12:18:43.879Z"}
+{"level":"info","message":"ee70214c-cc01-413b-ae2a-e1ed816aae6c POST /api/v1/auth/login 200 87.751 ms","timestamp":"2026-05-31T12:18:43.886Z"}
+{"action":"login","email":"dani@gmail.com","level":"info","message":"User login sukses","requestId":"7246f97f-fa57-4a77-935e-b56363b2da32","timestamp":"2026-05-31T12:18:50.077Z"}
+{"level":"info","message":"7246f97f-fa57-4a77-935e-b56363b2da32 POST /api/v1/auth/login 200 66.525 ms","timestamp":"2026-05-31T12:18:50.078Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-05-31T12:37:45.631Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-06-01T09:33:08.859Z"}
+{"action":"login","email":"dani@gmail.com","level":"info","message":"User login sukses","requestId":"eee062f1-fb92-4454-88c9-2c2e10c98b08","timestamp":"2026-06-01T09:33:34.378Z"}
+{"level":"info","message":"eee062f1-fb92-4454-88c9-2c2e10c98b08 POST /api/v1/auth/login 200 107.311 ms","timestamp":"2026-06-01T09:33:34.384Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2026-06-01T09:41:16.567Z"}
+{"action":"login","email":"dani@gmail.com","level":"info","message":"User login sukses","requestId":"ccd0f5d0-77c8-4d8a-8a9d-bd044e70601e","timestamp":"2026-06-01T09:41:23.835Z"}
+{"level":"info","message":"127.0.0.1 - - [01/Jun/2026:09:41:23 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 246 \"-\" \"PostmanRuntime/7.54.0\"","timestamp":"2026-06-01T09:41:23.844Z"}
