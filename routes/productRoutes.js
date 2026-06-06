@@ -13,7 +13,7 @@ router.post('/', authMiddleware,
     upload.single('image'), [
     body('name').notEmpty().withMessage('Nama wajib diisi'),
     body('price').isInt({ min: 1 }).withMessage('Harga harus angka > 0')],
-    productController.createProduct
+    asyncHandler(productController.createProduct)
 );
 
 /**
@@ -26,10 +26,10 @@ router.post('/', authMiddleware,
  *         description: Success
  */
 router.get('/', asyncHandler(productController.getAllProducts));
-router.get('/my-products', authMiddleware, productController.getMyProducts);
-router.get('/:id', productController.getProductById);
-router.put('/:id', authMiddleware, upload.single('image'), productController.updateProduct);
-router.delete('/:id', authMiddleware, authorize("admin"), productController.deleteProduct);
+router.get('/my-products', authMiddleware, asyncHandler(productController.getMyProducts));
+router.get('/:id', asyncHandler(productController.getProductById));
+router.put('/:id', authMiddleware, upload.single('image'), asyncHandler(productController.updateProduct));
+router.delete('/:id', authMiddleware, authorize("admin"), asyncHandler(productController.deleteProduct));
 
 
 module.exports = router

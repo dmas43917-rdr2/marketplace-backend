@@ -12,9 +12,10 @@ module.exports = (err, req, res, next) => {
 
     const statusCode = err.statusCode || 500;
 
-    return response.error(
-        res,
-        isProduction && statusCode === 500 ? 'Internal server error' : err.message,
-        statusCode,
-    );
+    const message =
+        isProduction && !err.isOperational 
+            ? 'Internal server error' 
+            : err.message;
+
+    return response.error(res, message, statusCode);
 };

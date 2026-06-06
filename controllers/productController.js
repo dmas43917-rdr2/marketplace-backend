@@ -1,10 +1,10 @@
-const db = require('../config/db');
 const { validationResult } = require('express-validator');
 const fs = require('fs');
 const path = require('path');
 const redisClient = require('../config/redis');
 const AppError = require('../utils/appError');
 const logger = require('../utils/logger');
+const response = require('../utils/response');
 
 const productService = require('../services/productService');
 
@@ -23,16 +23,21 @@ exports.getAllProducts = async (req, res) => {
         cacheData = await redisClient.get(cacheKey);
     } catch (err) {
         console.log('Redis GET error:', err.message);
-    }
+        }
     }
 
     if (cacheData) {
-        logger.info('user get product from redis');
         
-        return res.json({
+        logger.info(`Products served from redis. key=${cacheKey}`);
+        
+        return response.success(
+            res,
+            'Produk berhasil diambil',
+            {
             source: 'redis',
             ...JSON.parse(cacheData),
-        });
+            }
+        );
     }
 
     let orderQuery = 'ORDER BY products.id DESC';
@@ -43,94 +48,89 @@ exports.getAllProducts = async (req, res) => {
         orderQuery = 'ORDER BY products.price DESC';
     }
 
-        const result = await productService.getAllProducts({
-            search,
-            limit,
-            offset,
-            orderQuery,
-        });
+    const result = await productService.getAllProducts({
+        search,
+        limit,
+        offset,
+        orderQuery,
+    });
 
-        const products = result.map((product) => {
-            return {
-                ...product,
-                image_url: product.image ?`http://localhost:3000/uploads/${product.image}` : null
-            };
-        });
-
-        const responseData = {
-            page,
-            limit,
-            data: products
+    const products = result.map((product) => {
+        return {
+            ...product,
+            image_url: product.image ?`http://localhost:3000/uploads/${product.image}` : null
         };
+    });
 
-        try {
-          await redisClient.setEx(
-            cacheKey,
-            60,
-            JSON.stringify(responseData)
-          );
-        }  catch (err) {
-            console.log('Redis SET error:', err.message)
+    const responseData = {
+        page,
+        limit,
+        data: products
+    };
+
+    try {
+        await redisClient.setEx(
+        cacheKey,
+        60,
+        JSON.stringify(responseData)
+        );
+    } catch (err) {
+        console.log('Redis SET error:', err.message)
+    }
+
+    logger.info(`Products served from database. key=${cacheKey}`);
+
+    return response.success(
+        res,
+        'Produk berhasil diambil',
+        {
+        source: 'database',
+        ...responseData,
         }
-
-        logger.info('user get product from database');
-
-        res.json({
-            source: 'database',
-            ...responseData,
-        });
+    );
         
 };
 
 exports.getProductById = async (req, res) => {
-    const id = parseInt(req.params.id);
+    const productId = parseInt(req.params.id);
 
-    try {
-        const result = await db.query(
-            'SELECT * FROM products WHERE id = $1',
-            [id]
-        );
+    const product = await productService.getProductById(productId);
 
-        if (result.rows.length === 0) {
-            return res.status(404).json({ message: 'Produk tidak ditemukan' });
-        }
-
-        res.json(result.rows[0]);
-    } catch (err) {
-        res.status(500).json({ message: err.message });
+    if (!product) {
+        throw new AppError('Produk tidak ditemukan', 404);
     }
+
+    return response.success(res, 'produk ditemukan', product);
+    
 };
 
 exports.createProduct = async (req,res) => {
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-        return res.status(400).json({ errors: errors.array()});
+        throw new AppError(errors.array()[0].msg, 400);
     }
 
     const { name, price } = req.body;
     const  userId = req.user.id;
-    const image = req.file ? req.file.path : null;
+    const image = req.file ? req.file.filename : null;
 
-    try {
-        const result = await db.query(
-            'INSERT INTO products (name, price, user_id, image) VALUES ($1, $2, $3, $4) RETURNING *',
-            [name, price, userId, image] 
-        );
+    const product = await productService.createProduct({
+        name,
+        price,
+        userId,
+        image,
+    });
 
-        const keys = await redisClient.keys('products:*');
+    const keys = await redisClient.keys('products:*');
 
-        for (const key of keys) {
-            await redisClient.del(key);
-        }
-
-        res.json({
-            message: 'Produk berhasil ditambahkan',
-            data: result.rows[0]
-        });
-    } catch (err) {
-        res.status(500).json({ message: err.message });
+    for (const key of keys) {
+          await redisClient.del(key);
     }
+
+    logger.info(`Product created: ${product.id} by user ${userId}`);
+
+    return response.success(res, 'Produk berhasil ditambahkan', product)
 };
 
 exports.updateProduct = async (req, res) => {
@@ -138,112 +138,83 @@ exports.updateProduct = async (req, res) => {
     const { name, price } = req.body;
     const userId = req.user.id;
 
-    try {
-        const productResult = await db.query(
-            'SELECT * FROM products WHERE id = $1',
-            [productId]
-        );
-
-        if (productResult.rows.length === 0) {
-            return res.status(404).json({ message: 'Produk tidak ditemukan' });
-        }
-
-        const product = productResult.rows[0];
-
-        if (Number(product.user_id) !== Number(userId)) {
-            return res.status(403).json({ message: 'Kamu tidak berhak mengedit produk ini' });
-        } 
-
-        const image = req.file ? req.file.filename : product.image;
-
-        if (req.file && product.image) {
-            const oldImagePath = path.join(__dirname, '../uploads',product.image);
-
-            if (fs.existsSync(oldImagePath)) {
-                fs.unlinkSync(oldImagePath);
-            }
-        }
-
-         const result = await db.query('UPDATE products SET name = $1, price = $2, image =$3 WHERE id = $4 RETURNING *',
-            [name, price, image, productId]
-        );
-
-        const keys = await redisClient.keys('products:*');
-
-        for (const key of keys) {
-            await redisClient.del(key);
-        }
-
-        res.json({
-            message: 'Produk berhasil diupdate',
-            data: result.rows[0]
-         });
-
-    } catch (err) {
-        res.status(500),json({ message: err.message });
+    
+    const product = await productService.getProductById(productId);
+        
+    if (!product) {
+        throw new AppError('Produk tidak ditemukan',404)
     }
+
+    if (Number(product.user_id) !== Number(userId)) {
+        throw new AppError('Kamu tidak berhak mengedit produk ini', 403);
+    } 
+
+    const image = req.file ? req.file.filename : product.image;
+
+    if (req.file && product.image) {
+        const oldImagePath = path.join(__dirname, '../uploads',product.image);
+
+        if (fs.existsSync(oldImagePath)) {
+            fs.unlinkSync(oldImagePath);
+        }
+    }
+
+    const result = await productService.updateProduct({
+        name,
+        price,
+        image,
+        productId,
+    })
+
+    const keys = await redisClient.keys('products:*');
+
+    for (const key of keys) {
+        await redisClient.del(key);
+    }
+
+    logger.info(`Product updated: ${productId} by user ${userId}`);
+
+    return response.success(res, 'Produk berhasil diupdate', result);
 };
 
 exports.deleteProduct = async (req,res) => {
     const productId = parseInt(req.params.id);
     const userId = req.user.id;
 
-    try {
-        const productResult = await db.query(
-            'SELECT * FROM products WHERE id = $1',
-            [productId]
-        );
+    const product = await productService.getProductById(productId);
 
-        if (productResult.rows.length === 0) {
-            return res.status(404).json({ message: 'produk tidak ditemukan' });
-        }
-
-        const product = productResult.rows[0];
-
-        /*if (Number(product.user_id) !== Number(userId)) {
-            return res.status(403).json({ message: 'kamu tidak berhak menghapus produk ini' });
-        }*/
-
-        if (product.image) {
-            const imagePath = path.join(__dirname, '../uploads', product.image);
-
-            if (fs.existsSync(imagePath)) {
-                fs.unlinkSync(imagePath);
-            }
-        }
-
-        const result = await db.query(
-            'DELETE FROM products WHERE id = $1 RETURNING *',
-            [productId]
-        );
-
-        const keys = await redisClient.keys('products:*');
-
-        for (const key of keys) {
-            await redisClient.del(key);
-        }
-
-        res.json({
-            message: 'Produk berhasil dihapus',
-            data: result.rows[0]
-         });
-    } catch (err) {
-        res.status(500).json({ message: err.message });
+    if (!product) {
+        throw new AppError('produk tidak ditemukan', 404);
     }
+
+        
+
+    if (product.image) {
+        const imagePath = path.join(__dirname, '../uploads', product.image);
+
+        if (fs.existsSync(imagePath)) {
+            fs.unlinkSync(imagePath);
+        }
+    }
+
+    const result = await productService.deleteProduct(productId);
+
+    const keys = await redisClient.keys('products:*');
+
+    for (const key of keys) {
+        await redisClient.del(key);
+    }
+
+    logger.info(`Product deleted: ${productId} by user ${userId}`);
+
+    return response.success(res, 'Produk berhasil dihapus', result);
     
 };
 
 exports.getMyProducts = async (req, res) => {
     const userId = req.user.id;
 
-    try {
-        const result = await db.query(
-            'SELECT * FROM products WHERE user_id = $1',
-            [userId]
-        );
+    const result = await productService.getMyProducts(userId)
 
-    res.json(result.rows);
-    } catch (err) {
-        res.status(500).json({ message: err.message });
-    }
+    return response.success(res, 'Produk ditemukan', result)
 };
