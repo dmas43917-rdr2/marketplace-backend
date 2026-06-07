@@ -29,7 +29,7 @@ router.get('/', asyncHandler(productController.getAllProducts));
 router.get('/my-products', authMiddleware, asyncHandler(productController.getMyProducts));
 router.get('/:id', asyncHandler(productController.getProductById));
 router.put('/:id', authMiddleware, upload.single('image'), asyncHandler(productController.updateProduct));
-router.delete('/:id', authMiddleware, authorize("admin"), asyncHandler(productController.deleteProduct));
+router.delete('/:id', authMiddleware, authorize('admin', 'seller'), asyncHandler(productController.deleteProduct));
 
 
 module.exports = router

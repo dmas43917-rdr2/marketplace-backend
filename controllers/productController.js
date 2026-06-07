@@ -96,10 +96,6 @@ exports.getProductById = async (req, res) => {
 
     const product = await productService.getProductById(productId);
 
-    if (!product) {
-        throw new AppError('Produk tidak ditemukan', 404);
-    }
-
     return response.success(res, 'produk ditemukan', product);
     
 };
@@ -137,17 +133,9 @@ exports.updateProduct = async (req, res) => {
     const productId = parseInt(req.params.id);
     const { name, price } = req.body;
     const userId = req.user.id;
-
+    
     
     const product = await productService.getProductById(productId);
-        
-    if (!product) {
-        throw new AppError('Produk tidak ditemukan',404)
-    }
-
-    if (Number(product.user_id) !== Number(userId)) {
-        throw new AppError('Kamu tidak berhak mengedit produk ini', 403);
-    } 
 
     const image = req.file ? req.file.filename : product.image;
 
@@ -164,6 +152,8 @@ exports.updateProduct = async (req, res) => {
         price,
         image,
         productId,
+        image,
+        userId
     })
 
     const keys = await redisClient.keys('products:*');
@@ -180,14 +170,9 @@ exports.updateProduct = async (req, res) => {
 exports.deleteProduct = async (req,res) => {
     const productId = parseInt(req.params.id);
     const userId = req.user.id;
+    const role = req.user.role;
 
     const product = await productService.getProductById(productId);
-
-    if (!product) {
-        throw new AppError('produk tidak ditemukan', 404);
-    }
-
-        
 
     if (product.image) {
         const imagePath = path.join(__dirname, '../uploads', product.image);
@@ -197,7 +182,11 @@ exports.deleteProduct = async (req,res) => {
         }
     }
 
-    const result = await productService.deleteProduct(productId);
+    const result = await productService.deleteProduct({
+        productId,
+        userId,
+        role
+    });
 
     const keys = await redisClient.keys('products:*');
 
