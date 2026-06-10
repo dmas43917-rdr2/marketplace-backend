@@ -1,16 +1,24 @@
 const db = require('../config/db');
+const orderService = require('../services/orderService');
+const response = require('../utils/response');
 
 exports.createOrder = async (req, res) => {
-    const client = await db.connect();
+    /*const client = await db.connect();
 
     try {
-        await client.query('BEGIN');
+        await client.query('BEGIN')*/
 
         const userId = req.user.id;
-        const { product_id } = req.body;
+        const { product_id: productId, } = req.body;
+
+        const order = await orderService.createOrder({ userId, productId });
+
+        return response.success(res, 'Order berhasil', order);
+
+
 
     
-        const productResult = await client.query(
+      /*  const productResult = await client.query(
             'SELECT * FROM products WHERE id = $1',
             [product_id]
         );
@@ -51,11 +59,16 @@ exports.createOrder = async (req, res) => {
 
     } finally {
         client.release();
-    }
+    }*/
 };
 
 exports.getAllOrders = async (req, res) => {
-    try {
+    const order = await orderService.getAllOrders();
+
+    return response.success(res,'Semua order ditemukan', order);
+    
+    
+    /*try {
         const result = await db.query (`
             SELECT 
               orders.id AS order_id,
@@ -75,13 +88,17 @@ exports.getAllOrders = async (req, res) => {
         res.json(result.rows);
     } catch (err) {
         res.status(500).json({ message: err.message });
-    }
+    }*/
 };
 
 exports.getMyOrders = async (req, res) => {
     const userId = req.user.id;
 
-    try {
+    const order = await orderService.getMyOrders(userId);
+
+    return response.success(res, 'Orderan ditemukan', order)
+
+    /*try {
         const result = await db.query(`
             SELECT
                orders.id AS order_id,
@@ -100,5 +117,5 @@ exports.getMyOrders = async (req, res) => {
             res.json(result.rows);
     } catch (err) {
         res.status(500).json({ message: err.message });
-    }
+    }*/
 };

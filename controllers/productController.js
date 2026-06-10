@@ -6,7 +6,7 @@ const AppError = require('../utils/appError');
 const logger = require('../utils/logger');
 const response = require('../utils/response');
 
-const productService = require('../services/productService');
+const productService = require('../container/productContainer');
 
 exports.getAllProducts = async (req, res) => {
     const page = parseInt(req.query.page) || 1;

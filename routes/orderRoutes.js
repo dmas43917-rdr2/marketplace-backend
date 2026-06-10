@@ -3,9 +3,10 @@ const router = express.Router();
 
 const orderController = require('../controllers/orderController');
 const authMiddleware = require('../middlewares/authMiddleware');
+const asyncHandler = require('../utils/asyncHandler');
 
-router.post('/', authMiddleware, orderController.createOrder);
-router.get('/', authMiddleware, orderController.getAllOrders);
-router.get('/', authMiddleware, orderController.getMyOrders);
+router.post('/', authMiddleware, asyncHandler(orderController.createOrder));
+router.get('/', authMiddleware, asyncHandler(orderController.getAllOrders));
+router.get('/my-orders', authMiddleware, asyncHandler(orderController.getMyOrders));
 
 module.exports = router;
