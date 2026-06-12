@@ -13,5 +13,4 @@ router.use('/orders', orderRoutes);
 router.use('/payment', paymentRoutes);
 router.use('/health', healthRoutes);
 
-
 module.exports = router;

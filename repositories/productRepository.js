@@ -2,7 +2,7 @@ const db = require('../config/db');
 
 class ProductRepository {
     async findById({ productId, client = db }) {
-        const result = await db.query(
+        const result = await client.query(
             'SELECT * FROM products WHERE id = $1',
             [productId]
         );

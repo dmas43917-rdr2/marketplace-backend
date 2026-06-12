@@ -47,7 +47,7 @@ morgan.token('requestId', (req) => {
 });
 
 app.use(morgan(
-    //':requestId :method :url :status :response-time ms',
+    ':requestId :method :url :status :response-time ms',
     'combined',
     {
         stream: logger.stream
@@ -61,6 +61,15 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
 app.use('/api/v1', apiRoutes);
+
+app.get('/api/v1', (req, res) => {
+    res.send(
+        `Server Jalan Bro!
+        Wi Wok De Tok Not Onli Tok De Tok`
+    );
+});
+
+
 
 /*app.use('/', productRoutes);
 app.use('/', authRoutes);

@@ -1,33 +1,30 @@
 const db = require('../config/db');
-const productRepository = require('../repositories/productRepository');
-const orderRepository = require('../repositories/orderRepository');
 const AppError = require('../utils/appError');
-const { getMyOrders } = require('../controllers/orderController');
 
-const orderService = {
+class OrderService {
+    constructor(orderRepository, productService) {
+        this.orderRepository = orderRepository;
+        this.productService = productService;
+    } 
     async createOrder({ userId, productId }) {
         const client = await db.connect();
 
         try {
             await client.query('BEGIN');
 
-            const product = await productRepository.findById({ productId, client });
-
-            if (!product) {
-                throw new AppError('Produk tidak ditemukan', 404);
-            }
+            const product = await this.productService.getProductById({ productId, client });
 
             if (Number(product.user_id) === Number(userId)) {
                 throw new AppError('Tidak bisa membeli produk sendiri', 403);
             }
 
-            const existingOrders = await orderRepository.findByUserIdAndProductId({ userId, productId, client });
+            const existingOrders = await this.orderRepository.findByUserIdAndProductId({ userId, productId, client });
 
             if (existingOrders) {
                 throw new AppError('Kamu sudah membeli produk ini', 400);
             }
 
-            const order = await orderRepository.create({ userId, productId, client });
+            const order = await this.orderRepository.create({ userId, productId, client });
 
             await client.query('COMMIT');
 
@@ -38,15 +35,15 @@ const orderService = {
         } finally {
             client.release();
         }
-    },
+    }
 
     async getAllOrders() {
-        return orderRepository.findAll();
-    },
+        return this.orderRepository.findAll();
+    }
 
     async getMyOrders(userId) {
-        return orderRepository.findByUserId(userId);
+        return this.orderRepository.findByUserId(userId);
     }
 };
 
-module.exports = orderService;
+module.exports = OrderService;

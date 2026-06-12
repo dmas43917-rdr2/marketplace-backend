@@ -1,14 +1,14 @@
 const db = require('../config/db');
 
-const orderRepository = {
+class OrderRepository  {
     async findByUserIdAndProductId({ userId, productId, client = db }) {
-        const result = await db.query(
+        const result = await client.query(
             'SELECT * FROM orders WHERE user_id = $1 AND  product_id = $2',
             [userId, productId]
         );
 
         return result.rows[0];
-    },
+    }
 
     async create({ userId, productId, client = db }) {
          const result = await client.query(
@@ -17,7 +17,7 @@ const orderRepository = {
         );
 
         return result.rows[0];
-    },
+    }
 
     async findAll() {
         const result = await db.query (`
@@ -37,7 +37,7 @@ const orderRepository = {
         `);
 
         return result.rows;
-    },
+    }
 
     async findByUserId(userId) {
         const result = await db.query(`
@@ -60,4 +60,4 @@ const orderRepository = {
     }
 }
 
-module.exports = orderRepository;
+module.exports = OrderRepository;

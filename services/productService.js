@@ -1,6 +1,6 @@
 const AppError = require('../utils/appError');
 
-class ProductService  {
+class ProductService {
     constructor(productRepository) {
         this.productRepository = productRepository;
     }
@@ -8,8 +8,8 @@ class ProductService  {
         return this.productRepository.findAll(params);
     };
 
-    async getProductById(productId) {
-        const product = await this.productRepository.findById({ productId });
+    async getProductById({ productId, client }) {
+        const product = await this.productRepository.findById({ productId, client });
 
         if (!product) {
         throw new AppError('Produk tidak ditemukan', 404);
