@@ -10,7 +10,7 @@ class ProductService {
 
     async getProductById({ productId, client }) {
         const product = await this.productRepository.findById({ productId, client });
-
+        
         if (!product) {
         throw new AppError('Produk tidak ditemukan', 404);
         }

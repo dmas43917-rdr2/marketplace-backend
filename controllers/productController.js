@@ -94,7 +94,7 @@ exports.getAllProducts = async (req, res) => {
 exports.getProductById = async (req, res) => {
     const productId = parseInt(req.params.id);
 
-    const product = await productService.getProductById(productId);
+    const product = await productService.getProductById({ productId });
 
     return response.success(res, 'produk ditemukan', product);
     
@@ -135,7 +135,7 @@ exports.updateProduct = async (req, res) => {
     const userId = req.user.id;
     
     
-    const product = await productService.getProductById(productId);
+    const product = await productService.getProductById({ productId });
 
     const image = req.file ? req.file.filename : product.image;
 
@@ -172,7 +172,7 @@ exports.deleteProduct = async (req,res) => {
     const userId = req.user.id;
     const role = req.user.role;
 
-    const product = await productService.getProductById(productId);
+    const product = await productService.getProductById({ productId });
 
     if (product.image) {
         const imagePath = path.join(__dirname, '../uploads', product.image);

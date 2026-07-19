@@ -77,5 +77,6 @@ app.use('/', orderRoutes);
 app.use('/', paymentRoutes);
 app.use('/', healthRoutes);*/
 app.use(errorMiddleware);
+console.log('hai')
 
 module.exports = app;
